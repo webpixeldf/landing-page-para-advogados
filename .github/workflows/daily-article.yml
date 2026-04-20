@@ -1,0 +1,64 @@
+name: Daily Article
+
+on:
+  schedule:
+    # Roda todo dia às 09:00 UTC = 06:00 horário de Brasília
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Quantidade de artigos a gerar'
+        required: false
+        default: '1'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Generate article(s)
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+        run: node scripts/generate-article.mjs ${{ github.event.inputs.count || '1' }}
+
+      - name: Commit & push
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/blog/ content/topics-pool.json content/anchors-pool.json public/images/blog/
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Sem alterações."
+            exit 0
+          fi
+          git commit -m "chore(blog): novo artigo automático $(date -u +%Y-%m-%d)"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Aguarda Cloudflare publicar (60s)
+        if: steps.commit.outputs.changed == 'true'
+        run: sleep 60
+
+      - name: Notifica IndexNow (Bing/Yandex/etc) sobre URLs novas
+        if: steps.commit.outputs.changed == 'true'
+        run: node scripts/ping-indexnow.mjs --since "$(date -u +%Y-%m-%d)"
