@@ -1,0 +1,55 @@
+# ───────────────────────────────────────────────────────────────
+#  Cloudflare Pages — Redirects (301 permanente, exceto onde indicado)
+#  Sintaxe: <origem> <destino> <status>
+#  Avalia de cima pra baixo; PRIMEIRA regra que casar vence.
+# ───────────────────────────────────────────────────────────────
+
+# 1. Domínio www → apex (sem www)
+https://www.landingpageparaadvogados.com/* https://landingpageparaadvogados.com/:splat 301!
+
+# 2. Rotas .html da versão antiga (HTML estático) → novas rotas Next.js
+/index.html                      /                              301!
+/quem-somos.html                 /quem-somos/                   301!
+/portfolio.html                  /portfolio/                    301!
+/politica-privacidade.html       /politica-privacidade/         301!
+/termos-de-uso.html              /termos-de-uso/                301!
+
+# 3. Variações sem barra final (Next.js usa trailingSlash: true)
+/quem-somos                      /quem-somos/                   301!
+/portfolio                       /portfolio/                    301!
+/politica-privacidade            /politica-privacidade/         301!
+/termos-de-uso                   /termos-de-uso/                301!
+/blog                            /blog/                         301!
+
+# 4. Redirecionamentos semânticos (variantes de URL para conteúdo canônico)
+/sobre                           /quem-somos/                   301
+/sobre-nos                       /quem-somos/                   301
+/cases                           /portfolio/                    301
+/clientes                        /portfolio/                    301
+/contato                         /                              301
+/orcamento                       /                              301
+/privacidade                     /politica-privacidade/         301
+/termos                          /termos-de-uso/                301
+/artigos                         /blog/                         301
+/noticias                        /blog/                         301
+
+# 5. Redirecionamentos de rotas históricas (caso URLs já tenham sido indexadas)
+/landing-page                    /                              301
+/landing-pages                   /                              301
+/landing-page-para-advogados     /                              301
+/site-para-advogados             /                              301
+
+# 6. Rotas de blog antigas (caso existam slugs com variações conhecidas)
+/blog/post/*                     /blog/:splat                   301
+/artigo/*                        /blog/:splat                   301
+
+# 7. Bloquear acesso direto a arquivos sensíveis
+/.env                            /404                           404!
+/.git/*                          /404                           404!
+/node_modules/*                  /404                           404!
+/package.json                    /404                           404!
+/package-lock.json               /404                           404!
+/tsconfig.json                   /404                           404!
+
+# 8. Fallback SPA (404 padrão do Next.js já fica em /404/index.html)
+/* /404 404

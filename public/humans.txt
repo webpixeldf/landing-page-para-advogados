@@ -1,0 +1,17 @@
+/* TEAM */
+Landing Page para Advogados
+Site: https://landingpageparaadvogados.com
+Contato: contato@landingpageparaadvogados.com
+Localização: Brasília — DF, Brasil
+
+/* THANKS */
+OAB / Provimento 205/2021 — pela clareza ética sobre publicidade digital
+Unsplash — fotos editoriais com crédito
+
+/* SITE */
+Last update: 2026/04/20
+Language: pt-BR
+Doctype: HTML5
+Standards: HTML5, CSS3, JavaScript (ES2020+), JSON-LD, Schema.org, OpenGraph, Twitter Cards, PWA Manifest
+Components: Next.js 15 (App Router, static export) · React 19 · TypeScript · Tailwind CSS · Lexend
+Performance: Core Web Vitals compliant · Static export · CDN-ready

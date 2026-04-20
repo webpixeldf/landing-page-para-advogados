@@ -1,0 +1,740 @@
+{
+  "_comment": "Tópicos para geração diária. Estrutura: {topic, category, tags, used?: ISODate}. Quando usado, o script preenche 'used'. Tópicos sem 'used' são candidatos.",
+  "topics": [
+    {
+      "topic": "Como criar uma landing page para advogado tributarista que converte mais de 10%",
+      "category": "Landing Page",
+      "tags": [
+        "landing page",
+        "tributário",
+        "conversão"
+      ],
+      "used": "2026-04-20",
+      "slug": "landing-page-para-advogado-tributarista-guia-para-conversoes-acima-de-10"
+    },
+    {
+      "topic": "7 elementos essenciais de uma landing page jurídica de alta performance",
+      "category": "Landing Page",
+      "tags": [
+        "landing page",
+        "estrutura",
+        "conversão"
+      ],
+      "used": "2026-04-20",
+      "slug": "7-elementos-essenciais-de-uma-landing-page-juridica-de-alta-performance"
+    },
+    {
+      "topic": "Landing page para advogado trabalhista: copy ideal para captar leads",
+      "category": "Landing Page",
+      "tags": [
+        "trabalhista",
+        "copywriting",
+        "leads"
+      ],
+      "used": "2026-04-20",
+      "slug": "landing-page-para-advogado-trabalhista-copy-ideal-para-captar-leads"
+    },
+    {
+      "topic": "Landing page para advogado previdenciário: diferenciais que funcionam",
+      "category": "Landing Page",
+      "tags": [
+        "previdenciário",
+        "INSS",
+        "estratégia"
+      ]
+    },
+    {
+      "topic": "Landing page para advogado de família: tom de voz e prova social",
+      "category": "Landing Page",
+      "tags": [
+        "família",
+        "tom",
+        "prova social"
+      ]
+    },
+    {
+      "topic": "Landing page para advogado criminalista: ética e captação",
+      "category": "Landing Page",
+      "tags": [
+        "criminal",
+        "ética",
+        "OAB"
+      ]
+    },
+    {
+      "topic": "Landing page para advogado empresarial B2B: linguagem corporativa",
+      "category": "Landing Page",
+      "tags": [
+        "empresarial",
+        "B2B",
+        "corporativo"
+      ]
+    },
+    {
+      "topic": "Otimização mobile-first em landing page jurídica: o guia definitivo",
+      "category": "Landing Page",
+      "tags": [
+        "mobile",
+        "responsivo",
+        "performance"
+      ]
+    },
+    {
+      "topic": "A/B testing em landing page jurídica: o que testar e como medir",
+      "category": "Landing Page",
+      "tags": [
+        "testing",
+        "métricas",
+        "otimização"
+      ]
+    },
+    {
+      "topic": "Como usar vídeo em landing page para advogados sem ferir a OAB",
+      "category": "Landing Page",
+      "tags": [
+        "vídeo",
+        "OAB",
+        "engajamento"
+      ]
+    },
+    {
+      "topic": "Marketing jurídico no Brasil: panorama 2026 e tendências",
+      "category": "Marketing",
+      "tags": [
+        "marketing",
+        "tendências",
+        "2026"
+      ]
+    },
+    {
+      "topic": "Funil de vendas para advogados: do clique ao contrato assinado",
+      "category": "Marketing",
+      "tags": [
+        "funil",
+        "vendas",
+        "conversão"
+      ]
+    },
+    {
+      "topic": "Inbound marketing jurídico: estratégia completa para escritórios",
+      "category": "Marketing",
+      "tags": [
+        "inbound",
+        "estratégia",
+        "conteúdo"
+      ]
+    },
+    {
+      "topic": "E-mail marketing para escritórios jurídicos: cadências e modelos",
+      "category": "Marketing",
+      "tags": [
+        "e-mail",
+        "automação",
+        "leads"
+      ]
+    },
+    {
+      "topic": "Automação de marketing para advocacia: ferramentas e workflows",
+      "category": "Marketing",
+      "tags": [
+        "automação",
+        "ferramentas",
+        "workflow"
+      ]
+    },
+    {
+      "topic": "CRM para advogados: como escolher e implementar",
+      "category": "Marketing",
+      "tags": [
+        "CRM",
+        "ferramentas",
+        "gestão"
+      ]
+    },
+    {
+      "topic": "Lead nurturing na advocacia: nutrindo o cliente até a contratação",
+      "category": "Marketing",
+      "tags": [
+        "nurturing",
+        "leads",
+        "conversão"
+      ]
+    },
+    {
+      "topic": "Marketing de conteúdo jurídico: pilares de uma estratégia vencedora",
+      "category": "Marketing",
+      "tags": [
+        "conteúdo",
+        "blog",
+        "SEO"
+      ]
+    },
+    {
+      "topic": "Storytelling no marketing jurídico: contando histórias éticas",
+      "category": "Marketing",
+      "tags": [
+        "storytelling",
+        "conteúdo",
+        "ética"
+      ]
+    },
+    {
+      "topic": "Branding para escritórios de advocacia: identidade que diferencia",
+      "category": "Marketing",
+      "tags": [
+        "branding",
+        "identidade",
+        "design"
+      ]
+    },
+    {
+      "topic": "Posicionamento de marca para advogados: sair da invisibilidade",
+      "category": "Marketing",
+      "tags": [
+        "posicionamento",
+        "marca",
+        "estratégia"
+      ]
+    },
+    {
+      "topic": "Marketing de relacionamento para escritórios jurídicos",
+      "category": "Marketing",
+      "tags": [
+        "relacionamento",
+        "retenção",
+        "indicação"
+      ]
+    },
+    {
+      "topic": "Instagram para advogados: guia completo 2026",
+      "category": "Redes Sociais",
+      "tags": [
+        "instagram",
+        "redes sociais",
+        "guia"
+      ]
+    },
+    {
+      "topic": "Reels para advogados: 12 ideias de conteúdo que respeitam a OAB",
+      "category": "Redes Sociais",
+      "tags": [
+        "instagram",
+        "reels",
+        "conteúdo"
+      ]
+    },
+    {
+      "topic": "Stories estratégicos para escritórios jurídicos",
+      "category": "Redes Sociais",
+      "tags": [
+        "instagram",
+        "stories",
+        "engajamento"
+      ]
+    },
+    {
+      "topic": "Instagram Ads para advogados: setup ético passo a passo",
+      "category": "Redes Sociais",
+      "tags": [
+        "instagram",
+        "ads",
+        "tráfego pago"
+      ]
+    },
+    {
+      "topic": "Bio do Instagram para advogados: o que escrever em 150 caracteres",
+      "category": "Redes Sociais",
+      "tags": [
+        "instagram",
+        "bio",
+        "copy"
+      ]
+    },
+    {
+      "topic": "Hashtags jurídicas: como pesquisar, escolher e usar",
+      "category": "Redes Sociais",
+      "tags": [
+        "instagram",
+        "hashtags",
+        "alcance"
+      ]
+    },
+    {
+      "topic": "Carrosséis jurídicos no Instagram: estrutura que engaja",
+      "category": "Redes Sociais",
+      "tags": [
+        "instagram",
+        "carrossel",
+        "design"
+      ]
+    },
+    {
+      "topic": "Calendário editorial do Instagram para advocacia: 30 dias",
+      "category": "Redes Sociais",
+      "tags": [
+        "instagram",
+        "calendário",
+        "planejamento"
+      ]
+    },
+    {
+      "topic": "Lives no Instagram para advogados: ética, formato e captação",
+      "category": "Redes Sociais",
+      "tags": [
+        "instagram",
+        "live",
+        "vídeo"
+      ]
+    },
+    {
+      "topic": "Facebook Ads para advogados: configuração inicial sem desperdício",
+      "category": "Redes Sociais",
+      "tags": [
+        "facebook",
+        "ads",
+        "tráfego pago"
+      ]
+    },
+    {
+      "topic": "Página do Facebook para advocacia: setup, SEO e dicas",
+      "category": "Redes Sociais",
+      "tags": [
+        "facebook",
+        "setup",
+        "SEO"
+      ]
+    },
+    {
+      "topic": "Grupos do Facebook para advogados: estratégia de autoridade",
+      "category": "Redes Sociais",
+      "tags": [
+        "facebook",
+        "grupos",
+        "comunidade"
+      ]
+    },
+    {
+      "topic": "Pixel do Facebook em landing page jurídica: instalação correta",
+      "category": "Redes Sociais",
+      "tags": [
+        "facebook",
+        "pixel",
+        "tracking"
+      ]
+    },
+    {
+      "topic": "LinkedIn para advogados: estratégia 2026 para construir autoridade",
+      "category": "Redes Sociais",
+      "tags": [
+        "linkedin",
+        "autoridade",
+        "B2B"
+      ]
+    },
+    {
+      "topic": "Headlines do LinkedIn que funcionam para advogados",
+      "category": "Redes Sociais",
+      "tags": [
+        "linkedin",
+        "copy",
+        "perfil"
+      ]
+    },
+    {
+      "topic": "Posts do LinkedIn para advogado: a estrutura ideal",
+      "category": "Redes Sociais",
+      "tags": [
+        "linkedin",
+        "posts",
+        "engajamento"
+      ]
+    },
+    {
+      "topic": "LinkedIn Ads para advocacia: B2B sem queimar verba",
+      "category": "Redes Sociais",
+      "tags": [
+        "linkedin",
+        "ads",
+        "B2B"
+      ]
+    },
+    {
+      "topic": "Networking no LinkedIn para escritórios jurídicos",
+      "category": "Redes Sociais",
+      "tags": [
+        "linkedin",
+        "networking",
+        "relacionamento"
+      ]
+    },
+    {
+      "topic": "Artigos do LinkedIn: SEO e construção de autoridade jurídica",
+      "category": "Redes Sociais",
+      "tags": [
+        "linkedin",
+        "artigos",
+        "SEO"
+      ]
+    },
+    {
+      "topic": "YouTube para advogados: como começar do zero",
+      "category": "Redes Sociais",
+      "tags": [
+        "youtube",
+        "vídeo",
+        "começar"
+      ]
+    },
+    {
+      "topic": "Roteiros de vídeo para advogado: estrutura de retenção",
+      "category": "Redes Sociais",
+      "tags": [
+        "youtube",
+        "roteiro",
+        "vídeo"
+      ]
+    },
+    {
+      "topic": "SEO no YouTube para advogados: ranquear no segundo maior buscador",
+      "category": "Redes Sociais",
+      "tags": [
+        "youtube",
+        "SEO",
+        "ranking"
+      ]
+    },
+    {
+      "topic": "YouTube Shorts para advocacia: formato vertical sem ferir a OAB",
+      "category": "Redes Sociais",
+      "tags": [
+        "youtube",
+        "shorts",
+        "vídeo"
+      ]
+    },
+    {
+      "topic": "TikTok para advogados: o que pode e o que não pode",
+      "category": "Redes Sociais",
+      "tags": [
+        "tiktok",
+        "OAB",
+        "vídeo"
+      ]
+    },
+    {
+      "topic": "Conteúdo viral ético para advocacia no TikTok",
+      "category": "Redes Sociais",
+      "tags": [
+        "tiktok",
+        "viral",
+        "ética"
+      ]
+    },
+    {
+      "topic": "Tendências do TikTok aplicáveis ao direito brasileiro",
+      "category": "Redes Sociais",
+      "tags": [
+        "tiktok",
+        "tendências",
+        "vídeo"
+      ]
+    },
+    {
+      "topic": "Google Ads para advogados: configuração inicial passo a passo",
+      "category": "Buscadores",
+      "tags": [
+        "google",
+        "ads",
+        "tráfego pago"
+      ]
+    },
+    {
+      "topic": "Google Meu Negócio para advocacia: setup completo e dicas",
+      "category": "Buscadores",
+      "tags": [
+        "google",
+        "GMN",
+        "local"
+      ]
+    },
+    {
+      "topic": "SEO local para advogados: dominando buscas geolocalizadas",
+      "category": "Buscadores",
+      "tags": [
+        "google",
+        "SEO local",
+        "geolocalização"
+      ]
+    },
+    {
+      "topic": "Google Search Console para advogados: leitura e ações",
+      "category": "Buscadores",
+      "tags": [
+        "google",
+        "search console",
+        "métricas"
+      ]
+    },
+    {
+      "topic": "Google Analytics 4 para advocacia: relatórios essenciais",
+      "category": "Buscadores",
+      "tags": [
+        "google",
+        "GA4",
+        "analytics"
+      ]
+    },
+    {
+      "topic": "Featured snippets para advogados: como conquistar a posição zero",
+      "category": "Buscadores",
+      "tags": [
+        "google",
+        "snippets",
+        "SEO"
+      ]
+    },
+    {
+      "topic": "People Also Ask: estratégia de SEO para advogados",
+      "category": "Buscadores",
+      "tags": [
+        "google",
+        "PAA",
+        "SEO"
+      ]
+    },
+    {
+      "topic": "Bing Ads para advogados: vale a pena investir?",
+      "category": "Buscadores",
+      "tags": [
+        "bing",
+        "ads",
+        "tráfego pago"
+      ]
+    },
+    {
+      "topic": "SEO no Bing para advogados: diferenças vs Google",
+      "category": "Buscadores",
+      "tags": [
+        "bing",
+        "SEO",
+        "buscadores"
+      ]
+    },
+    {
+      "topic": "Yahoo Search e SEO jurídico: ainda relevante?",
+      "category": "Buscadores",
+      "tags": [
+        "yahoo",
+        "SEO",
+        "buscadores"
+      ]
+    },
+    {
+      "topic": "Posicionamento em buscadores alternativos: DuckDuckGo, Brave, Ecosia",
+      "category": "Buscadores",
+      "tags": [
+        "buscadores",
+        "SEO",
+        "alternativos"
+      ]
+    },
+    {
+      "topic": "WhatsApp Business para advogados: configuração e automação",
+      "category": "Captação",
+      "tags": [
+        "whatsapp",
+        "automação",
+        "atendimento"
+      ]
+    },
+    {
+      "topic": "Automação de WhatsApp para escritórios jurídicos sem perder humanização",
+      "category": "Captação",
+      "tags": [
+        "whatsapp",
+        "automação",
+        "atendimento"
+      ]
+    },
+    {
+      "topic": "Grupos de WhatsApp para advocacia: ética e estratégia",
+      "category": "Captação",
+      "tags": [
+        "whatsapp",
+        "grupos",
+        "ética"
+      ]
+    },
+    {
+      "topic": "Podcast jurídico: planejamento, produção e monetização",
+      "category": "Conteúdo",
+      "tags": [
+        "podcast",
+        "conteúdo",
+        "áudio"
+      ]
+    },
+    {
+      "topic": "Newsletter para advogados: estrutura, ferramentas e cadência",
+      "category": "Conteúdo",
+      "tags": [
+        "newsletter",
+        "e-mail",
+        "conteúdo"
+      ]
+    },
+    {
+      "topic": "PWA para escritórios de advocacia: o que é e benefícios",
+      "category": "Tecnologia",
+      "tags": [
+        "PWA",
+        "tecnologia",
+        "mobile"
+      ]
+    },
+    {
+      "topic": "Acessibilidade web para escritórios de advocacia: WCAG na prática",
+      "category": "Tecnologia",
+      "tags": [
+        "acessibilidade",
+        "WCAG",
+        "inclusão"
+      ]
+    },
+    {
+      "topic": "LGPD em sites de advocacia: checklist 2026 atualizado",
+      "category": "Compliance",
+      "tags": [
+        "LGPD",
+        "compliance",
+        "checklist"
+      ]
+    },
+    {
+      "topic": "Provimento 205/2021 da OAB: aplicação prática em sites e redes",
+      "category": "Compliance",
+      "tags": [
+        "OAB",
+        "Provimento 205",
+        "ética"
+      ]
+    },
+    {
+      "topic": "Métricas de marketing jurídico: o dashboard que todo escritório deveria ter",
+      "category": "Marketing",
+      "tags": [
+        "métricas",
+        "dashboard",
+        "KPIs"
+      ]
+    },
+    {
+      "topic": "ROI de marketing jurídico: como calcular o retorno de cada canal",
+      "category": "Marketing",
+      "tags": [
+        "ROI",
+        "métricas",
+        "investimento"
+      ]
+    },
+    {
+      "topic": "Briefing para criação de site jurídico: o que reunir antes",
+      "category": "Estratégia",
+      "tags": [
+        "briefing",
+        "planejamento",
+        "site"
+      ]
+    },
+    {
+      "topic": "Migração de site WordPress para Next.js: por que e como",
+      "category": "Tecnologia",
+      "tags": [
+        "wordpress",
+        "next.js",
+        "migração"
+      ]
+    },
+    {
+      "topic": "Cookies e LGPD em landing page jurídica: implementação correta",
+      "category": "Compliance",
+      "tags": [
+        "cookies",
+        "LGPD",
+        "compliance"
+      ]
+    },
+    {
+      "topic": "Formulários jurídicos: campos essenciais e conformidade LGPD",
+      "category": "Compliance",
+      "tags": [
+        "formulários",
+        "LGPD",
+        "leads"
+      ]
+    },
+    {
+      "topic": "Web Vitals para escritórios jurídicos: LCP, INP e CLS na prática",
+      "category": "Performance",
+      "tags": [
+        "core web vitals",
+        "performance",
+        "SEO"
+      ]
+    },
+    {
+      "topic": "Atribuição de canais para advogados: descobrindo o que realmente converte",
+      "category": "Marketing",
+      "tags": [
+        "atribuição",
+        "métricas",
+        "canais"
+      ]
+    },
+    {
+      "topic": "Anúncios pagos para advogados: orçamento mínimo viável",
+      "category": "Marketing",
+      "tags": [
+        "ads",
+        "orçamento",
+        "tráfego pago"
+      ]
+    },
+    {
+      "topic": "Remarketing para advocacia: recuperando visitantes que não converteram",
+      "category": "Marketing",
+      "tags": [
+        "remarketing",
+        "conversão",
+        "ads"
+      ]
+    },
+    {
+      "topic": "SEO técnico para advogados: schema, sitemap e robots.txt",
+      "category": "Buscadores",
+      "tags": [
+        "SEO técnico",
+        "schema",
+        "google"
+      ]
+    },
+    {
+      "topic": "Backlinks para advogados: como construir autoridade ética",
+      "category": "Buscadores",
+      "tags": [
+        "backlinks",
+        "autoridade",
+        "SEO"
+      ]
+    },
+    {
+      "topic": "Pesquisa de palavras-chave para advocacia: ferramentas e processo",
+      "category": "Buscadores",
+      "tags": [
+        "keywords",
+        "pesquisa",
+        "SEO"
+      ]
+    }
+  ]
+}

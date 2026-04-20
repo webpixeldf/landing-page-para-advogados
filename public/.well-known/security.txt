@@ -1,0 +1,6 @@
+# Reporte uma vulnerabilidade de segurança aqui.
+Contact: mailto:contato@landingpageparaadvogados.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: pt-BR, en
+Canonical: https://landingpageparaadvogados.com/.well-known/security.txt
+Policy: https://landingpageparaadvogados.com/politica-privacidade/
