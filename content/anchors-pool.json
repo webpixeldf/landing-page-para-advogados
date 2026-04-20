@@ -1,7 +1,6 @@
 {
   "_comment": "Pool de âncoras keyword-rich para linkar a homepage. TODAS contêm 'landing page' (a keyword raiz) para reforçar o sinal SEO interno. Cada artigo consome 1 âncora; 'used' lista consumidas.",
   "available": [
-    "landing page jurídica",
     "landing page jurídica profissional",
     "landing page jurídica de alta conversão",
     "landing page jurídica responsiva",
@@ -127,6 +126,11 @@
       "anchor": "criação de landing page para advogados",
       "slug": "wordpress-ou-codigo-puro-para-advogados",
       "date": "2026-02-22"
+    },
+    {
+      "anchor": "landing page jurídica",
+      "slug": "landing-page-para-advogado-previdenciario-diferenciais-que-convertem-clientes",
+      "date": "2026-04-20"
     }
   ]
 }
