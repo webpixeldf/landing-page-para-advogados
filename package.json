@@ -9,7 +9,8 @@
     "lint": "next lint",
     "generate:article": "node scripts/generate-article.mjs",
     "regenerate:article": "node scripts/regenerate-article.mjs",
-    "migrate:posts": "tsx scripts/migrate-posts.ts"
+    "migrate:posts": "tsx scripts/migrate-posts.ts",
+    "indexnow": "node scripts/ping-indexnow.mjs"
   },
   "dependencies": {
     "next": "15.1.6",
