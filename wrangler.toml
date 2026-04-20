@@ -1,0 +1,13 @@
+#:schema node_modules/wrangler/config-schema.json
+# Cloudflare Workers — static assets only (Next.js export)
+# Serve a pasta `out/` direto como site estático, sem executar JS no edge.
+name = "landing-page-para-advogados"
+compatibility_date = "2025-01-15"
+
+[assets]
+directory = "./out"
+not_found_handling = "404-page"
+html_handling = "auto-trailing-slash"
+
+[observability]
+enabled = true
