@@ -55,9 +55,25 @@ jobs:
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
-      - name: Aguarda Cloudflare publicar (60s)
+      - name: Aguarda Cloudflare publicar (120s)
         if: steps.commit.outputs.changed == 'true'
-        run: sleep 60
+        run: sleep 120
+
+      - name: Pre-warm das URLs novas (cache Cloudflare quente antes dos crawlers)
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          for f in content/blog/*.json; do
+            date=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$f','utf8')).date)")
+            if [ "$date" = "$TODAY" ]; then
+              slug=$(basename "$f" .json)
+              url="https://landingpageparaadvogados.com/blog/$slug/"
+              echo "Warming $url"
+              curl -sS -o /dev/null -w "  HTTP %{http_code} · TTFB %{time_starttransfer}s · Total %{time_total}s\n" "$url" || true
+              # Segunda chamada para garantir cache quente
+              curl -sS -o /dev/null -w "  HTTP %{http_code} · TTFB %{time_starttransfer}s (pós-cache)\n" "$url" || true
+            fi
+          done
 
       - name: Notifica IndexNow (Bing/Yandex/etc) sobre URLs novas
         if: steps.commit.outputs.changed == 'true'

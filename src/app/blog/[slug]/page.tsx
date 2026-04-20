@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import CtaBanner from '@/components/CtaBanner';
-import { getAllPosts, getPostBySlug, getRelatedPosts } from '@/lib/posts';
+import { getAllPosts, getPostBySlug, getRelatedPosts, getRecentPosts } from '@/lib/posts';
 import { renderMarkdown } from '@/lib/markdown';
 import { siteConfig } from '@/lib/site';
 
@@ -22,7 +22,7 @@ export async function generateMetadata({
   if (!post) return {};
   const url = `/blog/${post.slug}/`;
   return {
-    title: post.title,
+    title: { absolute: post.title },
     description: post.description,
     keywords: post.tags,
     alternates: { canonical: url },
@@ -59,7 +59,9 @@ export default async function BlogPostPage({
   if (!post) notFound();
 
   const html = renderMarkdown(post.content);
-  const related = getRelatedPosts(post.slug);
+  const related = getRelatedPosts(post.slug, 4);
+  const relatedSlugs = new Set(related.map((r) => r.slug));
+  const recent = getRecentPosts(post.slug, 10).filter((r) => !relatedSlugs.has(r.slug)).slice(0, 6);
   const url = `${siteConfig.url}/blog/${post.slug}/`;
 
   const articleSchema = {
@@ -206,7 +208,7 @@ export default async function BlogPostPage({
                 Ver todos →
               </Link>
             </div>
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {related.map((r) => (
                 <Link
                   key={r.slug}
@@ -230,6 +232,47 @@ export default async function BlogPostPage({
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+      )}
+
+      {recent.length > 0 && (
+        <section className="bg-cream-50 pb-20">
+          <div className="container-pp">
+            <div className="mb-10 flex items-end justify-between">
+              <div>
+                <span className="eyebrow">Últimos artigos</span>
+                <h2 className="display-sm mt-4 text-balance">Ver também</h2>
+              </div>
+              <Link href="/blog/" className="hidden text-sm font-medium text-primary hover:text-accent md:inline-flex">
+                Ir para o blog →
+              </Link>
+            </div>
+            <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+              {recent.map((r) => (
+                <li key={r.slug}>
+                  <Link
+                    href={`/blog/${r.slug}/`}
+                    className="group flex items-start gap-4 rounded-2xl border border-ink-100 bg-white p-4 transition-all hover:-translate-y-0.5 hover:shadow-soft"
+                  >
+                    <div
+                      className="h-16 w-16 shrink-0 rounded-xl bg-cover bg-center"
+                      style={{ backgroundImage: `url('${r.cover}')` }}
+                      role="img"
+                      aria-label={r.coverAlt}
+                    />
+                    <div className="flex-1">
+                      <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
+                        {r.category}
+                      </span>
+                      <h3 className="mt-0.5 font-display text-sm font-semibold leading-snug tracking-tight text-ink-900 group-hover:text-primary">
+                        {r.title}
+                      </h3>
+                    </div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
       )}

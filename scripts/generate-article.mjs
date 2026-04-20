@@ -218,7 +218,7 @@ Tags sugeridas: ${tags.join(', ')}
 Devolva o JSON com este shape exato:
 {
   "title": "string (50-65 caracteres, otimizado para SERP)",
-  "description": "string (140-160 caracteres, meta description)",
+  "description": "string (MÁX 155 caracteres, meta description — CONTE os caracteres e se passar de 155, reescreva)",
   "coverAlt": "string (alt text descritivo de 8-15 palavras para a imagem de capa)",
   "imageQuery": "string em INGLÊS (1-3 palavras) para buscar imagem no Unsplash",
   "readingTime": número inteiro (estimativa em minutos),
@@ -268,6 +268,22 @@ Devolva o JSON com este shape exato:
   }
   if (wordCount(parsed.content) < 600) {
     throw new Error(`Conteúdo curto demais: ${wordCount(parsed.content)} palavras`);
+  }
+
+  // Defesa: trunca description se IA devolveu > 155 chars
+  if (parsed.description.length > 155) {
+    const original = parsed.description;
+    // Corta no último ponto/ponto-e-vírgula antes de 155, senão no último espaço
+    let truncated = original.slice(0, 155);
+    const lastPunct = Math.max(truncated.lastIndexOf('. '), truncated.lastIndexOf('; '));
+    if (lastPunct > 100) {
+      truncated = truncated.slice(0, lastPunct + 1);
+    } else {
+      const lastSpace = truncated.lastIndexOf(' ');
+      if (lastSpace > 100) truncated = truncated.slice(0, lastSpace) + '.';
+    }
+    parsed.description = truncated.trim();
+    console.log(`   ⚠ Description truncada: ${original.length} → ${parsed.description.length}`);
   }
 
   return parsed;

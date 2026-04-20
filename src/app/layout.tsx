@@ -18,7 +18,7 @@ const lexend = Lexend({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Landing Page para Advogados | 20 Anos de Experiência | OAB',
+    default: 'Landing Page para Advogados de Alta Conversão | Conforme OAB',
     template: '%s | Landing Page para Advogados'
   },
   description: siteConfig.description,

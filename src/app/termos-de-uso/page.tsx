@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Termos de Uso | Landing Page para Advogados',
+  title: 'Termos de Uso',
   description:
     'Termos e condições de uso do site Landing Page para Advogados, prestador de serviços de criação de páginas profissionais jurídicas.',
   alternates: { canonical: '/termos-de-uso/' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'Termos de Uso | Landing Page para Advogados',
+    title: 'Termos de Uso',
     description:
       'Termos e condições de uso do site Landing Page para Advogados, prestador de serviços de criação de páginas profissionais jurídicas.',
     url: '/termos-de-uso/',

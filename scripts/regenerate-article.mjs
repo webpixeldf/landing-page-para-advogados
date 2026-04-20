@@ -173,7 +173,7 @@ Tags sugeridas: ${tags.join(', ')}
 Shape JSON exato:
 {
   "title": "string (50-65 caracteres, otimizado para SERP)",
-  "description": "string (140-160 caracteres, meta description)",
+  "description": "string (MÁX 155 caracteres, meta description — CONTE os caracteres e se passar de 155, reescreva)",
   "coverAlt": "string (alt text descritivo de 8-15 palavras)",
   "imageQuery": "string em INGLÊS (1-3 palavras) para buscar imagem no Unsplash",
   "readingTime": número inteiro (minutos),
@@ -207,6 +207,22 @@ Shape JSON exato:
     if (!parsed[f]) throw new Error(`DeepSeek omitiu "${f}"`);
   }
   if (wordCount(parsed.content) < 700) throw new Error(`Conteúdo curto: ${wordCount(parsed.content)} palavras`);
+
+  // Defesa: trunca description se > 155 chars
+  if (parsed.description.length > 155) {
+    const original = parsed.description;
+    let truncated = original.slice(0, 155);
+    const lastPunct = Math.max(truncated.lastIndexOf('. '), truncated.lastIndexOf('; '));
+    if (lastPunct > 100) {
+      truncated = truncated.slice(0, lastPunct + 1);
+    } else {
+      const lastSpace = truncated.lastIndexOf(' ');
+      if (lastSpace > 100) truncated = truncated.slice(0, lastSpace) + '.';
+    }
+    parsed.description = truncated.trim();
+    console.log(`   ⚠ Description truncada: ${original.length} → ${parsed.description.length}`);
+  }
+
   return parsed;
 }
 

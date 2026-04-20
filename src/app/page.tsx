@@ -12,12 +12,12 @@ import CtaBanner from '@/components/CtaBanner';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Landing Page para Advogados | 20 Anos de Experiência | Conforme OAB',
+  title: 'Landing Page para Advogados de Alta Conversão | Conforme OAB',
   description:
     'Criação de landing page para advogados com alta conversão, SEO técnico e total conformidade com a OAB. 20 anos e 500+ projetos entregues.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Landing Page para Advogados | 20 Anos de Experiência',
+    title: 'Landing Page para Advogados de Alta Conversão | Conforme OAB',
     description:
       'Páginas de captura para escritórios jurídicos com design moderno, performance, SEO e conformidade total com a OAB.',
     url: '/',

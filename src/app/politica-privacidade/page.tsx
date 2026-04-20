@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidade | Landing Page para Advogados',
+  title: 'Política de Privacidade',
   description:
-    'Política de Privacidade do site Landing Page para Advogados — como tratamos dados pessoais coletados em formulários, cookies, contatos e durante a prestação de serviços.',
+    'Como coletamos, tratamos e protegemos dados pessoais nos formulários, cookies e contatos deste site, em conformidade com a LGPD.',
   alternates: { canonical: '/politica-privacidade/' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'Política de Privacidade | Landing Page para Advogados',
+    title: 'Política de Privacidade',
     description:
-      'Política de Privacidade do site Landing Page para Advogados — como tratamos dados pessoais coletados em formulários, cookies, contatos e durante a prestação de serviços.',
+      'Como coletamos, tratamos e protegemos dados pessoais nos formulários, cookies e contatos deste site, em conformidade com a LGPD.',
     url: '/politica-privacidade/',
     type: 'website',
     locale: 'pt_BR',

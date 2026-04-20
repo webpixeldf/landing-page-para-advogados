@@ -38,7 +38,7 @@ export default function Hero() {
             </span>
 
             <h1 className="mt-6 font-display text-[2.6rem] font-extrabold leading-[1.02] tracking-tightest text-balance md:text-6xl lg:text-[4.5rem]">
-              <span className="block">Landing Page</span>
+              <span className="block">Landing Page</span>{' '}
               <span className="relative inline-block">
                 <span className="bg-gradient-to-r from-accent via-cream-300 to-accent bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-x">
                   para Advogados
@@ -63,9 +63,9 @@ export default function Hero() {
                     </linearGradient>
                   </defs>
                 </svg>
-              </span>
+              </span>{' '}
               <br />
-              que captam
+              que captam{' '}
               <br />
               <span className="font-light italic text-white/85">clientes qualificados.</span>
             </h1>

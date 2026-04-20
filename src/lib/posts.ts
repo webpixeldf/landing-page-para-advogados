@@ -48,15 +48,30 @@ export function getPostBySlug(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
 }
 
-export function getRelatedPosts(slug: string, limit = 3): Post[] {
+export function getRelatedPosts(slug: string, limit = 4): Post[] {
   const current = getPostBySlug(slug);
   if (!current) return [];
   return posts
     .filter((p) => p.slug !== slug)
     .sort((a, b) => {
+      // 1º critério: tags compartilhadas (desc)
       const aShared = a.tags.filter((t) => current.tags.includes(t)).length;
       const bShared = b.tags.filter((t) => current.tags.includes(t)).length;
-      return bShared - aShared;
+      if (aShared !== bShared) return bShared - aShared;
+      // 2º critério: data mais recente (desc) — evita que posts alfabeticamente
+      // primeiros monopolizem a seção de relacionados
+      return a.date < b.date ? 1 : -1;
     })
+    .slice(0, limit);
+}
+
+/**
+ * Retorna os N posts mais recentes, excluindo um slug opcional (útil para
+ * montar uma segunda seção "Últimos artigos" em páginas de post).
+ */
+export function getRecentPosts(excludeSlug?: string, limit = 6): Post[] {
+  return posts
+    .filter((p) => p.slug !== excludeSlug)
+    .sort((a, b) => (a.date < b.date ? 1 : -1))
     .slice(0, limit);
 }

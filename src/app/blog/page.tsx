@@ -7,7 +7,7 @@ import { siteConfig } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Blog — Marketing Jurídico, SEO e Conversão',
   description:
-    'Artigos sobre marketing jurídico, SEO, copywriting, ética da OAB e performance para escritórios de advocacia. Leitura para advogados que querem captar mais e melhor.',
+    'Marketing jurídico, SEO, copywriting e ética da OAB: leitura para advogados que querem captar mais e melhores clientes.',
   alternates: { canonical: '/blog/' },
   openGraph: {
     title: 'Blog — Marketing Jurídico, SEO e Conversão',
