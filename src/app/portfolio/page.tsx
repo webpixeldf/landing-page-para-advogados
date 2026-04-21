@@ -5,12 +5,12 @@ import CtaBanner from '@/components/CtaBanner';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Portfólio — Páginas Jurídicas Reais Entregues',
+  title: 'Portfólio — Páginas Jurídicas',
   description:
     'Conheça projetos reais de páginas jurídicas desenvolvidos para escritórios em todo o Brasil — com métricas, segmentos e resultados de captação.',
   alternates: { canonical: '/portfolio/' },
   openGraph: {
-    title: 'Portfólio — Páginas Jurídicas Reais Entregues',
+    title: 'Portfólio — Páginas Jurídicas',
     description:
       'Cases reais de bancas que escalaram captação com páginas profissionais jurídicas.',
     url: '/portfolio/',

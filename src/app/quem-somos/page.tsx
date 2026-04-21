@@ -5,12 +5,12 @@ import CtaBanner from '@/components/CtaBanner';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Quem Somos — Especialistas em Páginas Jurídicas',
+  title: 'Quem Somos — Páginas Jurídicas',
   description:
     'Conheça nossa equipe: especialistas na criação de site jurídico com mais de 20 anos de experiência e 500+ projetos entregues para advogados em todo o Brasil.',
   alternates: { canonical: '/quem-somos/' },
   openGraph: {
-    title: 'Quem Somos — Especialistas em Páginas Jurídicas',
+    title: 'Quem Somos — Páginas Jurídicas',
     description:
       'Mais de 20 anos criando soluções digitais para advogados, com foco em conversão, SEO e ética.',
     url: '/quem-somos/',

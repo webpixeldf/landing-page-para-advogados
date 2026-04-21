@@ -5,12 +5,12 @@ import { getAllPosts } from '@/lib/posts';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Blog — Marketing Jurídico, SEO e Conversão',
+  title: 'Blog — Marketing Jurídico e SEO',
   description:
     'Marketing jurídico, SEO, copywriting e ética da OAB: leitura para advogados que querem captar mais e melhores clientes.',
   alternates: { canonical: '/blog/' },
   openGraph: {
-    title: 'Blog — Marketing Jurídico, SEO e Conversão',
+    title: 'Blog — Marketing Jurídico e SEO',
     description:
       'Conteúdo prático para escritórios que querem crescer no digital com ética e estratégia.',
     url: '/blog/',
