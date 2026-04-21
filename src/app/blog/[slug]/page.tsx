@@ -61,7 +61,7 @@ export default async function BlogPostPage({
   const html = renderMarkdown(post.content);
   const related = getRelatedPosts(post.slug, 4);
   const relatedSlugs = new Set(related.map((r) => r.slug));
-  const recent = getRecentPosts(post.slug, 10).filter((r) => !relatedSlugs.has(r.slug)).slice(0, 6);
+  const recent = getRecentPosts(post.slug, 14).filter((r) => !relatedSlugs.has(r.slug)).slice(0, 10);
   const url = `${siteConfig.url}/blog/${post.slug}/`;
 
   const articleSchema = {
