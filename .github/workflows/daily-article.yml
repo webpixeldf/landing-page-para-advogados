@@ -2,8 +2,10 @@ name: Daily Article
 
 on:
   schedule:
-    # Roda todo dia às 09:00 UTC = 06:00 horário de Brasília
-    - cron: '0 9 * * *'
+    # Roda todo dia às 09:23 UTC = 06:23 horário de Brasília.
+    # Minuto 23 (não-redondo) evita o pico do GitHub Actions cron —
+    # schedules em hora cheia (:00) sofrem atraso de 30min–1h+ e podem ser pulados.
+    - cron: '23 9 * * *'
   workflow_dispatch:
     inputs:
       count:
