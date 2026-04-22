@@ -1,7 +1,6 @@
 {
   "_comment": "Pool de âncoras keyword-rich para linkar a homepage. TODAS contêm 'landing page' (a keyword raiz) para reforçar o sinal SEO interno. Cada artigo consome 1 âncora; 'used' lista consumidas.",
   "available": [
-    "landing page jurídica de alta conversão",
     "landing page jurídica responsiva",
     "landing page jurídica otimizada",
     "landing page responsiva para advogados",
@@ -135,6 +134,11 @@
       "anchor": "landing page jurídica profissional",
       "slug": "landing-page-para-advogado-de-familia-tom-de-voz-e-prova-social",
       "date": "2026-04-21"
+    },
+    {
+      "anchor": "landing page jurídica de alta conversão",
+      "slug": "landing-page-para-advogado-criminalista-etica-e-captacao-de-clientes",
+      "date": "2026-04-22"
     }
   ]
 }

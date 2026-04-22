@@ -79,6 +79,29 @@ const writeJSON = async (p, data) =>
 
 const wordCount = (text) => text.trim().split(/\s+/).filter(Boolean).length;
 
+// Escapa control chars (\n, \r, \t, etc.) que a LLM às vezes devolve crus
+// dentro de strings JSON — quebrando o JSON.parse. Preserva bytes fora de strings.
+function sanitizeLlmJson(raw) {
+  let out = '';
+  let inStr = false;
+  let esc = false;
+  for (let i = 0; i < raw.length; i++) {
+    const c = raw[i];
+    if (esc) { out += c; esc = false; continue; }
+    if (c === '\\') { out += c; esc = true; continue; }
+    if (c === '"') { inStr = !inStr; out += c; continue; }
+    if (inStr && c.charCodeAt(0) < 0x20) {
+      if (c === '\n') out += '\\n';
+      else if (c === '\r') out += '\\r';
+      else if (c === '\t') out += '\\t';
+      else out += '\\u' + c.charCodeAt(0).toString(16).padStart(4, '0');
+      continue;
+    }
+    out += c;
+  }
+  return out;
+}
+
 // Fallback keyword-rich: usado só se o pool de âncoras únicas falhar.
 // Todas contêm "landing page" para manter o sinal SEO.
 const FALLBACK_INLINE_ANCHORS = [
@@ -256,10 +279,15 @@ Devolva o JSON com este shape exato:
   try {
     parsed = JSON.parse(raw);
   } catch {
-    // Tenta extrair JSON dentro de cercas, caso o modelo desobedeça
-    const m = raw.match(/\{[\s\S]*\}/);
-    if (!m) throw new Error('Resposta da DeepSeek não é JSON válido:\n' + raw.slice(0, 400));
-    parsed = JSON.parse(m[0]);
+    // Fallback 1: sanitiza control chars crus em strings (causa comum de falha)
+    try {
+      parsed = JSON.parse(sanitizeLlmJson(raw));
+    } catch {
+      // Fallback 2: extrai JSON dentro de cercas, também sanitizado
+      const m = raw.match(/\{[\s\S]*\}/);
+      if (!m) throw new Error('Resposta da DeepSeek não é JSON válido:\n' + raw.slice(0, 400));
+      parsed = JSON.parse(sanitizeLlmJson(m[0]));
+    }
   }
 
   // Validação mínima
