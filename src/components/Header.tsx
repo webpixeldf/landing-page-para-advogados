@@ -8,7 +8,8 @@ const NAV = [
   { href: '/', label: 'Início' },
   { href: '/quem-somos/', label: 'Quem somos' },
   { href: '/portfolio/', label: 'Portfólio' },
-  { href: '/blog/', label: 'Blog' }
+  { href: '/blog/', label: 'Blog' },
+  { href: '/contato/', label: 'Contato' }
 ];
 
 export default function Header() {

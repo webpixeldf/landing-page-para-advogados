@@ -48,6 +48,7 @@ export default function Footer() {
               <li><Link href="/quem-somos/" className="transition-colors hover:text-accent">Quem somos</Link></li>
               <li><Link href="/portfolio/" className="transition-colors hover:text-accent">Portfólio</Link></li>
               <li><Link href="/blog/" className="transition-colors hover:text-accent">Blog</Link></li>
+              <li><Link href="/contato/" className="transition-colors hover:text-accent">Contato</Link></li>
               <li><Link href="/politica-privacidade/" className="transition-colors hover:text-accent">Política de privacidade</Link></li>
               <li><Link href="/termos-de-uso/" className="transition-colors hover:text-accent">Termos de uso</Link></li>
             </ul>
@@ -75,9 +76,8 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="container-pp flex flex-col items-center justify-between gap-3 py-6 text-xs text-white/45 md:flex-row">
+        <div className="container-pp py-6 text-center text-xs text-white/45">
           <p>© {year} Landing Page para Advogados. Todos os direitos reservados.</p>
-          <p className="font-mono">Feito em Brasília · Next.js estático · Lexend</p>
         </div>
       </div>
     </footer>

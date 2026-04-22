@@ -20,15 +20,17 @@
 /politica-privacidade            /politica-privacidade/         301
 /termos-de-uso                   /termos-de-uso/                301
 /blog                            /blog/                         301
+/contato                         /contato/                      301
 
 # 3. Redirecionamentos semânticos (variantes de URL para conteúdo canônico)
 /sobre                           /quem-somos/                   301
 /sobre-nos                       /quem-somos/                   301
 /cases                           /portfolio/                    301
 /clientes                        /portfolio/                    301
-/contato                         /                              301
-/orcamento                       /                              301
+/orcamento                       /contato/                      301
 /privacidade                     /politica-privacidade/         301
+/politica-de-privacidade         /politica-privacidade/         301
+/politica-de-privacidade/        /politica-privacidade/         301
 /termos                          /termos-de-uso/                301
 /artigos                         /blog/                         301
 /noticias                        /blog/                         301
@@ -42,3 +44,9 @@
 # 5. Rotas de blog antigas (se URLs já tenham sido indexadas)
 /blog/post/*                     /blog/:splat                   301
 /artigo/*                        /blog/:splat                   301
+
+# 6. Posts antigos (pré-migração) indexados pelo Google → conteúdo tematicamente similar
+/blog/vantagens-landing-page-advogados             /blog/7-elementos-essenciais-de-uma-landing-page-juridica-de-alta-performance/   301
+/blog/vantagens-landing-page-advogados/            /blog/7-elementos-essenciais-de-uma-landing-page-juridica-de-alta-performance/   301
+/blog/gatilhos-mentais-captar-clientes-advogados   /blog/copy-para-advogados-como-escrever-textos-que-convertem/                    301
+/blog/gatilhos-mentais-captar-clientes-advogados/  /blog/copy-para-advogados-como-escrever-textos-que-convertem/                    301

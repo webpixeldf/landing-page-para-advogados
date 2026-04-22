@@ -28,13 +28,32 @@ export const metadata: Metadata = {
 
 export default function PoliticaPrivacidadePage() {
   return (
-    <article className="bg-cream-50 pb-20 pt-36 md:pt-44">
-      <div className="container-pp max-w-3xl">
-        <span className="eyebrow">Documentos legais</span>
-        <h1 className="display-md mt-5">Política de Privacidade</h1>
-        <p className="mt-3 text-sm font-light text-ink-400">Última atualização: 20 de abril de 2026</p>
+    <>
+      <section className="relative overflow-hidden bg-primary-dark pb-24 pt-44 text-white">
+        <div className="absolute inset-0 -z-10 bg-mesh-emerald opacity-70 animate-mesh-shift" />
+        <div className="absolute inset-0 -z-10 bg-noise opacity-[0.05] mix-blend-overlay" />
+        <div className="absolute -left-40 top-20 -z-10 h-96 w-96 rounded-full bg-emerald-500/30 blur-3xl" />
+        <div className="absolute -right-40 bottom-0 -z-10 h-96 w-96 rounded-full bg-accent/15 blur-3xl" />
 
-        <div className="prose-editorial mt-10">
+        <div className="container-pp">
+          <span className="eyebrow-light">Documentos legais</span>
+          <h1 className="display-lg mt-6 max-w-4xl text-balance text-white">
+            Política de
+            <span className="italic font-light text-accent"> Privacidade</span>
+          </h1>
+          <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-white/70">
+            Como coletamos, tratamos e protegemos seus dados nos formulários, cookies e contatos
+            deste site — em conformidade com a LGPD.
+          </p>
+          <p className="mt-6 text-xs font-light uppercase tracking-widest text-white/55">
+            Última atualização: 20 de abril de 2026
+          </p>
+        </div>
+      </section>
+
+      <article className="bg-cream-50 pb-20 pt-16">
+        <div className="container-pp max-w-3xl">
+          <div className="prose-editorial">
           <p>
             Esta Política descreve como o site Landing Page para Advogados (&ldquo;nós&rdquo;)
             coleta, utiliza, armazena e protege os dados pessoais dos visitantes
@@ -88,8 +107,9 @@ export default function PoliticaPrivacidadePage() {
 
           <h2>8. Atualizações</h2>
           <p>Esta política pode ser atualizada. Recomenda-se revisar periodicamente.</p>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </>
   );
 }
