@@ -262,7 +262,10 @@ Devolva o JSON com este shape exato:
       ],
       response_format: { type: 'json_object' },
       temperature: 0.7,
-      max_tokens: 4000
+      // 4000 estava estourando em artigos >1.8k palavras (content + overhead JSON);
+      // a resposta era cortada no meio de uma string → "Unterminated string in JSON".
+      // deepseek-chat suporta até 8192 tokens de saída — 8000 dá folga segura.
+      max_tokens: 8000
     })
   });
 
@@ -272,6 +275,10 @@ Devolva o JSON com este shape exato:
   }
 
   const data = await res.json();
+  const finishReason = data.choices?.[0]?.finish_reason;
+  if (finishReason === 'length') {
+    throw new Error(`DeepSeek truncou a resposta (finish_reason=length). Aumente max_tokens.`);
+  }
   const raw = data.choices?.[0]?.message?.content?.trim();
   if (!raw) throw new Error('DeepSeek devolveu resposta vazia');
 
