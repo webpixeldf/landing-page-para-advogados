@@ -1,7 +1,6 @@
 {
   "_comment": "Pool de âncoras keyword-rich para linkar a homepage. TODAS contêm 'landing page' (a keyword raiz) para reforçar o sinal SEO interno. Cada artigo consome 1 âncora; 'used' lista consumidas.",
   "available": [
-    "landing page otimizada para advogados",
     "landing page moderna para advogados",
     "landing page personalizada para advogados",
     "landing page mobile-first para advogados",
@@ -151,6 +150,11 @@
       "anchor": "landing page responsiva para advogados",
       "slug": "ab-testing-em-landing-page-juridica-o-que-testar-e-como-medir",
       "date": "2026-04-25"
+    },
+    {
+      "anchor": "landing page otimizada para advogados",
+      "slug": "video-em-landing-page-para-advogados-como-usar-sem-ferir-a-oab",
+      "date": "2026-04-26"
     }
   ]
 }
