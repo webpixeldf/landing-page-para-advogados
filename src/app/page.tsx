@@ -164,9 +164,11 @@ export default function HomePage() {
     },
     // Speakable: sinaliza a Alexa/Google Assistant/bots de voz/IA
     // quais blocos são "respondíveis" com voz sem prejuízo de contexto.
+    // Nota: .prose-editorial não existe na homepage (só em posts/legais),
+    // então mantemos apenas h1/h2 — universais a qualquer página.
     speakable: {
       '@type': 'SpeakableSpecification',
-      cssSelector: ['h1', 'h2', '.prose-editorial p:first-of-type']
+      cssSelector: ['h1', 'h2']
     }
   };
 
