@@ -161,6 +161,14 @@ export default function QuemSomosPage() {
         title="Vamos transformar a captação digital do seu escritório?"
         subtitle="Solicite agora um diagnóstico gratuito e veja o que podemos fazer pela sua banca."
       />
+
+      <section className="bg-cream-50 pb-12">
+        <div className="container-pp max-w-3xl">
+          <div className="rounded-2xl border border-ink-100 bg-white px-6 py-5 text-center text-xs font-light text-ink-500">
+            Todos os Direitos Reservados © {new Date().getFullYear()} Landing Page Para Advogados — CNPJ: 34.644.883/0001-94
+          </div>
+        </div>
+      </section>
     </>
   );
 }

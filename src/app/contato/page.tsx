@@ -157,7 +157,27 @@ export default function ContatoPage() {
                 {siteConfig.contact.address}
               </p>
             </div>
+
+            <div className="rounded-3xl border border-ink-100 bg-white p-6 shadow-soft">
+              <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-accent">
+                Dados da empresa
+              </span>
+              <p className="mt-2 text-sm font-light leading-relaxed text-ink-700">
+                Landing Page Para Advogados
+              </p>
+              <p className="mt-1 text-sm font-light leading-relaxed text-ink-500">
+                CNPJ: 34.644.883/0001-94
+              </p>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-cream-50 pb-12">
+        <div className="container-pp max-w-3xl">
+          <p className="text-center text-xs font-light text-ink-500">
+            Todos os Direitos Reservados © {new Date().getFullYear()} Landing Page Para Advogados — CNPJ: 34.644.883/0001-94
+          </p>
         </div>
       </section>
     </>

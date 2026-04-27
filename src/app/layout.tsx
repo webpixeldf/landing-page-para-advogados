@@ -93,6 +93,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     url: siteConfig.url + '/',
     telephone: siteConfig.contact.phone,
     email: siteConfig.contact.email,
+    taxID: '34.644.883/0001-94',
+    vatID: '34.644.883/0001-94',
     priceRange: '$$',
     knowsAbout: [
       'Landing page para advogados',

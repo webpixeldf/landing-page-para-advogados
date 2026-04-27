@@ -77,7 +77,9 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-pp py-6 text-center text-xs text-white/45">
-          <p>© {year} Landing Page para Advogados. Todos os direitos reservados.</p>
+          <p>
+            Todos os Direitos Reservados © {year} Landing Page Para Advogados — CNPJ: 34.644.883/0001-94
+          </p>
         </div>
       </div>
     </footer>
