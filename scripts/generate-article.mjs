@@ -282,6 +282,13 @@ Devolva o JSON com este shape exato:
   const raw = data.choices?.[0]?.message?.content?.trim();
   if (!raw) throw new Error('DeepSeek devolveu resposta vazia');
 
+  // Diagnóstico para erros de parse: inclui finish_reason e amostras do início/fim
+  // do raw, para identificar truncamento, conexão dropada, content_filter etc.
+  const rawDebug = () =>
+    `finish_reason=${finishReason} | raw_length=${raw.length}\n` +
+    `--- início (300 chars) ---\n${raw.slice(0, 300)}\n` +
+    `--- fim (200 chars) ---\n${raw.slice(-200)}`;
+
   let parsed;
   try {
     parsed = JSON.parse(raw);
@@ -292,8 +299,12 @@ Devolva o JSON com este shape exato:
     } catch {
       // Fallback 2: extrai JSON dentro de cercas, também sanitizado
       const m = raw.match(/\{[\s\S]*\}/);
-      if (!m) throw new Error('Resposta da DeepSeek não é JSON válido:\n' + raw.slice(0, 400));
-      parsed = JSON.parse(sanitizeLlmJson(m[0]));
+      if (!m) throw new Error(`Resposta da DeepSeek não é JSON válido (sem '}' fechador).\n${rawDebug()}`);
+      try {
+        parsed = JSON.parse(sanitizeLlmJson(m[0]));
+      } catch (e) {
+        throw new Error(`JSON.parse falhou após sanitização: ${e.message}\n${rawDebug()}`);
+      }
     }
   }
 
@@ -458,14 +469,32 @@ async function generateOne() {
   console.log(`📝 Tópico: ${topic.topic}`);
   console.log(`🔗 Âncora: ${anchor}`);
 
-  // 2. DeepSeek
-  console.log('🤖 Chamando DeepSeek…');
-  const article = await generateArticle({
-    topic: topic.topic,
-    category: topic.category,
-    tags: topic.tags,
-    anchor
-  });
+  // 2. DeepSeek (com retry — LLMs falham ~1-3% por motivos transitórios:
+  //    conexão dropada, JSON malformado, hiccups de servidor. Retry resolve isso.)
+  const MAX_ATTEMPTS = 3;
+  let article;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    console.log(`🤖 Chamando DeepSeek… ${attempt > 1 ? `(tentativa ${attempt}/${MAX_ATTEMPTS})` : ''}`);
+    try {
+      article = await generateArticle({
+        topic: topic.topic,
+        category: topic.category,
+        tags: topic.tags,
+        anchor
+      });
+      break; // sucesso
+    } catch (err) {
+      console.warn(`   ⚠ Tentativa ${attempt} falhou: ${err.message.split('\n')[0]}`);
+      if (attempt === MAX_ATTEMPTS) {
+        // Última tentativa — propaga com erro completo (incluindo diagnóstico)
+        throw new Error(`DeepSeek falhou após ${MAX_ATTEMPTS} tentativas. Último erro:\n${err.message}`);
+      }
+      // Backoff exponencial: 5s → 10s → 20s
+      const delay = 5000 * Math.pow(2, attempt - 1);
+      console.log(`   ⏳ Aguardando ${delay / 1000}s antes de tentar novamente…`);
+      await new Promise((r) => setTimeout(r, delay));
+    }
+  }
 
   // 3. Slug + duplicidade
   const slug = slugify(article.title);
