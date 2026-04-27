@@ -26,7 +26,7 @@ export const siteConfig = {
   },
   social: {
     instagram: 'https://instagram.com/landingpageparaadvogados',
-    linkedin: 'https://www.linkedin.com/company/landingpageparaadvogados'
+    linkedin: 'https://www.linkedin.com/company/landing-page-para-advogado/'
   },
   indexNowKey: 'c2e2107a5718803b8f142c315b50da81'
 };
