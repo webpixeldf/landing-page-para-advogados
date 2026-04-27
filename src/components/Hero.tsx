@@ -79,6 +79,13 @@ export default function Hero() {
               metodologia.
             </p>
 
+            <p className="mt-7 flex items-baseline gap-2 text-white">
+              <span className="text-sm font-light text-white/65">3x de</span>
+              <span className="font-display text-4xl font-extrabold tracking-tight text-accent md:text-5xl">
+                R$ 260,00
+              </span>
+            </p>
+
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <a href={siteConfig.contact.whatsappBase} target="_blank" rel="noopener" className="btn-primary">
                 Solicitar orçamento gratuito
