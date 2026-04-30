@@ -98,12 +98,12 @@ export default function PoliticaPrivacidadePage() {
           <h2>6. Direitos do titular</h2>
           <p>
             Você pode, a qualquer momento, solicitar acesso, correção, anonimização, portabilidade
-            ou eliminação dos seus dados. Para exercer esses direitos, escreva para{' '}
-            <a href="mailto:contato@landingpageparaadvogados.com">contato@landingpageparaadvogados.com</a>.
+            ou eliminação dos seus dados. Para exercer esses direitos, fale com nossa equipe pelo
+            WhatsApp <strong>(61) 99278-4283</strong>.
           </p>
 
           <h2>7. Encarregado (DPO)</h2>
-          <p>O canal oficial para tratativas de privacidade é contato@landingpageparaadvogados.com.</p>
+          <p>O canal oficial para tratativas de privacidade é o WhatsApp <strong>(61) 99278-4283</strong>.</p>
 
           <h2>8. Atualizações</h2>
           <p>Esta política pode ser atualizada. Recomenda-se revisar periodicamente.</p>

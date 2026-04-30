@@ -117,23 +117,6 @@ export default function ContatoPage() {
 
             <div className="rounded-3xl border border-ink-100 bg-white p-6 shadow-soft">
               <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-accent">
-                E-mail
-              </span>
-              <p className="mt-2 font-display text-base font-semibold text-ink-900">
-                <a
-                  href={`mailto:${siteConfig.contact.email}`}
-                  className="border-b border-accent/40 transition-colors hover:text-accent"
-                >
-                  {siteConfig.contact.email}
-                </a>
-              </p>
-              <p className="mt-2 text-sm font-light leading-relaxed text-ink-500">
-                Para propostas detalhadas, briefings e documentos anexos.
-              </p>
-            </div>
-
-            <div className="rounded-3xl border border-ink-100 bg-white p-6 shadow-soft">
-              <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-accent">
                 Telefone
               </span>
               <p className="mt-2 font-display text-base font-semibold text-ink-900">

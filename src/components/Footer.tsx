@@ -64,11 +64,6 @@ export default function Footer() {
                   {siteConfig.contact.phoneDisplay}
                 </a>
               </li>
-              <li>
-                <a href={`mailto:${siteConfig.contact.email}`} className="transition-colors hover:text-accent">
-                  {siteConfig.contact.email}
-                </a>
-              </li>
               <li className="text-white/55">{siteConfig.contact.address}</li>
             </ul>
 
