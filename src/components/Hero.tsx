@@ -29,7 +29,7 @@ export default function Hero() {
 
       <div className="container-pp relative">
         <div className="grid items-center gap-16 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="animate-slide-up">
+          <div>
             <span className="eyebrow-light">
               20 anos · 500+ projetos · 100% conforme OAB
             </span>
@@ -37,7 +37,7 @@ export default function Hero() {
             <h1 className="mt-6 font-display text-[2.6rem] font-extrabold leading-[1.02] tracking-tightest text-balance md:text-6xl lg:text-[3.5rem]">
               <span className="block">Landing Page</span>{' '}
               <span className="relative inline-block">
-                <span className="bg-gradient-to-r from-accent via-cream-300 to-accent bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-x">
+                <span className="bg-gradient-to-r from-accent via-cream-300 to-accent bg-clip-text text-transparent">
                   para Advogados
                 </span>
                 <svg
@@ -154,11 +154,8 @@ export default function Hero() {
                 />
               </div>
 
-              {/* Floating badge: conversion */}
-              <div
-                className="absolute -right-4 -bottom-6 hidden animate-float rounded-2xl border border-white/10 bg-gradient-to-br from-emerald-700 to-emerald-900 p-4 shadow-card backdrop-blur-xl md:block"
-                style={{ animationDelay: '2.5s' }}
-              >
+              {/* Conversion badge (estático) */}
+              <div className="absolute -right-4 -bottom-6 hidden rounded-2xl border border-white/10 bg-gradient-to-br from-emerald-700 to-emerald-900 p-4 shadow-card backdrop-blur-xl md:block">
                 <div className="flex items-center gap-2.5">
                   <span className="grid h-9 w-9 place-items-center rounded-xl bg-accent/20">
                     <svg viewBox="0 0 24 24" fill="none" stroke="#dabb7e" strokeWidth="2.2" className="h-5 w-5">
