@@ -64,7 +64,7 @@ export default function Benefits() {
           </h2>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 lg:auto-rows-[180px]">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 lg:auto-rows-[240px]">
           {benefits.map((b) => (
             <article
               key={b.title}
