@@ -37,7 +37,7 @@ export default function Hero() {
               20 anos · 500+ projetos · 100% conforme OAB
             </span>
 
-            <h1 className="mt-6 font-display text-[2.6rem] font-extrabold leading-[1.02] tracking-tightest text-balance md:text-6xl lg:text-[4.5rem]">
+            <h1 className="mt-6 font-display text-[2.6rem] font-extrabold leading-[1.02] tracking-tightest text-balance md:text-6xl lg:text-[3.5rem]">
               <span className="block">Landing Page</span>{' '}
               <span className="relative inline-block">
                 <span className="bg-gradient-to-r from-accent via-cream-300 to-accent bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-x">
