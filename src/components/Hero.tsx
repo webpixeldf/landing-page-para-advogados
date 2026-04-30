@@ -8,16 +8,13 @@ export default function Hero() {
       id="home"
       className="relative isolate overflow-hidden bg-primary-dark pb-32 pt-36 text-white md:pb-40 md:pt-44"
     >
-      {/* Animated mesh gradient */}
-      <div className="absolute inset-0 -z-10 bg-mesh-emerald opacity-95 animate-mesh-shift" />
+      {/* Mesh gradient (estático) */}
+      <div className="absolute inset-0 -z-10 bg-mesh-emerald opacity-95" />
       <div className="absolute inset-0 -z-10 bg-noise opacity-[0.06] mix-blend-overlay" />
 
-      {/* Floating orbs */}
-      <div className="absolute -left-40 top-20 -z-10 h-96 w-96 rounded-full bg-emerald-500/30 blur-3xl animate-float" />
-      <div
-        className="absolute -right-32 top-60 -z-10 h-[28rem] w-[28rem] rounded-full bg-accent/20 blur-3xl animate-float"
-        style={{ animationDelay: '2s' }}
-      />
+      {/* Decorative orbs (estáticos) */}
+      <div className="absolute -left-40 top-20 -z-10 h-96 w-96 rounded-full bg-emerald-500/30 blur-3xl" />
+      <div className="absolute -right-32 top-60 -z-10 h-[28rem] w-[28rem] rounded-full bg-accent/20 blur-3xl" />
 
       {/* Decorative grid */}
       <div
