@@ -33,7 +33,7 @@ export default function ContactForm() {
   }
 
   const inputClass =
-    'w-full rounded-2xl border border-ink-100 bg-white px-4 py-3 text-sm font-light text-ink-700 placeholder:text-ink-300 transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/15';
+    'w-full rounded-2xl border border-ink-100 bg-white px-4 py-3 text-sm font-light text-ink-700 placeholder:text-ink-400 transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/15';
   const labelClass = 'mb-2 block text-xs font-semibold uppercase tracking-widest text-ink-500';
 
   return (
@@ -89,7 +89,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="cf-segment" className={labelClass}>
-          Área de atuação <span className="text-ink-300 normal-case tracking-normal">(opcional)</span>
+          Área de atuação <span className="text-ink-400 normal-case tracking-normal">(opcional)</span>
         </label>
         <input
           id="cf-segment"
@@ -103,7 +103,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="cf-message" className={labelClass}>
-          Mensagem <span className="text-ink-300 normal-case tracking-normal">(opcional)</span>
+          Mensagem <span className="text-ink-400 normal-case tracking-normal">(opcional)</span>
         </label>
         <textarea
           id="cf-message"

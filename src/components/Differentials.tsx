@@ -84,7 +84,7 @@ export default function Differentials() {
                 <h3 className="font-display text-lg font-semibold tracking-tight text-ink-900">{it.title}</h3>
                 <p className="mt-2 text-sm font-light leading-relaxed text-ink-500">{it.text}</p>
 
-                <span className="mt-6 inline-block text-xs font-mono text-ink-300">
+                <span className="mt-6 inline-block text-xs font-mono text-ink-500">
                   /{(i + 1).toString().padStart(2, '0')}
                 </span>
               </div>

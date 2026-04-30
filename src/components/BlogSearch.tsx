@@ -54,7 +54,7 @@ export default function BlogSearch({ posts }: Props) {
               viewBox="0 0 24 24"
               strokeWidth={2}
               stroke="currentColor"
-              className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-ink-300"
+              className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-ink-400"
               aria-hidden="true"
             >
               <path
@@ -72,7 +72,7 @@ export default function BlogSearch({ posts }: Props) {
               placeholder="Buscar por palavra-chave, tag ou categoria…"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              className="w-full rounded-2xl border-0 bg-cream-50 py-4 pl-12 pr-4 text-sm font-light tracking-tight text-ink-900 placeholder:text-ink-300 focus:outline-none focus:ring-2 focus:ring-primary/20"
+              className="w-full rounded-2xl border-0 bg-cream-50 py-4 pl-12 pr-4 text-sm font-light tracking-tight text-ink-900 placeholder:text-ink-400 focus:outline-none focus:ring-2 focus:ring-primary/20"
             />
           </div>
 
@@ -167,7 +167,7 @@ export default function BlogSearch({ posts }: Props) {
               </p>
               <div className="mt-6 flex items-center justify-between text-xs">
                 <span className="font-light text-ink-400">{formatDate(p.date)}</span>
-                <span className="font-mono text-ink-300">{p.readingTime} min</span>
+                <span className="font-mono text-ink-400">{p.readingTime} min</span>
               </div>
             </div>
           </Link>

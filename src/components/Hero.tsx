@@ -68,7 +68,7 @@ export default function Hero() {
             </h1>
 
             <p className="mt-7 max-w-xl text-lg font-light leading-relaxed text-white/75">
-              Criamos <strong className="font-semibold text-white">landing pages para advogados</strong>{' '}
+              Criamos <strong className="font-semibold text-white">landing page para advogados</strong>{' '}
               com foco em estratégia, design profissional, SEO técnico e linguagem compatível com as
               regras da OAB.
             </p>
@@ -140,7 +140,7 @@ export default function Hero() {
                   <span className="h-2.5 w-2.5 rounded-full bg-rose-400/70" />
                   <span className="h-2.5 w-2.5 rounded-full bg-amber-300/70" />
                   <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/70" />
-                  <span className="ml-2 flex-1 truncate rounded-md bg-white/5 px-2 py-1 text-[10px] text-white/45">
+                  <span className="ml-2 flex-1 truncate rounded-md bg-white/5 px-2 py-1 text-[10px] text-white/65">
                     landingpageparaadvogados.com
                   </span>
                 </div>
@@ -174,7 +174,7 @@ export default function Hero() {
 
         {/* Trust strip */}
         <div className="mt-20 border-t border-white/10 pt-8">
-          <p className="text-center text-[11px] uppercase tracking-[0.2em] text-white/45">
+          <p className="text-center text-[11px] uppercase tracking-[0.2em] text-white/65">
             Bancas que confiaram na nossa metodologia
           </p>
           <div className="mt-6 grid grid-cols-2 items-center gap-y-6 text-center text-sm font-light text-white/55 sm:grid-cols-3 md:gap-x-12">

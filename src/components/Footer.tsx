@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="container-pp py-20">
         {/* Top: big quote */}
         <div className="mb-16 max-w-4xl">
-          <span className="eyebrow-light">Landing Page para Advogados</span>
+          <span className="eyebrow-light">Landing Page para escritório de advocacia</span>
           <p className="mt-6 font-display text-3xl font-light leading-tight tracking-tighter text-white/90 md:text-[2.4rem]">
             Criamos páginas jurídicas que combinam
             <span className="font-extrabold text-accent"> design</span>,{' '}
@@ -94,7 +94,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="container-pp py-6 text-center text-xs text-white/45">
+        <div className="container-pp py-6 text-center text-xs text-white/65">
           <p>
             Todos os Direitos Reservados © {year} Landing Page Para Advogados — CNPJ: 34.644.883/0001-94
           </p>
