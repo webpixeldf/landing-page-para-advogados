@@ -53,13 +53,17 @@ export default function Portfolio() {
           <div className="max-w-2xl">
             <span className="eyebrow">Portfólio selecionado</span>
             <h2 className="display-md mt-5 text-balance">
-              Landing pages que viraram
-              <span className="italic font-light text-primary-light"> casos reais de sucesso</span>
+              Landing pages criadas para escritórios que precisavam de
+              <span className="italic font-light text-primary-light"> mais clareza e presença digital</span>
             </h2>
+            <p className="mt-5 max-w-prose text-base font-light leading-relaxed text-ink-500">
+              Landing pages criadas para escritórios que precisavam de mais clareza, presença
+              digital e estrutura profissional para receber novos contatos.
+            </p>
           </div>
           <p className="max-w-md text-base font-light leading-relaxed text-ink-500">
-            Cada cliente recebe um projeto sob medida — design exclusivo, copywriting jurídico
-            ético e arquitetura técnica preparada para Google e WhatsApp.
+            Cada projeto é desenvolvido com design exclusivo, copywriting jurídico ético e
+            arquitetura técnica preparada para busca orgânica, anúncios e WhatsApp.
           </p>
         </div>
 
