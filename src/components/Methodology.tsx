@@ -1,37 +1,37 @@
 const steps = [
   {
     n: '01',
-    title: 'Diagnóstico estratégico',
+    title: 'Pesquisa e diagnóstico',
     text:
-      'Mergulhamos no seu negócio, mapeamos concorrentes e desenhamos o perfil do cliente ideal.',
+      'Analisamos o escritório, a área jurídica, os concorrentes, o público-alvo e os canais de aquisição. O objetivo é entender qual mensagem precisa aparecer na página para atrair contatos mais qualificados.',
     keyword: 'Pesquisa'
   },
   {
     n: '02',
-    title: 'Arquitetura de conversão',
+    title: 'Estrutura de conversão',
     text:
-      'Estruturamos a página com base em psicologia do consumidor, definindo hierarquia e prova social.',
+      'Montamos a arquitetura da página com hierarquia clara. Cada bloco tem uma função: gerar atenção, construir confiança, explicar o serviço, reduzir dúvidas e facilitar o contato.',
     keyword: 'Estrutura'
   },
   {
     n: '03',
-    title: 'Conteúdo profissional e ético',
+    title: 'Copywriting jurídico',
     text:
-      'Criamos textos claros, em conformidade com o Código de Ética da OAB, com linguagem sóbria.',
+      'Criamos textos com linguagem profissional, direta e ética. Nada de promessas de resultado, gatilhos apelativos ou abordagem incompatível com a advocacia.',
     keyword: 'Copywriting'
   },
   {
     n: '04',
     title: 'Design e desenvolvimento',
     text:
-      'Aplicamos design profissional sob código semântico, leve e otimizado para Core Web Vitals.',
+      'Desenvolvemos uma página visualmente forte, rápida e leve. O layout valoriza credibilidade, leitura fácil, prova social permitida e chamadas para ação bem posicionadas.',
     keyword: 'Build'
   },
   {
     n: '05',
-    title: 'SEO e analytics',
+    title: 'SEO técnico e mensuração',
     text:
-      'Implementamos schema markup, sitemap, breadcrumbs e configuramos o Search Console.',
+      'Aplicamos otimizações de indexação e desempenho: meta title e description, heading tags organizadas, schema markup, URLs amigáveis, sitemap, breadcrumbs, Search Console e ferramentas de análise.',
     keyword: 'Otimização'
   }
 ];
@@ -46,13 +46,13 @@ export default function Methodology() {
         <div className="mx-auto mb-20 max-w-3xl text-center">
           <span className="eyebrow-light">Metodologia exclusiva</span>
           <h2 className="display-md mt-5 text-balance text-white">
-            Cinco etapas para criar a sua
+            Nossa metodologia para criar
             <span className="italic font-light text-accent"> landing page para advogados</span>
           </h2>
           <p className="mx-auto mt-6 max-w-prose text-pretty text-lg font-light leading-relaxed text-white/65">
-            Não trabalhamos com templates. Cada projeto passa por um processo desenhado em 20 anos
-            e refinado em mais de 500 entregas — pensado para escritórios de advocacia que querem
-            previsibilidade na captação.
+            Cada projeto segue um processo validado em mais de 500 entregas. A página é construída
+            com base no posicionamento do escritório, na área de atuação, no perfil do cliente
+            ideal e nas regras de comunicação da advocacia.
           </p>
         </div>
 

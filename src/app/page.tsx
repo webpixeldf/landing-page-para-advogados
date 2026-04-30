@@ -58,7 +58,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     q: 'Qual o investimento necessário?',
     a: [
-      'O investimento inicial é a partir de R$ 499,90 em pagamento único, com hospedagem inclusa e sem mensalidade.',
+      'O investimento começa em R$ 699,00 em pagamento único (ou 3x de R$ 233 sem juros), com hospedagem inclusa e sem mensalidade obrigatória.',
       'Estão incluídos: design responsivo, SEO on-page, integração WhatsApp, formulário LGPD, treinamento e 90 dias de suporte gratuito.'
     ]
   },
@@ -132,7 +132,7 @@ export default function HomePage() {
     brand: { '@type': 'Brand', name: 'Landing Page para Advogados' },
     offers: {
       '@type': 'Offer',
-      price: '499.90',
+      price: '699.00',
       priceCurrency: 'BRL',
       availability: 'https://schema.org/InStock',
       itemOffered: {
@@ -203,7 +203,7 @@ export default function HomePage() {
       'Metodologia em 5 etapas para construir uma landing page para advogados com design profissional, SEO técnico e conformidade total com a OAB.',
     image: siteConfig.ogImage,
     totalTime: 'P7D',
-    estimatedCost: { '@type': 'MonetaryAmount', currency: 'BRL', value: '499.90' },
+    estimatedCost: { '@type': 'MonetaryAmount', currency: 'BRL', value: '699.00' },
     supply: [
       { '@type': 'HowToSupply', name: 'Logo em alta resolução' },
       { '@type': 'HowToSupply', name: 'Fotos do escritório e da equipe' },
@@ -219,25 +219,25 @@ export default function HomePage() {
       {
         '@type': 'HowToStep',
         position: 1,
-        name: 'Diagnóstico estratégico',
+        name: 'Pesquisa e diagnóstico',
         text:
-          'Mergulhamos no negócio do escritório, mapeamos concorrentes diretos e desenhamos o perfil do cliente ideal antes de qualquer linha de código.',
+          'Analisamos o escritório, a área jurídica, os concorrentes, o público-alvo e os canais de aquisição para entender qual mensagem precisa aparecer na página.',
         url: siteConfig.url + '/#metodologia'
       },
       {
         '@type': 'HowToStep',
         position: 2,
-        name: 'Arquitetura de conversão',
+        name: 'Estrutura de conversão',
         text:
-          'Estruturamos a página com base em psicologia do consumidor, definindo hierarquia de informação, fluxo de leitura e pontos de prova social.',
+          'Montamos a arquitetura da página com hierarquia clara. Cada bloco tem uma função: gerar atenção, construir confiança, explicar o serviço, reduzir dúvidas e facilitar o contato.',
         url: siteConfig.url + '/#metodologia'
       },
       {
         '@type': 'HowToStep',
         position: 3,
-        name: 'Conteúdo profissional e ético',
+        name: 'Copywriting jurídico',
         text:
-          'Criamos textos claros, em conformidade com o Código de Ética da OAB e o Provimento 205/2021, com linguagem informativa e sóbria.',
+          'Criamos textos com linguagem profissional, direta e ética. Sem promessas de resultado, gatilhos apelativos ou abordagem incompatível com a advocacia.',
         url: siteConfig.url + '/#metodologia'
       },
       {
@@ -245,15 +245,15 @@ export default function HomePage() {
         position: 4,
         name: 'Design e desenvolvimento',
         text:
-          'Aplicamos design profissional sob código semântico, leve e otimizado para Core Web Vitals (LCP, INP, CLS).',
+          'Desenvolvemos uma página visualmente forte, rápida e leve. O layout valoriza credibilidade, leitura fácil, prova social permitida e chamadas para ação bem posicionadas.',
         url: siteConfig.url + '/#metodologia'
       },
       {
         '@type': 'HowToStep',
         position: 5,
-        name: 'SEO técnico e analytics',
+        name: 'SEO técnico e mensuração',
         text:
-          'Implementamos schema markup, sitemap, breadcrumbs, e configuramos Google Search Console e Analytics para mensurar resultados.',
+          'Aplicamos otimizações de indexação e desempenho: meta tags, headings, schema markup, URLs amigáveis, sitemap, breadcrumbs, Search Console e ferramentas de análise.',
         url: siteConfig.url + '/#metodologia'
       }
     ]
@@ -293,7 +293,11 @@ export default function HomePage() {
       <Guide />
       <Benefits />
       <Portfolio />
-      <CtaBanner />
+      <CtaBanner
+        title="Vamos criar uma landing page jurídica para o seu escritório?"
+        subtitle="Sua banca não precisa depender apenas de indicação. Com uma página bem estruturada, o tráfego certo encontra uma mensagem clara, profissional e preparada para gerar contato. Solicite um diagnóstico gratuito e veja como uma landing page para advogados pode fortalecer sua captação digital com mais previsibilidade."
+        cta="Solicitar diagnóstico gratuito"
+      />
       <Testimonials />
       <FAQ items={FAQ_ITEMS} title="Perguntas frequentes" />
     </>

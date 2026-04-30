@@ -35,109 +35,164 @@ export default function Guide() {
                 O que é uma landing page para advogados?
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                É uma página web única, projetada com um objetivo específico: transformar
-                visitantes em potenciais clientes do escritório de advocacia.
+                É uma página única criada para conduzir o visitante a uma ação específica. Pode
+                ser iniciar uma conversa pelo WhatsApp, preencher um formulário, agendar um
+                contato ou acessar um material informativo.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Diferente de um site institucional — que apresenta diversas áreas, equipe, missão
-                e contatos — a landing page jurídica concentra toda a comunicação em uma única
-                ação.
+                Diferente de um site institucional, que apresenta várias páginas e informações
+                gerais, a landing page jurídica concentra a mensagem em um objetivo.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Pode ser agendar uma consulta, baixar um material informativo ou iniciar uma
-                conversa pelo WhatsApp.
+                Ela fala com um público específico, aborda uma dor clara e apresenta o escritório
+                de forma objetiva, ética e profissional.
               </p>
             </article>
 
             <article>
               <h3 className="font-display text-xl font-bold tracking-tight text-ink-900 md:text-2xl">
-                Por que escritórios brasileiros estão migrando para esse formato?
+                Por que escritórios de advocacia estão usando esse formato?
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                A advocacia é um mercado de confiança, e a primeira impressão online é decisiva.
+                A decisão de contratar um advogado começa pela confiança. Quando uma pessoa chega
+                até a sua página após uma busca no Google ou um anúncio, ela precisa entender
+                rapidamente:
               </p>
-              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Uma página de captura jurídica bem desenhada combina prova social (depoimentos
-                verificáveis, OAB visível, número de casos) e conteúdo informativo em
-                conformidade com o Provimento 205/2021.
-              </p>
-              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Soma-se a isso uma arquitetura técnica que favorece tanto Google Ads quanto SEO
-                orgânico. O resultado é uma fonte previsível de novos clientes qualificados.
-              </p>
-              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Algo que indicações sozinhas dificilmente entregam.
+              <ul className="mt-4 space-y-2 text-base font-light leading-relaxed text-ink-500">
+                <li className="relative pl-6">
+                  <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  Se o escritório atua naquele tipo de caso;
+                </li>
+                <li className="relative pl-6">
+                  <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  Como pode receber orientação;
+                </li>
+                <li className="relative pl-6">
+                  <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  Quais canais de contato estão disponíveis;
+                </li>
+                <li className="relative pl-6">
+                  <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  Se a comunicação transmite seriedade;
+                </li>
+                <li className="relative pl-6">
+                  <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  Se a página parece confiável no celular.
+                </li>
+              </ul>
+              <p className="mt-4 text-base font-light leading-relaxed text-ink-500">
+                Uma landing page bem construída reduz ruído. Ela organiza a informação, melhora a
+                experiência do visitante e aumenta a chance de contato qualificado.
               </p>
             </article>
 
             <article>
               <h3 className="font-display text-xl font-bold tracking-tight text-ink-900 md:text-2xl">
-                O que diferencia uma boa página jurídica de uma genérica?
+                O que diferencia uma boa landing page jurídica de uma página comum?
               </h3>
+              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
+                Uma página genérica apenas apresenta o serviço. Uma landing page jurídica bem
+                planejada trabalha com estratégia, clareza e cuidado ético. Entre os principais
+                pontos, destacamos:
+              </p>
               <ul className="mt-4 space-y-3 text-base font-light leading-relaxed text-ink-500">
                 <li className="relative pl-6">
                   <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                  <strong className="font-semibold text-ink-900">Headline orientada à dor:</strong>{' '}
-                  fala diretamente com a situação do cliente ideal (ex.: &ldquo;INSS negou seu
-                  benefício?&rdquo; em vez de &ldquo;Somos especialistas em previdenciário&rdquo;).
+                  <strong className="font-semibold text-ink-900">Headline direcionada:</strong>{' '}
+                  conversa com a situação do cliente ideal.
                 </li>
                 <li className="relative pl-6">
                   <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                  <strong className="font-semibold text-ink-900">Estrutura de prova social:</strong>{' '}
-                  depoimentos com nome, cidade, foto, sem prometer resultado.
+                  <strong className="font-semibold text-ink-900">Mensagem objetiva:</strong>{' '}
+                  explica a atuação sem juridiquês excessivo.
                 </li>
                 <li className="relative pl-6">
                   <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                  <strong className="font-semibold text-ink-900">CTA claro e único:</strong>{' '}
-                  toda página termina em uma ação só, repetida em pontos estratégicos.
+                  <strong className="font-semibold text-ink-900">Prova social com cautela:</strong>{' '}
+                  reforça confiança sem promessa de ganho.
                 </li>
                 <li className="relative pl-6">
                   <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                  <strong className="font-semibold text-ink-900">Conformidade ética:</strong>{' '}
-                  exibição correta da OAB, linguagem sóbria, foco informativo.
+                  <strong className="font-semibold text-ink-900">CTA único:</strong>{' '}
+                  conduz o visitante para uma ação principal.
                 </li>
                 <li className="relative pl-6">
                   <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
-                  <strong className="font-semibold text-ink-900">Performance técnica:</strong>{' '}
-                  carregamento abaixo de 2,5s, responsividade impecável e schema markup.
+                  <strong className="font-semibold text-ink-900">Linguagem sóbria:</strong>{' '}
+                  evita sensacionalismo e abordagem comercial agressiva.
+                </li>
+                <li className="relative pl-6">
+                  <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  <strong className="font-semibold text-ink-900">SEO técnico:</strong>{' '}
+                  ajuda a página a ser encontrada e compreendida pelo Google.
+                </li>
+                <li className="relative pl-6">
+                  <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  <strong className="font-semibold text-ink-900">Carregamento rápido:</strong>{' '}
+                  melhora a experiência e reduz abandono.
                 </li>
               </ul>
             </article>
 
             <article>
               <h3 className="font-display text-xl font-bold tracking-tight text-ink-900 md:text-2xl">
-                Como saber se a minha banca precisa de uma landing page para advogados?
+                Meu escritório precisa de uma landing page?
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Se o seu escritório depende exclusivamente de indicações, perdeu posições no
-                Google ou investe em tráfego pago sem retorno, provavelmente falta uma página
-                otimizada para receber esse tráfego.
+                Uma landing page para advogados faz sentido quando o escritório quer melhorar a
+                captação digital com mais controle. Ela costuma ser indicada para bancas que:
               </p>
-              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Bancas que atuam em áreas de alta concorrência — trabalhista, previdenciário,
-                família, tributário e criminal — colhem o maior retorno desse formato.
-              </p>
-              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Isso porque podem criar uma página dedicada por área de atuação, falando
-                diretamente com a dor de cada público.
+              <ul className="mt-4 space-y-2 text-base font-light leading-relaxed text-ink-500">
+                <li className="relative pl-6">
+                  <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  Dependem quase só de indicação;
+                </li>
+                <li className="relative pl-6">
+                  <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  Investem em tráfego pago e recebem contatos ruins;
+                </li>
+                <li className="relative pl-6">
+                  <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  Têm site bonito, mas sem conversão;
+                </li>
+                <li className="relative pl-6">
+                  <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  Perderam visibilidade no Google;
+                </li>
+                <li className="relative pl-6">
+                  <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  Atuam em áreas concorridas;
+                </li>
+                <li className="relative pl-6">
+                  <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-accent" />
+                  Querem páginas específicas por área de atuação.
+                </li>
+              </ul>
+              <p className="mt-4 text-base font-light leading-relaxed text-ink-500">
+                Áreas como previdenciário, trabalhista, família, tributário, imobiliário,
+                empresarial e criminal podem se beneficiar bastante de páginas direcionadas. Cada
+                área permite uma comunicação mais precisa, voltada ao tipo de cliente que o
+                escritório deseja atrair.
               </p>
             </article>
 
             <article>
               <h3 className="font-display text-xl font-bold tracking-tight text-ink-900 md:text-2xl">
-                Quanto custa e em quanto tempo o investimento se paga?
+                Quanto custa uma landing page para advogados?
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                O investimento inicial é a partir de R$ 499,90 em pagamento único, sem
-                mensalidade.
+                O investimento começa em <strong className="font-semibold text-ink-900">R$ 699,00, em pagamento único</strong> (ou{' '}
+                <strong className="font-semibold text-ink-900">3x de R$ 233 sem juros</strong>). Sem
+                mensalidade obrigatória.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Considerando o ticket médio de uma causa trabalhista, previdenciária ou familiar,
-                basta um único cliente captado pela página para o projeto se pagar.
+                O valor inclui estrutura, design, copywriting, desenvolvimento e otimizações
+                técnicas essenciais.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Isso geralmente acontece nas primeiras semanas de tráfego. A partir daí, cada
-                novo lead é margem para a banca.
+                Para muitos escritórios, a página se paga quando gera o primeiro contrato
+                qualificado. O prazo de retorno depende da área de atuação, do tráfego, da oferta,
+                da região e da maturidade comercial da banca.
               </p>
             </article>
           </div>

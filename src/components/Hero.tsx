@@ -65,30 +65,49 @@ export default function Hero() {
                 </svg>
               </span>{' '}
               <br />
-              que captam{' '}
+              que querem atrair{' '}
               <br />
               <span className="font-light italic text-white/85">clientes qualificados.</span>
             </h1>
 
             <p className="mt-7 max-w-xl text-lg font-light leading-relaxed text-white/75">
-              Criamos <strong className="font-semibold text-white">landing page para advogados</strong>{' '}
-              sob medida, com design moderno, SEO técnico e conformidade total com a OAB.
+              Criamos <strong className="font-semibold text-white">landing pages para advogados</strong>{' '}
+              com foco em estratégia, design profissional, SEO técnico e linguagem compatível com as
+              regras da OAB.
             </p>
             <p className="mt-3 max-w-xl text-lg font-light leading-relaxed text-white/75">
-              Mais de 500 escritórios já multiplicaram a captação de clientes com a nossa
-              metodologia.
+              Cada página é pensada para transformar visitantes em contatos reais, com uma estrutura
+              clara, rápida e preparada para campanhas no Google, redes sociais e buscas orgânicas.
+            </p>
+            <p className="mt-3 max-w-xl text-lg font-light leading-relaxed text-white/75">
+              Mais de 500 escritórios já usaram nossa metodologia para melhorar a presença digital e
+              receber oportunidades mais alinhadas ao perfil de cliente que desejam atender.
             </p>
 
-            <p className="mt-7 flex items-baseline gap-2 text-white">
-              <span className="text-sm font-light text-white/65">3x de</span>
+            <div className="mt-7 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-white">
               <span className="font-display text-4xl font-extrabold tracking-tight text-accent md:text-5xl">
-                R$ 260,00
+                R$ 699,00
               </span>
+              <span className="text-sm font-light text-white/65">à vista</span>
+              <span className="text-white/35">·</span>
+              <span className="text-sm font-light text-white/65">
+                ou <span className="font-semibold text-white/85">3x de R$ 233</span> sem juros
+              </span>
+            </div>
+
+            <p className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-widest text-white/55">
+              <span>Hospedagem grátis</span>
+              <span className="text-white/25">·</span>
+              <span>SSL grátis</span>
+              <span className="text-white/25">·</span>
+              <span>Site rápido</span>
+              <span className="text-white/25">·</span>
+              <span>Seguro</span>
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <a href={siteConfig.contact.whatsappBase} target="_blank" rel="noopener" className="btn-primary">
-                Solicitar orçamento gratuito
+                Solicite um orçamento gratuito
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
                   <path d="M5 12h14M13 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>

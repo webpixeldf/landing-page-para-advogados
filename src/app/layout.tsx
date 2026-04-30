@@ -122,7 +122,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     sameAs: [siteConfig.social.instagram, siteConfig.social.linkedin],
     makesOffer: {
       '@type': 'Offer',
-      price: '499.90',
+      price: '699.00',
       priceCurrency: 'BRL',
       itemOffered: {
         '@type': 'Service',

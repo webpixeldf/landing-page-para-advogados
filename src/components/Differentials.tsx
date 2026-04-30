@@ -2,32 +2,32 @@ const items = [
   {
     icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z',
     title: 'Experiência sólida',
-    text: 'Mais de 20 anos desenvolvendo páginas profissionais de alta performance.'
+    text: 'Longa trajetória criando páginas profissionais para negócios que dependem de confiança, autoridade e clareza na comunicação.'
   },
   {
     icon: 'M3 6l9-3 9 3-9 3-9-3zm9 6l9-3v6l-9 3-9-3v-6l9 3z',
-    title: 'Conformidade OAB',
-    text: 'Total adequação ao Código de Ética da advocacia (artigos 28 a 34).'
+    title: 'Comunicação alinhada à OAB',
+    text: 'Textos com tom sóbrio, informativo e compatível com o Código de Ética da OAB e o Provimento 205/2021.'
   },
   {
     icon: 'M16 18l6-6-6-6M8 6l-6 6 6 6',
     title: 'Qualidade técnica',
-    text: 'Código limpo, semântico e otimizado para ranqueamento orgânico.'
+    text: 'Código limpo, leve, semântico e preparado para leitura dos mecanismos de busca.'
   },
   {
     icon: 'M13 10V3L4 14h7v7l9-11h-7z',
-    title: 'Performance máxima',
-    text: 'Páginas que carregam em segundos, com nota alta no PageSpeed Insights.'
+    title: 'Performance real',
+    text: 'Páginas rápidas, otimizadas para Core Web Vitals e desenvolvidas para boa experiência em qualquer dispositivo.'
   },
   {
     icon: 'M3 7h18M3 12h18M3 17h12',
     title: 'Design responsivo',
-    text: 'Experiência impecável em desktop, tablet e mobile.'
+    text: 'Layout adaptado para desktop, tablet e celular, com navegação simples e leitura fluida.'
   },
   {
     icon: 'M5 13l4 4L19 7',
-    title: 'Resultados comprovados',
-    text: 'Mais de 500 escritórios escalaram a captação com a nossa metodologia.'
+    title: 'Foco em conversão',
+    text: 'Estrutura criada para orientar o visitante até o contato, sem distrações e sem excesso de informação.'
   }
 ];
 
@@ -40,13 +40,17 @@ export default function Differentials() {
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <span className="eyebrow">Por que escolher a gente</span>
           <h2 className="display-md mt-5 text-balance">
-            Por que escolher uma landing page para advogados feita
-            <span className="italic font-light text-primary-light"> por especialistas</span>
+            Landing page jurídica feita por quem entende de
+            <span className="italic font-light text-primary-light"> conversão e ética profissional</span>
           </h2>
           <p className="mx-auto mt-6 max-w-prose text-pretty text-lg font-light leading-relaxed text-ink-500">
-            Somos especialistas na criação de landing page para advogados de alta performance, e
-            transformamos cada briefing em uma estrutura funcional, rápida e otimizada para
-            conversão — sem templates genéricos.
+            Uma landing page para advogados não pode ser tratada como uma página comum. Ela precisa
+            vender confiança sem exageros, orientar sem prometer resultado e conduzir o visitante
+            para uma ação objetiva, sem ferir as regras da publicidade jurídica.
+          </p>
+          <p className="mx-auto mt-4 max-w-prose text-pretty text-base font-light leading-relaxed text-ink-500">
+            Nosso trabalho une estratégia, copywriting, design, SEO e desenvolvimento técnico em uma
+            entrega sob medida. <strong className="font-semibold text-ink-700">Sem template pronto. Sem estrutura genérica. Sem linguagem apelativa.</strong>
           </p>
         </div>
 

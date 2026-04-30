@@ -9,45 +9,45 @@ type Benefit = {
 const benefits: Benefit[] = [
   {
     title: 'Hospedagem inclusa',
-    text: 'Sua página entra no ar sem custo adicional, em servidor brasileiro premium.',
+    text: 'Sua página entra no ar em servidor brasileiro, sem custo extra no período contratado.',
     icon: 'M21 12a9 9 0 11-18 0 9 9 0 0118 0zM12 7v5l3 3',
     span: 'lg:col-span-2 lg:row-span-2',
     highlight: true
   },
   {
     title: 'Performance Core Web Vitals',
-    text: 'Desempenho otimizado com nota máxima no PageSpeed.',
+    text: 'Desenvolvimento leve, rápido e pensado para boa experiência de navegação.',
     icon: 'M13 10V3L4 14h7v7l9-11h-7z'
   },
   {
-    title: 'Indexação garantida',
-    text: 'Estrutura preparada para ranquear no Google.',
-    icon: 'M21 21l-4.3-4.3M11 19a8 8 0 100-16 8 8 0 000 16z'
+    title: 'Sem mensalidade obrigatória',
+    text: 'Você paga pela criação da página e não fica preso a planos recorrentes desnecessários.',
+    icon: 'M3 6l9-3 9 3-9 3-9-3zm9 6l9-3v6l-9 3-9-3v-6l9 3z'
   },
   {
     title: 'SEO on-page completo',
-    text: 'Schema markup, meta tags, breadcrumbs e URLs amigáveis.',
+    text: 'Estrutura otimizada com meta tags, headings, schema markup, breadcrumbs e URL amigável.',
     icon: 'M3 7h18M3 12h18M3 17h12',
     span: 'lg:col-span-2'
   },
   {
-    title: '100% responsivo',
-    text: 'Visual impecável em qualquer dispositivo.',
+    title: 'Página responsiva',
+    text: 'Design adaptado para celular, tablet e desktop.',
     icon: 'M4 4h12v16H4zM20 8h0M20 16h0'
   },
   {
-    title: 'Pronto para tráfego pago',
-    text: 'Integra com Google Ads, Meta Ads e outras plataformas.',
+    title: 'Pronta para tráfego pago',
+    text: 'Página preparada para campanhas no Google Ads, Meta Ads e outras plataformas.',
     icon: 'M3 18l6-6 4 4 8-8M14 6h7v7'
   },
   {
-    title: 'Formulários LGPD',
-    text: 'Consentimento explícito e dados tratados com transparência.',
+    title: 'Formulários com cuidado à LGPD',
+    text: 'Campos claros, consentimento explícito e tratamento transparente dos dados enviados.',
     icon: 'M12 11c1.66 0 3-1.34 3-3S13.66 5 12 5 9 6.34 9 8s1.34 3 3 3zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'
   },
   {
-    title: 'Suporte 90 dias',
-    text: 'Acompanhamento técnico completo após a entrega.',
+    title: 'Suporte por 90 dias',
+    text: 'Acompanhamento técnico após a entrega para ajustes essenciais e estabilidade da página.',
     icon: 'M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z'
   }
 ];
@@ -59,8 +59,8 @@ export default function Benefits() {
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <span className="eyebrow">O que está incluído</span>
           <h2 className="display-md mt-5 text-balance">
-            O que vem na sua landing page,
-            <span className="italic font-light text-primary-light"> sem custo extra</span>
+            O que está incluído na
+            <span className="italic font-light text-primary-light"> sua landing page</span>
           </h2>
         </div>
 
