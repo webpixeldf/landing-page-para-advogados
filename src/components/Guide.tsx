@@ -35,8 +35,10 @@ export default function Guide() {
                 O que é uma landing page para advogados?
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                É uma página única criada para conduzir o visitante a uma ação específica. Pode
-                ser iniciar uma conversa pelo WhatsApp, preencher um formulário, agendar um
+                É uma página única criada para conduzir o visitante a uma ação específica.
+              </p>
+              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
+                Pode ser iniciar uma conversa pelo WhatsApp, preencher um formulário, agendar um
                 contato ou acessar um material informativo.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
@@ -54,9 +56,11 @@ export default function Guide() {
                 Por que escritórios de advocacia estão usando esse formato?
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                A decisão de contratar um advogado começa pela confiança. Quando uma pessoa chega
-                até a sua página após uma busca no Google ou um anúncio, ela precisa entender
-                rapidamente:
+                A decisão de contratar um advogado começa pela confiança.
+              </p>
+              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
+                Quando uma pessoa chega até a sua página após uma busca no Google ou um anúncio,
+                ela precisa entender rapidamente:
               </p>
               <ul className="mt-4 space-y-2 text-base font-light leading-relaxed text-ink-500">
                 <li className="relative pl-6">
@@ -81,8 +85,11 @@ export default function Guide() {
                 </li>
               </ul>
               <p className="mt-4 text-base font-light leading-relaxed text-ink-500">
-                Uma landing page bem construída reduz ruído. Ela organiza a informação, melhora a
-                experiência do visitante e aumenta a chance de contato qualificado.
+                Uma landing page bem construída reduz ruído.
+              </p>
+              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
+                Ela organiza a informação, melhora a experiência do visitante e aumenta a chance
+                de contato qualificado.
               </p>
             </article>
 
@@ -91,9 +98,14 @@ export default function Guide() {
                 O que diferencia uma boa landing page jurídica de uma página comum?
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Uma página genérica apenas apresenta o serviço. Uma landing page jurídica bem
-                planejada trabalha com estratégia, clareza e cuidado ético. Entre os principais
-                pontos, destacamos:
+                Uma página genérica apenas apresenta o serviço.
+              </p>
+              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
+                Uma landing page jurídica bem planejada trabalha com estratégia, clareza e
+                cuidado ético.
+              </p>
+              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
+                Entre os principais pontos, destacamos:
               </p>
               <ul className="mt-4 space-y-3 text-base font-light leading-relaxed text-ink-500">
                 <li className="relative pl-6">
@@ -140,7 +152,10 @@ export default function Guide() {
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
                 Uma landing page para advogados faz sentido quando o escritório quer melhorar a
-                captação digital com mais controle. Ela costuma ser indicada para bancas que:
+                captação digital com mais controle.
+              </p>
+              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
+                Ela costuma ser indicada para bancas que:
               </p>
               <ul className="mt-4 space-y-2 text-base font-light leading-relaxed text-ink-500">
                 <li className="relative pl-6">
@@ -170,8 +185,10 @@ export default function Guide() {
               </ul>
               <p className="mt-4 text-base font-light leading-relaxed text-ink-500">
                 Áreas como previdenciário, trabalhista, família, tributário, imobiliário,
-                empresarial e criminal podem se beneficiar bastante de páginas direcionadas. Cada
-                área permite uma comunicação mais precisa, voltada ao tipo de cliente que o
+                empresarial e criminal podem se beneficiar bastante de páginas direcionadas.
+              </p>
+              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
+                Cada área permite uma comunicação mais precisa, voltada ao tipo de cliente que o
                 escritório deseja atrair.
               </p>
             </article>
@@ -182,8 +199,10 @@ export default function Guide() {
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
                 O investimento começa em <strong className="font-semibold text-ink-900">R$ 699,00, em pagamento único</strong> (ou{' '}
-                <strong className="font-semibold text-ink-900">3x de R$ 233 sem juros</strong>). Sem
-                mensalidade obrigatória.
+                <strong className="font-semibold text-ink-900">3x de R$ 233 sem juros</strong>).
+              </p>
+              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
+                Sem mensalidade obrigatória.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
                 O valor inclui estrutura, design, copywriting, desenvolvimento e otimizações
@@ -191,8 +210,11 @@ export default function Guide() {
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
                 Para muitos escritórios, a página se paga quando gera o primeiro contrato
-                qualificado. O prazo de retorno depende da área de atuação, do tráfego, da oferta,
-                da região e da maturidade comercial da banca.
+                qualificado.
+              </p>
+              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
+                O prazo de retorno depende da área de atuação, do tráfego, da oferta, da região
+                e da maturidade comercial da banca.
               </p>
             </article>
           </div>

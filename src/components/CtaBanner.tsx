@@ -6,9 +6,10 @@ export default function CtaBanner({
   cta = 'Solicitar orçamento'
 }: {
   title?: string;
-  subtitle?: string;
+  subtitle?: string | string[];
   cta?: string;
 }) {
+  const subtitles = Array.isArray(subtitle) ? subtitle : [subtitle];
   return (
     <section className="relative overflow-hidden py-20">
       <div className="container-pp">
@@ -31,9 +32,11 @@ export default function CtaBanner({
             <div>
               <span className="eyebrow-light">Próximo passo</span>
               <h2 className="display-md mt-5 text-balance text-white">{title}</h2>
-              <p className="mt-5 max-w-2xl text-pretty text-lg font-light leading-relaxed text-white/75">
-                {subtitle}
-              </p>
+              <div className="mt-5 max-w-2xl space-y-3 text-pretty text-lg font-light leading-relaxed text-white/75">
+                {subtitles.map((s, i) => (
+                  <p key={i}>{s}</p>
+                ))}
+              </div>
             </div>
 
             <div className="flex flex-col items-stretch gap-4 md:items-end">

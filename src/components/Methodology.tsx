@@ -1,37 +1,48 @@
-const steps = [
+type Step = { n: string; title: string; text: string[]; keyword: string };
+
+const steps: Step[] = [
   {
     n: '01',
     title: 'Pesquisa e diagnóstico',
-    text:
-      'Analisamos o escritório, a área jurídica, os concorrentes, o público-alvo e os canais de aquisição. O objetivo é entender qual mensagem precisa aparecer na página para atrair contatos mais qualificados.',
+    text: [
+      'Analisamos o escritório, a área jurídica, os concorrentes, o público-alvo e os canais de aquisição.',
+      'O objetivo é entender qual mensagem precisa aparecer na página para atrair contatos mais qualificados.'
+    ],
     keyword: 'Pesquisa'
   },
   {
     n: '02',
     title: 'Estrutura de conversão',
-    text:
-      'Montamos a arquitetura da página com hierarquia clara. Cada bloco tem uma função: gerar atenção, construir confiança, explicar o serviço, reduzir dúvidas e facilitar o contato.',
+    text: [
+      'Montamos a arquitetura da página com hierarquia clara.',
+      'Cada bloco tem uma função: gerar atenção, construir confiança, explicar o serviço, reduzir dúvidas e facilitar o contato.'
+    ],
     keyword: 'Estrutura'
   },
   {
     n: '03',
     title: 'Copywriting jurídico',
-    text:
-      'Criamos textos com linguagem profissional, direta e ética. Nada de promessas de resultado, gatilhos apelativos ou abordagem incompatível com a advocacia.',
+    text: [
+      'Criamos textos com linguagem profissional, direta e ética.',
+      'Nada de promessas de resultado, gatilhos apelativos ou abordagem incompatível com a advocacia.'
+    ],
     keyword: 'Copywriting'
   },
   {
     n: '04',
     title: 'Design e desenvolvimento',
-    text:
-      'Desenvolvemos uma página visualmente forte, rápida e leve. O layout valoriza credibilidade, leitura fácil, prova social permitida e chamadas para ação bem posicionadas.',
+    text: [
+      'Desenvolvemos uma página visualmente forte, rápida e leve.',
+      'O layout valoriza credibilidade, leitura fácil, prova social permitida e chamadas para ação bem posicionadas.'
+    ],
     keyword: 'Build'
   },
   {
     n: '05',
     title: 'SEO técnico e mensuração',
-    text:
-      'Aplicamos otimizações de indexação e desempenho: meta title e description, heading tags organizadas, schema markup, URLs amigáveis, sitemap, breadcrumbs, Search Console e ferramentas de análise.',
+    text: [
+      'Aplicamos otimizações importantes para indexação e análise de desempenho: meta title e description, heading tags organizadas, schema markup, URLs amigáveis, sitemap, breadcrumbs, Search Console e ferramentas de análise.'
+    ],
     keyword: 'Otimização'
   }
 ];
@@ -50,9 +61,11 @@ export default function Methodology() {
             <span className="italic font-light text-accent"> landing page para advogados</span>
           </h2>
           <p className="mx-auto mt-6 max-w-prose text-pretty text-lg font-light leading-relaxed text-white/65">
-            Cada projeto segue um processo validado em mais de 500 entregas. A página é construída
-            com base no posicionamento do escritório, na área de atuação, no perfil do cliente
-            ideal e nas regras de comunicação da advocacia.
+            Cada projeto segue um processo validado em mais de 500 entregas.
+          </p>
+          <p className="mx-auto mt-3 max-w-prose text-pretty text-lg font-light leading-relaxed text-white/65">
+            A página é construída com base no posicionamento do escritório, na área de atuação,
+            no perfil do cliente ideal e nas regras de comunicação da advocacia.
           </p>
         </div>
 
@@ -74,9 +87,13 @@ export default function Methodology() {
                 <h3 className="mt-2 font-display text-2xl font-semibold tracking-tight text-white md:text-[1.6rem]">
                   {s.title}
                 </h3>
-                <p className="mt-3 max-w-md font-light leading-relaxed text-white/65 md:ml-auto">
-                  {s.text}
-                </p>
+                <div className={`mt-3 space-y-2 max-w-md font-light leading-relaxed text-white/65 ${
+                  i % 2 === 0 ? 'md:ml-auto' : ''
+                }`}>
+                  {s.text.map((p, idx) => (
+                    <p key={idx}>{p}</p>
+                  ))}
+                </div>
               </div>
 
               {/* number badge */}

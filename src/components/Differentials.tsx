@@ -44,13 +44,18 @@ export default function Differentials() {
             <span className="italic font-light text-primary-light"> conversão e ética profissional</span>
           </h2>
           <p className="mx-auto mt-6 max-w-prose text-pretty text-lg font-light leading-relaxed text-ink-500">
-            Uma landing page para advogados não pode ser tratada como uma página comum. Ela precisa
-            vender confiança sem exageros, orientar sem prometer resultado e conduzir o visitante
-            para uma ação objetiva, sem ferir as regras da publicidade jurídica.
+            Uma landing page para advogados não pode ser tratada como uma página comum.
+          </p>
+          <p className="mx-auto mt-3 max-w-prose text-pretty text-lg font-light leading-relaxed text-ink-500">
+            Ela precisa vender confiança sem exageros, orientar sem prometer resultado e conduzir
+            o visitante para uma ação objetiva, sem ferir as regras da publicidade jurídica.
           </p>
           <p className="mx-auto mt-4 max-w-prose text-pretty text-base font-light leading-relaxed text-ink-500">
-            Nosso trabalho une estratégia, copywriting, design, SEO e desenvolvimento técnico em uma
-            entrega sob medida. <strong className="font-semibold text-ink-700">Sem template pronto. Sem estrutura genérica. Sem linguagem apelativa.</strong>
+            Nosso trabalho une estratégia, copywriting, design, SEO e desenvolvimento técnico em
+            uma entrega sob medida.
+          </p>
+          <p className="mx-auto mt-3 max-w-prose text-pretty text-base font-semibold leading-relaxed text-ink-700">
+            Sem template pronto. Sem estrutura genérica. Sem linguagem apelativa.
           </p>
         </div>
 

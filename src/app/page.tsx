@@ -295,7 +295,11 @@ export default function HomePage() {
       <Portfolio />
       <CtaBanner
         title="Vamos criar uma landing page jurídica para o seu escritório?"
-        subtitle="Sua banca não precisa depender apenas de indicação. Com uma página bem estruturada, o tráfego certo encontra uma mensagem clara, profissional e preparada para gerar contato. Solicite um diagnóstico gratuito e veja como uma landing page para advogados pode fortalecer sua captação digital com mais previsibilidade."
+        subtitle={[
+          'Sua banca não precisa depender apenas de indicação.',
+          'Com uma página bem estruturada, o tráfego certo encontra uma mensagem clara, profissional e preparada para gerar contato.',
+          'Solicite um diagnóstico gratuito e veja como uma landing page para advogados pode fortalecer sua captação digital com mais previsibilidade.'
+        ]}
         cta="Solicitar diagnóstico gratuito"
       />
       <Testimonials />
