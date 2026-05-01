@@ -1,7 +1,6 @@
 {
   "_comment": "Pool de âncoras keyword-rich para linkar a homepage. TODAS contêm 'landing page' (a keyword raiz) para reforçar o sinal SEO interno. Cada artigo consome 1 âncora; 'used' lista consumidas.",
   "available": [
-    "landing page de captação para advogados",
     "landing page de aquisição para advogados",
     "landing page institucional para advogados",
     "landing page comercial para advogados",
@@ -171,6 +170,11 @@
       "anchor": "landing page de conversão para advogados",
       "slug": "e-mail-marketing-para-escritorios-juridicos-cadencias-e-modelos-que-convertem",
       "date": "2026-04-30"
+    },
+    {
+      "anchor": "landing page de captação para advogados",
+      "slug": "automacao-de-marketing-para-advocacia-guia-de-ferramentas-e-workflows",
+      "date": "2026-05-01"
     }
   ]
 }
