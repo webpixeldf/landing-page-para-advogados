@@ -8,12 +8,12 @@ export default function Guide() {
             <h2 className="display-md mt-5 text-balance">
               O que é, para que serve e
               <span className="italic font-light text-primary-light"> como funciona </span>
-              uma landing page para advogados.
+              uma página de captação jurídica.
             </h2>
             <p className="mt-6 text-base font-light leading-relaxed text-ink-500">
-              Antes de investir, vale entender o que diferencia uma landing page jurídica de
-              um site institucional comum — e por que advogados que dominam o digital têm
-              estruturas pensadas exclusivamente para conversão.
+              Antes de investir, vale entender o que diferencia uma página focada em conversão
+              de um site institucional comum — e por que escritórios que dominam o ambiente digital
+              estão adotando estruturas pensadas exclusivamente para transformar visitas em contatos.
             </p>
             <div className="mt-8 grid grid-cols-3 gap-3 max-w-md">
               {[
@@ -32,22 +32,29 @@ export default function Guide() {
           <div className="space-y-10">
             <article>
               <h3 className="font-display text-xl font-bold tracking-tight text-ink-900 md:text-2xl">
-                O que é uma landing page para advogados?
+                O que é uma página de captação para escritórios de advocacia?
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                É uma página única criada para conduzir o visitante a uma ação específica.
+                É uma página única, construída com um objetivo claro: conduzir o visitante a uma
+                ação específica.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Pode ser iniciar uma conversa pelo WhatsApp, preencher um formulário, agendar um
-                contato ou acessar um material informativo.
+                Essa ação pode ser iniciar uma conversa pelo WhatsApp, preencher um formulário de
+                contato, agendar uma consulta ou baixar um material informativo.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Diferente de um site institucional, que apresenta várias páginas e informações
-                gerais, a landing page jurídica concentra a mensagem em um objetivo.
+                Diferente de um site institucional — que distribui a atenção do visitante entre
+                várias páginas, menus e informações gerais — a página de conversão concentra toda
+                a mensagem em um único fluxo.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Ela fala com um público específico, aborda uma dor clara e apresenta o escritório
-                de forma objetiva, ética e profissional.
+                Ela é desenhada para falar com um público específico, abordar uma dor jurídica
+                concreta e apresentar o escritório de forma objetiva, ética e profissional.
+              </p>
+              <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
+                Na prática, funciona como o equivalente digital de uma primeira consulta bem
+                conduzida: o potencial cliente entende rapidamente se a banca atua na área que
+                ele precisa, como pode ser ajudado e qual o próximo passo para iniciar o contato.
               </p>
             </article>
 
@@ -95,14 +102,14 @@ export default function Guide() {
 
             <article>
               <h3 className="font-display text-xl font-bold tracking-tight text-ink-900 md:text-2xl">
-                O que diferencia uma boa landing page jurídica de uma página comum?
+                O que diferencia uma página jurídica bem planejada de uma página comum?
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Uma página genérica apenas apresenta o serviço.
+                Uma página genérica apenas apresenta o serviço com um formulário no final.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Uma landing page jurídica bem planejada trabalha com estratégia, clareza e
-                cuidado ético.
+                Uma página jurídica bem planejada trabalha com estratégia de comunicação, clareza
+                na oferta de valor e cuidado ético em cada elemento visível.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
                 Entre os principais pontos, destacamos:
@@ -148,11 +155,11 @@ export default function Guide() {
 
             <article>
               <h3 className="font-display text-xl font-bold tracking-tight text-ink-900 md:text-2xl">
-                Meu escritório precisa de uma landing page?
+                Meu escritório precisa de uma página de captação?
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Uma landing page para advogados faz sentido quando o escritório quer melhorar a
-                captação digital com mais controle.
+                Uma página focada em conversão faz sentido quando o escritório quer melhorar a
+                captação digital com mais controle sobre a mensagem e o perfil de cliente atraído.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
                 Ela costuma ser indicada para bancas que:
@@ -195,11 +202,12 @@ export default function Guide() {
 
             <article>
               <h3 className="font-display text-xl font-bold tracking-tight text-ink-900 md:text-2xl">
-                Quanto custa uma landing page para advogados?
+                Quanto custa uma página de conversão para advocacia?
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
                 O investimento começa em <strong className="font-semibold text-ink-900">R$ 699,00, em pagamento único</strong> (ou{' '}
-                <strong className="font-semibold text-ink-900">3x de R$ 233 sem juros</strong>).
+                <strong className="font-semibold text-ink-900">3x de R$ 233 sem juros</strong>),
+                com hospedagem inclusa e sem mensalidade obrigatória.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
                 Sem mensalidade obrigatória.

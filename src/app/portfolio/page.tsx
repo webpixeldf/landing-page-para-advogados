@@ -51,7 +51,7 @@ export default function PortfolioPage() {
           <span className="eyebrow-light">Portfólio</span>
           <h1 className="display-lg mt-6 max-w-4xl text-balance text-white">
             Portfólio de
-            <span className="italic font-light text-accent"> landing page para advogados </span>
+            <span className="italic font-light text-accent"> páginas jurídicas de alta conversão </span>
             entregues pela nossa equipe.
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-white/70">

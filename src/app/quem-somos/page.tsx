@@ -5,14 +5,14 @@ import CtaBanner from '@/components/CtaBanner';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Quem Somos — Páginas Jurídicas',
+  title: 'Quem Somos — Especialistas em Presença Digital Jurídica',
   description:
-    'Conheça nossa equipe: especialistas na criação de site jurídico com mais de 20 anos de experiência e 500+ projetos entregues para advogados em todo o Brasil.',
+    'Conheça Marcelo França e nossa equipe: especialistas em páginas de conversão para escritórios de advocacia com mais de 15 anos de experiência e 500+ projetos entregues.',
   alternates: { canonical: '/quem-somos/' },
   openGraph: {
-    title: 'Quem Somos — Páginas Jurídicas',
+    title: 'Quem Somos — Especialistas em Presença Digital Jurídica',
     description:
-      'Mais de 20 anos criando soluções digitais para advogados, com foco em conversão, SEO e ética.',
+      'Mais de 15 anos criando soluções digitais para advogados, com foco em conversão, SEO e ética.',
     url: '/quem-somos/',
     type: 'website',
     locale: 'pt_BR',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: '/images/quem-somos.jpg',
         width: 1200,
         height: 630,
-        alt: 'Equipe especializada em Landing Page para Advogados',
+        alt: 'Marcelo França — Especialista em páginas de conversão para escritórios de advocacia',
         type: 'image/jpeg'
       }
     ]
@@ -42,9 +42,9 @@ export default function QuemSomosPage() {
   const aboutSchema = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    name: 'Quem Somos — Landing Page para Advogados',
+    name: 'Quem Somos — Especialistas em Páginas Jurídicas',
     description:
-      'Especialistas em criação de páginas jurídicas com foco em performance, SEO e ética profissional.',
+      'Especialistas em criação de páginas de conversão para escritórios de advocacia, com foco em performance, SEO e ética profissional. Liderado por Marcelo França.',
     url: siteConfig.url + '/quem-somos/'
   };
 
@@ -61,13 +61,14 @@ export default function QuemSomosPage() {
           <span className="eyebrow-light">Sobre nós</span>
           <h1 className="display-lg mt-6 max-w-4xl text-balance text-white">
             Especialistas em
-            <span className="italic font-light text-accent"> landing page para advogados </span>
-            com resultados comprovados.
+            <span className="italic font-light text-accent"> páginas de conversão</span> para
+            escritórios de advocacia.
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-white/70">
-            Há mais de duas décadas combinamos design, performance e estratégia para transformar
-            escritórios de advocacia em referências digitais — e nos especializamos em criar a
-            landing page para advogados ideal para cada perfil de banca.
+            Há mais de 15 anos combinamos design, performance e estratégia para transformar
+            escritórios de advocacia em referências digitais. Sob a liderança de Marcelo França,
+            nossa equipe é especializada em criar páginas de captação que respeitam o Código de
+            Ética da OAB e entregam contatos qualificados de forma consistente.
           </p>
         </div>
       </section>
@@ -96,10 +97,10 @@ export default function QuemSomosPage() {
             </h2>
             <div className="mt-6 space-y-5 text-base font-light leading-relaxed text-ink-500">
               <p>
-                Nascemos da união entre tecnologia, design e um profundo conhecimento do mercado
-                jurídico. Compreendemos os desafios e as oportunidades que advogados enfrentam no
-                ambiente digital — e traduzimos a complexidade do direito em uma comunicação clara,
-                ética e persuasiva.
+                Nascemos da visão de Marcelo França, que uniu sua experiência em tecnologia e SEO
+                com um profundo conhecimento do mercado jurídico. Compreendemos os desafios que
+                advogados enfrentam no ambiente digital — e traduzimos a complexidade do direito
+                em uma comunicação clara, ética e persuasiva.
               </p>
               <p>
                 Entregamos soluções digitais que, além de destacar a marca da banca, geram
@@ -111,7 +112,7 @@ export default function QuemSomosPage() {
                 acessibilidade e SEO.
               </p>
               <p>
-                Construímos páginas que são verdadeiras máquinas de aquisição de clientes,
+                Construímos páginas que são verdadeiras ferramentas de aquisição de clientes,
                 priorizando a conversão qualificada — não o volume vazio.
               </p>
             </div>

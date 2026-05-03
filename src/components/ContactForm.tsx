@@ -16,7 +16,7 @@ export default function ContactForm() {
     e.preventDefault();
 
     const lines = [
-      `Olá! Gostaria de solicitar um orçamento de landing page para advogados.`,
+      `Olá! Gostaria de solicitar um orçamento de página de captação para escritório de advocacia.`,
       ``,
       `*Nome:* ${name}`,
       `*E-mail:* ${email}`,

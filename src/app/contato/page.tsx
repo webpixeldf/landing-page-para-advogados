@@ -5,12 +5,12 @@ import { siteConfig } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Contato — Fale Conosco',
   description:
-    'Fale com nossa equipe especialista em landing page para advogados. WhatsApp, e-mail ou formulário — resposta em até 1 dia útil.',
+    'Fale com nossa equipe especialista em páginas de conversão para escritórios de advocacia. WhatsApp, e-mail ou formulário — resposta em até 1 dia útil.',
   alternates: { canonical: '/contato/' },
   openGraph: {
     title: 'Contato — Fale Conosco',
     description:
-      'Fale com nossa equipe especialista em landing page para advogados. Resposta rápida pelos canais oficiais.',
+      'Fale com nossa equipe especialista em páginas jurídicas de alta performance. Resposta rápida pelos canais oficiais.',
     url: '/contato/',
     type: 'website',
     locale: 'pt_BR',
@@ -62,7 +62,7 @@ export default function ContatoPage() {
           <span className="eyebrow-light">Contato</span>
           <h1 className="display-lg mt-6 max-w-4xl text-balance text-white">
             Fale com quem cria
-            <span className="italic font-light text-accent"> landing page para advogados </span>
+            <span className="italic font-light text-accent"> páginas de conversão para advocacia </span>
             há mais de 20 anos.
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-white/70">

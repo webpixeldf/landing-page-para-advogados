@@ -18,13 +18,13 @@ const lexend = Lexend({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Landing Page para Advogados de Alta Conversão | Conforme OAB',
-    template: '%s | Landing Page para Advogados'
+    default: 'Páginas de Alta Conversão para Escritórios de Advocacia | Conforme OAB',
+    template: '%s | Páginas Jurídicas de Alta Conversão'
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
-  authors: [{ name: 'Landing Page para Advogados' }],
-  creator: 'Landing Page para Advogados',
+  authors: [{ name: siteConfig.author.name }],
+  creator: siteConfig.author.name,
   publisher: 'Landing Page para Advogados',
   applicationName: siteConfig.name,
   category: 'Marketing Digital Jurídico',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: 'Landing Page para Advogados | 20 Anos de Experiência',
+    title: 'Páginas Jurídicas de Alta Conversão | 20 Anos de Experiência',
     description: siteConfig.description,
     images: [
       {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Landing Page para Advogados | 20 Anos de Experiência',
+    title: 'Páginas Jurídicas de Alta Conversão | 20 Anos de Experiência',
     description: siteConfig.description,
     images: [siteConfig.ogImage]
   },
@@ -85,10 +85,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name: 'Landing Page para Advogados',
     alternateName: 'Criação de Landing Page para Advogados',
     description:
-      'Criação de landing page para advogados com mais de 20 anos de experiência. Design responsivo, SEO técnico e conformidade total com o Código de Ética da OAB.',
-    slogan: 'Landing page para advogados de alta conversão, em conformidade com a OAB.',
+      'Criação de páginas de conversão para escritórios de advocacia com mais de 20 anos de experiência. Design responsivo, SEO técnico e conformidade total com o Código de Ética da OAB.',
+    slogan: 'Páginas jurídicas de alta conversão, em conformidade com a OAB.',
     keywords:
-      'landing page para advogados, site para advogados, criação de site jurídico, marketing digital jurídico, captação de clientes advocacia',
+      'página de captação para advogados, site para advogados, criação de site jurídico, marketing digital jurídico, captação de clientes advocacia',
     image: siteConfig.ogImage,
     url: siteConfig.url + '/',
     telephone: siteConfig.contact.phone,

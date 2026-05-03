@@ -58,7 +58,7 @@ export default function Methodology() {
           <span className="eyebrow-light">Metodologia exclusiva</span>
           <h2 className="display-md mt-5 text-balance text-white">
             Nossa metodologia para criar
-            <span className="italic font-light text-accent"> landing page para advogados</span>
+            <span className="italic font-light text-accent"> páginas jurídicas de alta conversão</span>
           </h2>
           <p className="mx-auto mt-6 max-w-prose text-pretty text-lg font-light leading-relaxed text-white/65">
             Cada projeto segue um processo validado em mais de 500 entregas.

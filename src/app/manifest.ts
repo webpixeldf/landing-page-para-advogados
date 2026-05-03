@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Landing Page para Advogados',
     short_name: 'LP Advogados',
     description:
-      'Criação de landing page para advogados com mais de 20 anos de experiência. SEO, performance e conformidade OAB.',
+      'Criação de páginas de conversão para escritórios de advocacia com mais de 20 anos de experiência. SEO, performance e conformidade OAB.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

@@ -46,7 +46,7 @@ export default function BlogIndexPage() {
       url: `${siteConfig.url}/blog/${p.slug}/`,
       datePublished: p.date,
       dateModified: p.updated ?? p.date,
-      author: { '@type': 'Organization', name: 'Landing Page para Advogados' },
+      author: { '@type': 'Person', name: siteConfig.author.name, url: siteConfig.author.linkedin },
       image: `${siteConfig.url}${p.cover}`
     }))
   };
@@ -75,8 +75,8 @@ export default function BlogIndexPage() {
           <span className="eyebrow-light">Blog</span>
           <h1 className="display-lg mt-6 max-w-4xl text-balance text-white">
             Blog sobre
-            <span className="italic font-light text-accent"> landing page para advogados</span>,
-            SEO e marketing jurídico.
+            <span className="italic font-light text-accent"> marketing jurídico</span>,
+            SEO e páginas de conversão para escritórios.
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-white/70">
             Conteúdo prático para escritórios que querem crescer no digital com ética, estratégia

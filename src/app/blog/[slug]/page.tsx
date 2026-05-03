@@ -73,7 +73,7 @@ export default async function BlogPostPage({
     image: `${siteConfig.url}${post.cover}`,
     datePublished: post.date,
     dateModified: post.updated ?? post.date,
-    author: { '@type': 'Organization', name: 'Landing Page para Advogados', url: siteConfig.url + '/' },
+    author: { '@type': 'Person', name: siteConfig.author.name, url: siteConfig.author.linkedin },
     publisher: {
       '@type': 'Organization',
       name: 'Landing Page para Advogados',
@@ -133,9 +133,9 @@ export default async function BlogPostPage({
             <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-xs font-light text-white/55">
               <span className="inline-flex items-center gap-2">
                 <span className="grid h-7 w-7 place-items-center rounded-full bg-gradient-to-br from-accent to-gold-600 font-display text-[10px] font-bold text-primary-dark">
-                  WP
+                  MF
                 </span>
-                <span className="text-white/80">Landing Page para Advogados</span>
+                <span className="text-white/80">Marcelo França</span>
               </span>
               <span className="h-1 w-1 rounded-full bg-white/30" />
               <span>{formatDate(post.date)}</span>

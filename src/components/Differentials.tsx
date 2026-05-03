@@ -40,11 +40,11 @@ export default function Differentials() {
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <span className="eyebrow">Por que escolher a gente</span>
           <h2 className="display-md mt-5 text-balance">
-            Landing page jurídica feita por quem entende de
+            Página jurídica feita por quem entende de
             <span className="italic font-light text-primary-light"> conversão e ética profissional</span>
           </h2>
           <p className="mx-auto mt-6 max-w-prose text-pretty text-lg font-light leading-relaxed text-ink-500">
-            Uma landing page para advogados não pode ser tratada como uma página comum.
+            Uma página de captação para advocacia não pode ser tratada como uma página comum.
           </p>
           <p className="mx-auto mt-3 max-w-prose text-pretty text-lg font-light leading-relaxed text-ink-500">
             Ela precisa vender confiança sem exageros, orientar sem prometer resultado e conduzir

@@ -12,14 +12,14 @@ import CtaBanner from '@/components/CtaBanner';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Landing Page para Advogados de Alta Conversão | Conforme OAB',
+  title: 'Páginas de Alta Conversão para Escritórios de Advocacia | Conforme OAB',
   description:
-    'Criação de landing page para advogados com alta conversão, SEO técnico e total conformidade com a OAB. 20 anos e 500+ projetos entregues.',
+    'Criação de páginas de captação para advogados com SEO técnico, copywriting jurídico ético e total conformidade com o Código de Ética da OAB. 20 anos e mais de 500 projetos entregues.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Landing Page para Advogados de Alta Conversão | Conforme OAB',
+    title: 'Páginas de Alta Conversão para Escritórios de Advocacia | Conforme OAB',
     description:
-      'Páginas de captura para escritórios jurídicos com design moderno, performance, SEO e conformidade total com a OAB.',
+      'Páginas de captação para escritórios jurídicos com design que transmite credibilidade, performance, SEO e conformidade total com a OAB.',
     url: '/',
     type: 'website',
     locale: 'pt_BR',
@@ -115,7 +115,7 @@ export default function HomePage() {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: 'Landing Page para Advogados',
-    serviceType: 'Criação de Landing Page para Advogados',
+    serviceType: 'Criação de Páginas de Conversão para Escritórios de Advocacia',
     category: 'Marketing Digital Jurídico',
     provider: {
       '@type': 'Organization',
@@ -128,7 +128,7 @@ export default function HomePage() {
       audienceType: 'Advogados e escritórios de advocacia'
     },
     description:
-      'Desenvolvimento de landing page para advogados sob medida — design responsivo, SEO técnico, copywriting jurídico ético e conformidade total com o Código de Ética da OAB.',
+      'Desenvolvimento de páginas de conversão para escritórios de advocacia — design responsivo, SEO técnico, copywriting jurídico ético e total conformidade com a OAB.',
     brand: { '@type': 'Brand', name: 'Landing Page para Advogados' },
     offers: {
       '@type': 'Offer',
@@ -149,7 +149,7 @@ export default function HomePage() {
     url: siteConfig.url + '/',
     name: 'Landing Page para Advogados',
     description:
-      'Criação de landing page para advogados com mais de 20 anos de experiência. Design responsivo, SEO técnico e conformidade total com a OAB.',
+      'Criação de páginas de conversão para escritórios de advocacia com mais de 20 anos de experiência. Design responsivo, SEO técnico e conformidade total com a OAB.',
     inLanguage: 'pt-BR',
     isPartOf: { '@id': siteConfig.url + '/' },
     primaryImageOfPage: { '@type': 'ImageObject', url: siteConfig.ogImage },
@@ -176,31 +176,31 @@ export default function HomePage() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     '@id': siteConfig.url + '/#author',
-    name: 'Landing Page para Advogados',
-    alternateName: 'Equipe Landing Page para Advogados',
-    url: siteConfig.url + '/quem-somos/',
-    image: siteConfig.url + '/images/landing-page-para-advogados-logo.webp',
-    jobTitle: 'Especialista em criação de landing page para advogados',
-    description:
-      'Time com mais de 20 anos de experiência em desenvolvimento web e marketing digital jurídico, especializado em landing page para advogados em conformidade com a OAB.',
+    name: siteConfig.author.name,
+    alternateName: 'Marcelo França — Especialista em SEO e Desenvolvimento Web Jurídico',
+    url: siteConfig.author.linkedin,
+    image: siteConfig.url + siteConfig.author.image,
+    jobTitle: siteConfig.author.jobTitle,
+    description: siteConfig.author.bio,
     knowsAbout: [
-      'Landing page para advogados',
       'SEO para escritórios de advocacia',
+      'Criação de páginas de conversão jurídicas',
       'Marketing jurídico ético',
       'Provimento 205/2021 da OAB',
       'Core Web Vitals',
-      'Copywriting jurídico'
+      'Copywriting jurídico',
+      'Desenvolvimento web para advocacia'
     ],
     worksFor: { '@id': siteConfig.url + '/#organization' },
-    sameAs: [siteConfig.social.linkedin, siteConfig.social.instagram]
+    sameAs: [siteConfig.author.linkedin]
   };
 
   const howToSchema = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'Como criar uma landing page para advogados de alta conversão',
+    name: 'Como criar uma página de captação jurídica de alta performance',
     description:
-      'Metodologia em 5 etapas para construir uma landing page para advogados com design profissional, SEO técnico e conformidade total com a OAB.',
+      'Metodologia em 5 etapas para construir uma página profissional para escritórios de advocacia, com design otimizado, SEO técnico e total conformidade com a OAB.',
     image: siteConfig.ogImage,
     totalTime: 'P7D',
     estimatedCost: { '@type': 'MonetaryAmount', currency: 'BRL', value: '699.00' },
@@ -298,7 +298,7 @@ export default function HomePage() {
         subtitle={[
           'Sua banca não precisa depender apenas de indicação.',
           'Com uma página bem estruturada, o tráfego certo encontra uma mensagem clara, profissional e preparada para gerar contato.',
-          'Solicite um diagnóstico gratuito e veja como uma landing page para advogados pode fortalecer sua captação digital com mais previsibilidade.'
+          'Solicite um diagnóstico gratuito e veja como uma página de captação jurídica pode fortalecer seus resultados digitais com mais previsibilidade.'
         ]}
         cta="Solicitar diagnóstico gratuito"
       />
