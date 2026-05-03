@@ -13,9 +13,10 @@ export default function Guide() {
               uma página de captação jurídica.
             </h2>
             <p className="mt-6 text-base font-light leading-relaxed text-ink-500">
-              Antes de investir, vale entender o que diferencia uma página focada em conversão
-              de um site institucional comum — e por que escritórios que dominam o ambiente digital
-              estão adotando estruturas pensadas exclusivamente para transformar visitas em contatos.
+              Antes de investir em uma landing page para advogados, vale entender o que diferencia
+              uma página focada em conversão de um site institucional comum — e por que escritórios
+              que dominam o ambiente digital estão adotando estruturas pensadas exclusivamente para
+              transformar visitas em contatos.
             </p>
             <div className="mt-8 grid grid-cols-3 gap-3 max-w-md">
               {[

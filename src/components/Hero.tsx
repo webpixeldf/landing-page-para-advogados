@@ -68,10 +68,11 @@ export default function Hero() {
             </h1>
 
             <p className="mt-7 max-w-xl text-lg font-light leading-relaxed text-white/75">
-              Desenvolvemos <strong className="font-semibold text-white">páginas de alta conversão para escritórios de advocacia</strong>,
-              unindo estratégia de posicionamento, design que transmite credibilidade, SEO técnico e
-              comunicação alinhada ao Código de Ética da OAB — com estrutura enxuta, carregamento rápido
-              e integração direta com WhatsApp.
+              Somos especialistas em{' '}
+              <strong className="font-semibold text-white">landing page para advogados</strong> de
+              alta conversão — unindo estratégia de posicionamento, design que transmite credibilidade,
+              SEO técnico e comunicação alinhada ao Código de Ética da OAB, com estrutura enxuta,
+              carregamento rápido e integração direta com WhatsApp.
             </p>
             <p className="mt-4 text-sm font-light text-white/50">
               <Link href="/blog/pagina-de-captura-para-advogados-guia-completo/" className="border-b border-accent/30 text-accent transition-colors hover:border-accent">

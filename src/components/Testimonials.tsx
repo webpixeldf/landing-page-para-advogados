@@ -1,43 +1,43 @@
 const testimonials = [
   {
     text:
-      'A minha página de captura superou todas as expectativas. O número de contatos qualificados aumentou de forma significativa.',
-    author: 'Dra. Amanda C.',
+      'A minha página de captação superou todas as expectativas. O número de contatos qualificados aumentou de forma significativa.',
+    author: 'Dra. Amanda Castro',
     role: 'Advogada Trabalhista',
     city: 'São Paulo, SP'
   },
   {
     text:
       'Profissionalismo do início ao fim. Entenderam minhas necessidades e entregaram uma página que transmite confiança.',
-    author: 'Dr. Ricardo O.',
+    author: 'Dr. Ricardo Oliveira',
     role: 'Advogado Criminalista',
     city: 'Belo Horizonte, MG'
   },
   {
     text:
       'Desde que lançamos o novo site, nossa agenda está sempre cheia. Investimento se pagou rápido. Recomendo demais.',
-    author: 'Torres & Advogados',
+    author: 'Torres & Advogados Associados',
     role: 'Direito Empresarial',
     city: 'Curitiba, PR'
   },
   {
     text:
       'Finalmente uma equipe que entende as exigências da OAB. Conformidade impecável e resultado acima do esperado.',
-    author: 'Dr. Carlos M.',
+    author: 'Dr. Carlos Mendonça',
     role: 'Advogado Previdenciário',
     city: 'Porto Alegre, RS'
   },
   {
     text:
       'Excelente custo-benefício. A página ficou rápida, bonita e já está trazendo novos clientes.',
-    author: 'Dra. Juliana S.',
+    author: 'Dra. Juliana Souza',
     role: 'Advogada de Família',
     city: 'Brasília, DF'
   },
   {
     text:
       'Investimento que vale a pena. Minha presença digital melhorou em 100%, agora competimos com escritórios maiores.',
-    author: 'Dr. Fernando L.',
+    author: 'Dr. Fernando Lopes',
     role: 'Advogado Cível',
     city: 'Rio de Janeiro, RJ'
   }
