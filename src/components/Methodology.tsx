@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 type Step = { n: string; title: string; text: string[]; keyword: string };
 
 const steps: Step[] = [
@@ -41,7 +43,13 @@ const steps: Step[] = [
     n: '05',
     title: 'SEO técnico e mensuração',
     text: [
-      'Aplicamos otimizações importantes para indexação e análise de desempenho: meta title e description, heading tags organizadas, schema markup, URLs amigáveis, sitemap, breadcrumbs, Search Console e ferramentas de análise.'
+      'Aplicamos otimizações importantes para indexação e análise de desempenho: meta title e description, heading tags organizadas, schema markup, URLs amigáveis, sitemap, breadcrumbs, Search Console e ferramentas de análise.',
+      <span key="seo-link" className="inline-flex items-center gap-1 text-accent">
+        <Link href="/blog/seo-para-advogados-como-aparecer-no-google/" className="border-b border-accent/30 transition-colors hover:border-accent">
+          Guia completo de SEO jurídico
+        </Link>
+        {' '}— técnicas atualizadas para 2026
+      </span>
     ],
     keyword: 'Otimização'
   }

@@ -73,6 +73,12 @@ export default function Hero() {
               comunicação alinhada ao Código de Ética da OAB — com estrutura enxuta, carregamento rápido
               e integração direta com WhatsApp.
             </p>
+            <p className="mt-4 text-sm font-light text-white/50">
+              <Link href="/blog/pagina-de-captura-para-advogados-guia-completo/" className="border-b border-accent/30 text-accent transition-colors hover:border-accent">
+                Leia o guia completo sobre páginas de captação jurídica
+              </Link>
+              {' '}— entenda a estratégia por trás de cada elemento da página antes de investir.
+            </p>
 
             <div className="mt-7 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-white">
               <span className="font-display text-4xl font-extrabold tracking-tight text-accent md:text-5xl">
@@ -178,39 +184,6 @@ export default function Hero() {
             <span className="font-display tracking-tight">Santos Miranda</span>
             <span className="font-display tracking-tight">Seguins Adv.</span>
           </div>
-        </div>
-
-        {/* Author credibility */}
-        <div className="mt-12 flex flex-col items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm sm:flex-row sm:items-center">
-          <div className="flex items-center gap-3">
-            <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-gradient-to-br from-accent to-gold-600 font-display text-sm font-bold text-primary-dark shadow-glow">
-              MF
-            </div>
-            <div className="sm:min-w-0">
-              <p className="font-display text-sm font-semibold text-white">
-                {siteConfig.author.name}
-              </p>
-              <p className="text-xs font-light text-white/55">
-                {siteConfig.author.jobTitle}
-              </p>
-            </div>
-          </div>
-          <div className="hidden h-8 w-px bg-white/10 sm:block" />
-          <p className="text-center text-xs font-light leading-relaxed text-white/55 sm:text-left">
-            {siteConfig.author.bio}
-          </p>
-          <a
-            href={siteConfig.author.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-[11px] font-medium text-white/85 transition-all hover:border-accent hover:bg-accent/10 hover:text-accent"
-            aria-label={`LinkedIn de ${siteConfig.author.name}`}
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-            </svg>
-            LinkedIn
-          </a>
         </div>
       </div>
     </section>

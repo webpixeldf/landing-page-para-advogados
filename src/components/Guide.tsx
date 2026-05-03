@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Guide() {
   return (
     <section id="guia" className="relative bg-cream-50 py-28">
@@ -55,6 +57,11 @@ export default function Guide() {
                 Na prática, funciona como o equivalente digital de uma primeira consulta bem
                 conduzida: o potencial cliente entende rapidamente se a banca atua na área que
                 ele precisa, como pode ser ajudado e qual o próximo passo para iniciar o contato.
+              </p>
+              <p className="mt-4 text-sm font-light text-ink-400">
+                <Link href="/blog/pagina-de-captura-para-advogados-guia-completo/" className="border-b border-accent/30 font-medium text-primary transition-colors hover:text-accent">
+                  Guia completo: como estruturar uma página de captação jurídica do zero
+                </Link>
               </p>
             </article>
 

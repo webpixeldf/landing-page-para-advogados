@@ -1,9 +1,12 @@
+import Link from 'next/link';
+
 type Benefit = {
   title: string;
   text: string;
   icon: string;
   span?: string;
   highlight?: boolean;
+  href?: string;
 };
 
 const benefits: Benefit[] = [
@@ -17,7 +20,8 @@ const benefits: Benefit[] = [
   {
     title: 'Performance Core Web Vitals',
     text: 'Desenvolvimento leve, rápido e pensado para boa experiência de navegação.',
-    icon: 'M13 10V3L4 14h7v7l9-11h-7z'
+    icon: 'M13 10V3L4 14h7v7l9-11h-7z',
+    href: '/blog/velocidade-de-carregamento-pagina-juridica/'
   },
   {
     title: 'Sem mensalidade obrigatória',
@@ -28,7 +32,8 @@ const benefits: Benefit[] = [
     title: 'SEO on-page completo',
     text: 'Estrutura otimizada com meta tags, headings, schema markup, breadcrumbs e URL amigável.',
     icon: 'M3 7h18M3 12h18M3 17h12',
-    span: 'lg:col-span-2'
+    span: 'lg:col-span-2',
+    href: '/blog/seo-para-advogados-como-aparecer-no-google/'
   },
   {
     title: 'Página responsiva',
@@ -120,6 +125,18 @@ export default function Benefits() {
                       </svg>
                     </span>
                   </div>
+                )}
+
+                {b.href && (
+                  <Link
+                    href={b.href}
+                    className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-primary transition-colors hover:text-accent"
+                  >
+                    Saiba mais
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="h-3 w-3">
+                      <path d="M5 12h14M13 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
                 )}
               </div>
             </article>

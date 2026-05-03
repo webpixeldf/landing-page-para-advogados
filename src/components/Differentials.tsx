@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const items = [
   {
     icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z',
@@ -7,7 +9,8 @@ const items = [
   {
     icon: 'M3 6l9-3 9 3-9 3-9-3zm9 6l9-3v6l-9 3-9-3v-6l9 3z',
     title: 'Comunicação alinhada à OAB',
-    text: 'Textos com tom sóbrio, informativo e compatível com o Código de Ética da OAB e o Provimento 205/2021.'
+    text: 'Textos com tom sóbrio, informativo e compatível com o Código de Ética da OAB e o Provimento 205/2021.',
+    href: '/blog/oab-publicidade-online-o-que-pode-e-o-que-nao-pode/'
   },
   {
     icon: 'M16 18l6-6-6-6M8 6l-6 6 6 6',
@@ -83,6 +86,18 @@ export default function Differentials() {
                 </div>
                 <h3 className="font-display text-lg font-semibold tracking-tight text-ink-900">{it.title}</h3>
                 <p className="mt-2 text-sm font-light leading-relaxed text-ink-500">{it.text}</p>
+
+                {'href' in it && (
+                  <Link
+                    href={(it as typeof it & { href: string }).href}
+                    className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-primary transition-colors hover:text-accent"
+                  >
+                    Saiba mais
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="h-3 w-3">
+                      <path d="M5 12h14M13 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
+                )}
 
                 <span className="mt-6 inline-block text-xs font-mono text-ink-500">
                   /{(i + 1).toString().padStart(2, '0')}
