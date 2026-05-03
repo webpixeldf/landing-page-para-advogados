@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-type Step = { n: string; title: string; text: string[]; keyword: string };
+type Step = { n: string; title: string; text: string[]; keyword: string; linkHref?: string; linkLabel?: string };
 
 const steps: Step[] = [
   {
@@ -43,14 +43,10 @@ const steps: Step[] = [
     n: '05',
     title: 'SEO técnico e mensuração',
     text: [
-      'Aplicamos otimizações importantes para indexação e análise de desempenho: meta title e description, heading tags organizadas, schema markup, URLs amigáveis, sitemap, breadcrumbs, Search Console e ferramentas de análise.',
-      <span key="seo-link" className="inline-flex items-center gap-1 text-accent">
-        <Link href="/blog/seo-para-advogados-como-aparecer-no-google/" className="border-b border-accent/30 transition-colors hover:border-accent">
-          Guia completo de SEO jurídico
-        </Link>
-        {' '}— técnicas atualizadas para 2026
-      </span>
+      'Aplicamos otimizações importantes para indexação e análise de desempenho: meta title e description, heading tags organizadas, schema markup, URLs amigáveis, sitemap, breadcrumbs, Search Console e ferramentas de análise.'
     ],
+    linkHref: '/blog/seo-para-advogados-como-aparecer-no-google/',
+    linkLabel: 'Guia completo de SEO jurídico — técnicas atualizadas para 2026',
     keyword: 'Otimização'
   }
 ];
@@ -101,6 +97,13 @@ export default function Methodology() {
                   {s.text.map((p, idx) => (
                     <p key={idx}>{p}</p>
                   ))}
+                  {s.linkHref && s.linkLabel && (
+                    <p className="text-accent">
+                      <Link href={s.linkHref} className="border-b border-accent/30 transition-colors hover:border-accent">
+                        {s.linkLabel}
+                      </Link>
+                    </p>
+                  )}
                 </div>
               </div>
 
