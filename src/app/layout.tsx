@@ -18,8 +18,8 @@ const lexend = Lexend({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Páginas de Alta Conversão para Escritórios de Advocacia | Conforme OAB',
-    template: '%s | Páginas Jurídicas de Alta Conversão'
+    default: 'Landing Page para Advogados — Páginas Jurídicas de Alta Conversão | Conforme OAB',
+    template: '%s | Landing Page para Advogados'
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: 'Páginas Jurídicas de Alta Conversão | 20 Anos de Experiência',
+    title: 'Landing Page para Advogados — Páginas Jurídicas de Alta Conversão | Conforme OAB',
     description: siteConfig.description,
     images: [
       {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Páginas Jurídicas de Alta Conversão | 20 Anos de Experiência',
+    title: 'Landing Page para Advogados — Páginas Jurídicas de Alta Conversão | Conforme OAB',
     description: siteConfig.description,
     images: [siteConfig.ogImage]
   },

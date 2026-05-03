@@ -12,12 +12,12 @@ import CtaBanner from '@/components/CtaBanner';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Páginas de Alta Conversão para Escritórios de Advocacia | Conforme OAB',
+  title: 'Landing Page para Advogados — Páginas Jurídicas de Alta Conversão | Conforme OAB',
   description:
     'Criação de páginas de captação para advogados com SEO técnico, copywriting jurídico ético e total conformidade com o Código de Ética da OAB. 20 anos e mais de 500 projetos entregues.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Páginas de Alta Conversão para Escritórios de Advocacia | Conforme OAB',
+    title: 'Landing Page para Advogados — Páginas Jurídicas de Alta Conversão | Conforme OAB',
     description:
       'Páginas de captação para escritórios jurídicos com design que transmite credibilidade, performance, SEO e conformidade total com a OAB.',
     url: '/',
