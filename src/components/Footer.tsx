@@ -10,6 +10,39 @@ export default function Footer() {
       <div className="absolute inset-0 -z-10 bg-noise opacity-[0.05] mix-blend-overlay" />
 
       <div className="container-pp py-20">
+        {/* Author card */}
+        <div className="mb-16 flex flex-col gap-5 rounded-2xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm sm:flex-row sm:items-start">
+          <div className="flex items-start gap-4 sm:w-64 sm:shrink-0">
+            <div className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-gradient-to-br from-accent to-gold-600 font-display text-lg font-bold text-primary-dark">
+              MF
+            </div>
+            <div>
+              <p className="font-display text-base font-semibold text-white">
+                {siteConfig.author.name}
+              </p>
+              <p className="mt-0.5 text-xs font-light leading-snug text-white/55">
+                {siteConfig.author.jobTitle}
+              </p>
+            </div>
+          </div>
+          <div className="hidden h-16 w-px shrink-0 bg-white/10 sm:block" />
+          <p className="text-sm font-light leading-relaxed text-white/55">
+            {siteConfig.author.bio}
+          </p>
+          <a
+            href={siteConfig.author.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-[11px] font-medium text-white/85 transition-all hover:border-accent hover:bg-accent/10 hover:text-accent sm:self-center"
+            aria-label={`LinkedIn de ${siteConfig.author.name}`}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+
         {/* Top: big quote */}
         <div className="mb-16 max-w-4xl">
           <span className="eyebrow-light">Landing Page para escritório de advocacia</span>
