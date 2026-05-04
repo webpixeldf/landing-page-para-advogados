@@ -232,6 +232,12 @@ export default function Guide() {
                 O prazo de retorno depende da área de atuação, do tráfego, da oferta, da região
                 e da maturidade comercial da banca.
               </p>
+              <p className="mt-4 text-sm font-light text-ink-400">
+                <Link href="/blog/pagina-de-captura-para-advogados-guia-completo/" className="border-b border-accent/30 font-medium text-primary transition-colors hover:text-accent">
+                  Leia o guia completo sobre páginas de captação jurídica
+                </Link>
+                {' '}— entenda a estratégia por trás de cada elemento da página antes de investir.
+              </p>
             </article>
           </div>
         </div>

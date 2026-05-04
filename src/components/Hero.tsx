@@ -74,33 +74,6 @@ export default function Hero() {
               SEO técnico e comunicação alinhada ao Código de Ética da OAB, com estrutura enxuta,
               carregamento rápido e integração direta com WhatsApp.
             </p>
-            <p className="mt-4 text-sm font-light text-white/50">
-              <Link href="/blog/pagina-de-captura-para-advogados-guia-completo/" className="border-b border-accent/30 text-accent transition-colors hover:border-accent">
-                Leia o guia completo sobre páginas de captação jurídica
-              </Link>
-              {' '}— entenda a estratégia por trás de cada elemento da página antes de investir.
-            </p>
-
-            <div className="mt-7 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-white">
-              <span className="font-display text-4xl font-extrabold tracking-tight text-accent md:text-5xl">
-                R$ 699,00
-              </span>
-              <span className="text-sm font-light text-white/65">à vista</span>
-              <span className="text-white/35">·</span>
-              <span className="text-sm font-light text-white/65">
-                ou <span className="font-semibold text-white/85">3x de R$ 233</span> sem juros
-              </span>
-            </div>
-
-            <p className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-widest text-white/55">
-              <span>Hospedagem grátis</span>
-              <span className="text-white/25">·</span>
-              <span>SSL grátis</span>
-              <span className="text-white/25">·</span>
-              <span>Site rápido</span>
-              <span className="text-white/25">·</span>
-              <span>Seguro</span>
-            </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <a href={siteConfig.contact.whatsappBase} target="_blank" rel="noopener" className="btn-primary">
