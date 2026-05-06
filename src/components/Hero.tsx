@@ -79,7 +79,7 @@ export default function Hero() {
               <span className="text-sm font-light text-white/65">à vista</span>
               <span className="text-white/35">·</span>
               <span className="text-sm font-light text-white/65">
-                ou <span className="font-semibold text-white/85">3x de R$ 230</span> sem juros
+                ou <span className="font-semibold text-white/85">3x no cartão</span>
               </span>
             </div>
 
