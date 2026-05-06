@@ -65,10 +65,10 @@ export default function Hero() {
 
             <p className="mt-7 max-w-xl text-lg font-light leading-relaxed text-white/75">
               Somos uma empresa especialista em criação de{' '}
-              <strong className="font-semibold text-white">landing page para advogados</strong> de
+              <strong className="font-semibold text-white">landing pages para advogados</strong> de
               alta conversão, unindo estratégia de posicionamento, design que transmite credibilidade,
               SEO técnico e comunicação alinhada ao Código de Ética da OAB, com estrutura enxuta,
-              carregamento rápido e integração direta com WhatsApp.
+              carregamento rápido e integração direta com o WhatsApp.
             </p>
 
             <div className="mt-7 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-white">
