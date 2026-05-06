@@ -20,7 +20,7 @@ export const siteConfig = {
   author: {
     name: 'Marcelo França',
     jobTitle: 'Especialista em SEO e Desenvolvimento Web para Escritórios de Advocacia',
-    bio: 'Marcelo França atua há mais de 15 anos com desenvolvimento web e SEO. É especializado em presença digital para escritórios de advocacia, combinando conhecimento técnico com as exigências éticas do marketing jurídico. Já auxiliou centenas de bancas a estruturar páginas de captação que convertem sem ferir o Código de Ética da OAB.',
+    bio: 'Marcelo França atua há mais de 20 anos com desenvolvimento web e SEO. É especializado em presença digital para escritórios de advocacia, combinando conhecimento técnico com as exigências éticas do marketing jurídico. Já auxiliou centenas de bancas a estruturar páginas de captação que convertem sem ferir o Código de Ética da OAB.',
     image: '/images/marcelo-franca.jpg',
     linkedin: 'https://www.linkedin.com/company/landing-page-para-advogado/'
   },
@@ -29,7 +29,7 @@ export const siteConfig = {
     phoneDisplay: '(61) 99278-4283',
     address: 'SHIS, Quadra 06, Complexo Brasil 21 - Asa Sul, Brasília - DF',
     whatsappBase:
-      'https://wa.me/5561992784283?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20p%C3%A1gina%20de%20capta%C3%A7%C3%A3o%20para%20escrit%C3%B3rio%20de%20advocacia.'
+      'https://wa.me/5561992784283?text=Ol%C3%A1!%20Vim%20do%20site%20landingpageparaadvogados.com%20e%20gostaria%20de%20um%20or%C3%A7amento.'
   },
   social: {
     instagram: 'https://instagram.com/landingpageparaadvogados',

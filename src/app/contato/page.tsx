@@ -3,12 +3,12 @@ import ContactForm from '@/components/ContactForm';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Contato — Fale Conosco',
+  title: 'Contato , Fale Conosco',
   description:
-    'Fale com nossa equipe especialista em páginas de conversão para escritórios de advocacia. WhatsApp, e-mail ou formulário — resposta em até 1 dia útil.',
+    'Fale com nossa equipe especialista em páginas de conversão para escritórios de advocacia. WhatsApp, e-mail ou formulário , resposta em até 1 dia útil.',
   alternates: { canonical: '/contato/' },
   openGraph: {
-    title: 'Contato — Fale Conosco',
+    title: 'Contato , Fale Conosco',
     description:
       'Fale com nossa equipe especialista em páginas jurídicas de alta performance. Resposta rápida pelos canais oficiais.',
     url: '/contato/',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: '/images/landing-page-para-advogados.jpg',
         width: 1200,
         height: 630,
-        alt: 'Fale conosco — Landing Page para Advogados',
+        alt: 'Fale conosco , Landing Page para Advogados',
         type: 'image/jpeg'
       }
     ]
@@ -40,7 +40,7 @@ export default function ContatoPage() {
   const contactSchema = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    name: 'Contato — Landing Page para Advogados',
+    name: 'Contato , Landing Page para Advogados',
     url: siteConfig.url + '/contato/',
     description:
       'Canais oficiais e formulário de contato para solicitar orçamento de landing page profissional jurídica.'
@@ -66,7 +66,7 @@ export default function ContatoPage() {
             há mais de 20 anos.
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-white/70">
-            Respondemos em até 1 dia útil. Prefere conversar direto? Use o WhatsApp — ou preencha
+            Respondemos em até 1 dia útil. Prefere conversar direto? Use o WhatsApp , ou preencha
             o formulário abaixo e abrimos a conversa com seus dados já inseridos.
           </p>
         </div>
@@ -82,7 +82,7 @@ export default function ContatoPage() {
               Conte seu caso e abrimos o WhatsApp por você.
             </h2>
             <p className="mt-3 text-sm font-light leading-relaxed text-ink-500">
-              Ao clicar em enviar, o WhatsApp abrirá com sua mensagem já redigida — você só confirma.
+              Ao clicar em enviar, o WhatsApp abrirá com sua mensagem já redigida , você só confirma.
             </p>
             <div className="mt-8">
               <ContactForm />
@@ -159,7 +159,7 @@ export default function ContatoPage() {
       <section className="bg-cream-50 pb-12">
         <div className="container-pp max-w-3xl">
           <p className="text-center text-xs font-light text-ink-500">
-            Todos os Direitos Reservados © {new Date().getFullYear()} Landing Page Para Advogados — CNPJ: 34.644.883/0001-94
+            Todos os Direitos Reservados © {new Date().getFullYear()} Landing Page Para Advogados , CNPJ: 34.644.883/0001-94
           </p>
         </div>
       </section>

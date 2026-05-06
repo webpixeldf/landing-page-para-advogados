@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: '/images/politica-de-privacidade.jpg',
         width: 1200,
         height: 630,
-        alt: 'Política de Privacidade — Landing Page para Advogados',
+        alt: 'Política de Privacidade , Landing Page para Advogados',
         type: 'image/jpeg'
       }
     ]
@@ -43,7 +43,7 @@ export default function PoliticaPrivacidadePage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-white/70">
             Como coletamos, tratamos e protegemos seus dados nos formulários, cookies e contatos
-            deste site — em conformidade com a LGPD.
+            deste site , em conformidade com a LGPD.
           </p>
           <p className="mt-6 text-xs font-light uppercase tracking-widest text-white/55">
             Última atualização: 20 de abril de 2026
@@ -58,7 +58,7 @@ export default function PoliticaPrivacidadePage() {
             Esta Política descreve como o site Landing Page para Advogados (&ldquo;nós&rdquo;)
             coleta, utiliza, armazena e protege os dados pessoais dos visitantes
             e clientes deste site, em conformidade com a Lei Geral de Proteção de Dados Pessoais
-            (Lei nº 13.709/2018 — LGPD).
+            (Lei nº 13.709/2018 , LGPD).
           </p>
 
           <h2>1. Dados que coletamos</h2>
@@ -86,7 +86,7 @@ export default function PoliticaPrivacidadePage() {
           <h2>4. Compartilhamento</h2>
           <p>
             Não vendemos dados. Eventualmente compartilhamos com fornecedores de hospedagem,
-            analytics e ferramentas de e-mail marketing — sempre vinculados a contrato e à LGPD.
+            analytics e ferramentas de e-mail marketing , sempre vinculados a contrato e à LGPD.
           </p>
 
           <h2>5. Cookies</h2>

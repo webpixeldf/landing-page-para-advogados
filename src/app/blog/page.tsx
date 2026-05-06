@@ -5,12 +5,12 @@ import { getAllPosts } from '@/lib/posts';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Blog — Marketing Jurídico e SEO',
+  title: 'Blog , Marketing Jurídico e SEO',
   description:
     'Marketing jurídico, SEO, copywriting e ética da OAB: leitura para advogados que querem captar mais e melhores clientes.',
   alternates: { canonical: '/blog/' },
   openGraph: {
-    title: 'Blog — Marketing Jurídico e SEO',
+    title: 'Blog , Marketing Jurídico e SEO',
     description:
       'Conteúdo prático para escritórios que querem crescer no digital com ética e estratégia.',
     url: '/blog/',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: '/images/blog-landing-page.jpg',
         width: 1200,
         height: 630,
-        alt: 'Blog — Marketing jurídico e SEO',
+        alt: 'Blog , Marketing jurídico e SEO',
         type: 'image/jpeg'
       }
     ]
@@ -35,7 +35,7 @@ export default function BlogIndexPage() {
   const blogSchema = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
-    name: 'Blog — Landing Page para Advogados',
+    name: 'Blog , Landing Page para Advogados',
 
     url: siteConfig.url + '/blog/',
     description:
@@ -80,7 +80,7 @@ export default function BlogIndexPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-white/70">
             Conteúdo prático para escritórios que querem crescer no digital com ética, estratégia
-            e performance — escrito por quem entrega projetos reais há 20 anos.
+            e performance , escrito por quem entrega projetos reais há 20 anos.
           </p>
         </div>
       </section>

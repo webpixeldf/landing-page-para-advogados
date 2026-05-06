@@ -38,7 +38,7 @@ export default function Hero() {
               <span className="block">Landing Page</span>{' '}
               <span className="relative inline-block">
                 <span className="bg-gradient-to-r from-accent via-cream-300 to-accent bg-clip-text text-transparent">
-                  para Advogados
+                  Para Advogados
                 </span>
                 <svg
                   className="absolute -bottom-2 left-0 w-full"
@@ -60,19 +60,37 @@ export default function Hero() {
                     </linearGradient>
                   </defs>
                 </svg>
-              </span>{' '}
-              <br />
-              que querem atrair{' '}
-              <br />
-              <span className="font-light italic text-white/85">clientes qualificados.</span>
+              </span>
             </h1>
 
             <p className="mt-7 max-w-xl text-lg font-light leading-relaxed text-white/75">
-              Somos especialistas em{' '}
+              Somos uma empresa especialista em criação de{' '}
               <strong className="font-semibold text-white">landing page para advogados</strong> de
-              alta conversão — unindo estratégia de posicionamento, design que transmite credibilidade,
+              alta conversão, unindo estratégia de posicionamento, design que transmite credibilidade,
               SEO técnico e comunicação alinhada ao Código de Ética da OAB, com estrutura enxuta,
               carregamento rápido e integração direta com WhatsApp.
+            </p>
+
+            <div className="mt-7 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-white">
+              <span className="text-sm font-light text-white/65">A partir de</span>
+              <span className="font-display text-4xl font-extrabold tracking-tight text-accent md:text-5xl">
+                R$ 690,00
+              </span>
+              <span className="text-sm font-light text-white/65">à vista</span>
+              <span className="text-white/35">·</span>
+              <span className="text-sm font-light text-white/65">
+                ou <span className="font-semibold text-white/85">3x de R$ 230</span> sem juros
+              </span>
+            </div>
+
+            <p className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-widest text-white/55">
+              <span>Hospedagem grátis</span>
+              <span className="text-white/25">·</span>
+              <span>SSL grátis</span>
+              <span className="text-white/25">·</span>
+              <span>Site rápido</span>
+              <span className="text-white/25">·</span>
+              <span>Seguro</span>
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -82,9 +100,6 @@ export default function Hero() {
                   <path d="M5 12h14M13 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
-              <Link href="#metodologia" className="btn-secondary">
-                Conhecer a metodologia
-              </Link>
             </div>
 
             {/* Mini-stats inline */}
@@ -104,7 +119,7 @@ export default function Hero() {
             </dl>
           </div>
 
-          {/* Right column — floating mockup */}
+          {/* Right column , floating mockup */}
           <div className="relative">
             <div className="relative mx-auto w-full max-w-md">
               {/* Browser frame */}

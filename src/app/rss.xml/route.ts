@@ -41,7 +41,7 @@ export async function GET() {
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>${escapeXml(siteConfig.name)} — Blog</title>
+    <title>${escapeXml(siteConfig.name)} , Blog</title>
     <link>${siteConfig.url}/blog/</link>
     <atom:link href="${siteConfig.url}/rss.xml" rel="self" type="application/rss+xml"/>
     <description>${escapeXml(siteConfig.description)}</description>

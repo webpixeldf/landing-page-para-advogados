@@ -32,7 +32,7 @@ export default function Header() {
       }`}
     >
       <div className="container-pp flex items-center justify-between py-4">
-        <Link href="/" className="group flex items-center" aria-label="Landing Page para Advogados — Página inicial">
+        <Link href="/" className="group flex items-center" aria-label="Landing Page para Advogados , Página inicial">
           <img
             src="/images/landing-page-para-advogados-logo.webp"
             alt="Landing Page para Advogados"

@@ -18,7 +18,7 @@ const lexend = Lexend({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Landing Page para Advogados — Páginas Jurídicas de Alta Conversão | Conforme OAB',
+    default: 'Landing Page para Advogados , Páginas Jurídicas de Alta Conversão | Conforme OAB',
     template: '%s | Landing Page para Advogados'
   },
   description: siteConfig.description,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: 'Landing Page para Advogados — Páginas Jurídicas de Alta Conversão | Conforme OAB',
+    title: 'Landing Page para Advogados , Páginas Jurídicas de Alta Conversão | Conforme OAB',
     description: siteConfig.description,
     images: [
       {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Landing Page para Advogados — Páginas Jurídicas de Alta Conversão | Conforme OAB',
+    title: 'Landing Page para Advogados , Páginas Jurídicas de Alta Conversão | Conforme OAB',
     description: siteConfig.description,
     images: [siteConfig.ogImage]
   },
@@ -160,7 +160,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="Landing Page para Advogados — Blog"
+          title="Landing Page para Advogados , Blog"
           href={`${siteConfig.url}/rss.xml`}
         />
         <script

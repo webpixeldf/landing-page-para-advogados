@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/site';
 export const dynamic = 'force-static';
 
 // Permissão explícita para bots de busca tradicional + IA (GEO-friendly)
-// Sinaliza claramente ao bot que ele pode indexar — alguns crawlers conservadores
+// Sinaliza claramente ao bot que ele pode indexar , alguns crawlers conservadores
 // só rodam se virem seu user-agent listado explicitamente.
 export default function robots(): MetadataRoute.Robots {
   const aiAndSearchBots = [

@@ -50,14 +50,14 @@ export default function Footer() {
             Criamos páginas jurídicas que combinam
             <span className="font-extrabold text-accent"> design</span>,{' '}
             <span className="font-extrabold text-accent">performance</span> e{' '}
-            <span className="font-extrabold text-accent">ética</span> — para bancas que querem
+            <span className="font-extrabold text-accent">ética</span> , para bancas que querem
             crescer com previsibilidade.
           </p>
         </div>
 
         <div className="grid gap-12 border-t border-white/10 pt-14 md:grid-cols-4">
           <div className="md:col-span-2">
-            <Link href="/" className="inline-flex items-center" aria-label="Landing Page para Advogados — Página inicial">
+            <Link href="/" className="inline-flex items-center" aria-label="Landing Page para Advogados , Página inicial">
               <img
                 src="/images/landing-page-para-advogados-logo.webp"
                 alt="Landing Page para Advogados"
@@ -108,7 +108,7 @@ export default function Footer() {
                 href={siteConfig.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                aria-label="LinkedIn de Landing Page Para Advogados — abre em nova aba"
+                aria-label="LinkedIn de Landing Page Para Advogados , abre em nova aba"
                 title="LinkedIn"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/75 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent hover:bg-accent/10 hover:text-accent"
               >
@@ -124,7 +124,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container-pp py-6 text-center text-xs text-white/65">
           <p>
-            Todos os Direitos Reservados © {year} Landing Page Para Advogados — CNPJ: 34.644.883/0001-94
+            Todos os Direitos Reservados © {year} Landing Page Para Advogados , CNPJ: 34.644.883/0001-94
           </p>
         </div>
       </div>

@@ -5,12 +5,12 @@ import CtaBanner from '@/components/CtaBanner';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Quem Somos — Especialistas em Presença Digital Jurídica',
+  title: 'Quem Somos , Especialistas em Presença Digital Jurídica',
   description:
     'Conheça Marcelo França e nossa equipe: especialistas em páginas de conversão para escritórios de advocacia com mais de 15 anos de experiência e 500+ projetos entregues.',
   alternates: { canonical: '/quem-somos/' },
   openGraph: {
-    title: 'Quem Somos — Especialistas em Presença Digital Jurídica',
+    title: 'Quem Somos , Especialistas em Presença Digital Jurídica',
     description:
       'Mais de 15 anos criando soluções digitais para advogados, com foco em conversão, SEO e ética.',
     url: '/quem-somos/',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: '/images/quem-somos.jpg',
         width: 1200,
         height: 630,
-        alt: 'Marcelo França — Especialista em páginas de conversão para escritórios de advocacia',
+        alt: 'Marcelo França , Especialista em páginas de conversão para escritórios de advocacia',
         type: 'image/jpeg'
       }
     ]
@@ -42,7 +42,7 @@ export default function QuemSomosPage() {
   const aboutSchema = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    name: 'Quem Somos — Especialistas em Páginas Jurídicas',
+    name: 'Quem Somos , Especialistas em Páginas Jurídicas',
     description:
       'Especialistas em criação de páginas de conversão para escritórios de advocacia, com foco em performance, SEO e ética profissional. Liderado por Marcelo França.',
     url: siteConfig.url + '/quem-somos/'
@@ -99,7 +99,7 @@ export default function QuemSomosPage() {
               <p>
                 Nascemos da visão de Marcelo França, que uniu sua experiência em tecnologia e SEO
                 com um profundo conhecimento do mercado jurídico. Compreendemos os desafios que
-                advogados enfrentam no ambiente digital — e traduzimos a complexidade do direito
+                advogados enfrentam no ambiente digital , e traduzimos a complexidade do direito
                 em uma comunicação clara, ética e persuasiva.
               </p>
               <p>
@@ -113,7 +113,7 @@ export default function QuemSomosPage() {
               </p>
               <p>
                 Construímos páginas que são verdadeiras ferramentas de aquisição de clientes,
-                priorizando a conversão qualificada — não o volume vazio.
+                priorizando a conversão qualificada , não o volume vazio.
               </p>
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function QuemSomosPage() {
       <section className="bg-cream-50 pb-12">
         <div className="container-pp max-w-3xl">
           <div className="rounded-2xl border border-ink-100 bg-white px-6 py-5 text-center text-xs font-light text-ink-500">
-            Todos os Direitos Reservados © {new Date().getFullYear()} Landing Page Para Advogados — CNPJ: 34.644.883/0001-94
+            Todos os Direitos Reservados © {new Date().getFullYear()} Landing Page Para Advogados , CNPJ: 34.644.883/0001-94
           </div>
         </div>
       </section>

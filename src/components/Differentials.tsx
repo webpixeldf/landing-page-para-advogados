@@ -43,22 +43,12 @@ export default function Differentials() {
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <span className="eyebrow">Por que escolher a gente</span>
           <h2 className="display-md mt-5 text-balance">
-            Página jurídica feita por quem entende de
+            Criação de landing page para advogados feitas por quem entende de
             <span className="italic font-light text-primary-light"> conversão e ética profissional</span>
           </h2>
           <p className="mx-auto mt-6 max-w-prose text-pretty text-lg font-light leading-relaxed text-ink-500">
-            Uma página de captação para advocacia não pode ser tratada como uma página comum.
-          </p>
-          <p className="mx-auto mt-3 max-w-prose text-pretty text-lg font-light leading-relaxed text-ink-500">
-            Ela precisa vender confiança sem exageros, orientar sem prometer resultado e conduzir
-            o visitante para uma ação objetiva, sem ferir as regras da publicidade jurídica.
-          </p>
-          <p className="mx-auto mt-4 max-w-prose text-pretty text-base font-light leading-relaxed text-ink-500">
-            Nosso trabalho une estratégia, copywriting, design, SEO e desenvolvimento técnico em
-            uma entrega sob medida.
-          </p>
-          <p className="mx-auto mt-3 max-w-prose text-pretty text-base font-semibold leading-relaxed text-ink-700">
-            Sem template pronto. Sem estrutura genérica. Sem linguagem apelativa.
+            Página de captação jurídica exige estratégia: gera confiança, respeita regras e
+            conduz à ação com copy, design e SEO sob medida.
           </p>
         </div>
 

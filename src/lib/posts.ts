@@ -1,5 +1,5 @@
 // Carrega posts dos arquivos JSON em content/blog/*.json em build-time.
-// Novos artigos aparecem só com adicionar um arquivo JSON nessa pasta — sem tocar em código.
+// Novos artigos aparecem só com adicionar um arquivo JSON nessa pasta , sem tocar em código.
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -58,7 +58,7 @@ export function getRelatedPosts(slug: string, limit = 4): Post[] {
       const aShared = a.tags.filter((t) => current.tags.includes(t)).length;
       const bShared = b.tags.filter((t) => current.tags.includes(t)).length;
       if (aShared !== bShared) return bShared - aShared;
-      // 2º critério: data mais recente (desc) — evita que posts alfabeticamente
+      // 2º critério: data mais recente (desc) , evita que posts alfabeticamente
       // primeiros monopolizem a seção de relacionados
       return a.date < b.date ? 1 : -1;
     })

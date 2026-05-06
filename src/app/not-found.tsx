@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Página não encontrada — 404',
+  title: 'Página não encontrada , 404',
   description: 'O endereço que você procurou não existe ou foi movido.',
   robots: { index: false, follow: true },
   openGraph: {
-    title: 'Página não encontrada — 404',
+    title: 'Página não encontrada , 404',
     description: 'O endereço que você procurou não existe ou foi movido.',
     type: 'website',
     locale: 'pt_BR',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         url: '/images/404.jpg',
         width: 1200,
         height: 630,
-        alt: 'Página não encontrada — Landing Page para Advogados',
+        alt: 'Página não encontrada , Landing Page para Advogados',
         type: 'image/jpeg'
       }
     ]

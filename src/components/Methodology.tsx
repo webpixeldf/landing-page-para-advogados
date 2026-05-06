@@ -46,7 +46,7 @@ const steps: Step[] = [
       'Aplicamos otimizações importantes para indexação e análise de desempenho: meta title e description, heading tags organizadas, schema markup, URLs amigáveis, sitemap, breadcrumbs, Search Console e ferramentas de análise.'
     ],
     linkHref: '/blog/seo-para-advogados-como-aparecer-no-google/',
-    linkLabel: 'Guia completo de SEO jurídico — técnicas atualizadas para 2026',
+    linkLabel: 'Guia completo de SEO jurídico, técnicas atualizadas para 2026',
     keyword: 'Otimização'
   }
 ];
@@ -62,14 +62,12 @@ export default function Methodology() {
           <span className="eyebrow-light">Metodologia exclusiva</span>
           <h2 className="display-md mt-5 text-balance text-white">
             Nossa metodologia para criar
-            <span className="italic font-light text-accent"> páginas jurídicas de alta conversão</span>
+            <span className="italic font-light text-accent"> site jurídico de alta conversão</span>
           </h2>
           <p className="mx-auto mt-6 max-w-prose text-pretty text-lg font-light leading-relaxed text-white/65">
-            Cada projeto segue um processo validado em mais de 500 entregas.
-          </p>
-          <p className="mx-auto mt-3 max-w-prose text-pretty text-lg font-light leading-relaxed text-white/65">
-            A página é construída com base no posicionamento do escritório, na área de atuação,
-            no perfil do cliente ideal e nas regras de comunicação da advocacia.
+            Cada projeto segue um processo validado em mais de 500 entregas, com a página
+            construída conforme o posicionamento do escritório, área de atuação, público ideal
+            e regras da advocacia.
           </p>
         </div>
 

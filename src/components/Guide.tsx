@@ -8,13 +8,12 @@ export default function Guide() {
           <div className="lg:sticky lg:top-28 lg:self-start">
             <span className="eyebrow">Guia rápido</span>
             <h2 className="display-md mt-5 text-balance">
-              O que é, para que serve e
-              <span className="italic font-light text-primary-light"> como funciona </span>
-              uma página de captação jurídica.
+              O que é e para que serve
+              <span className="italic font-light text-primary-light"> uma landing page jurídica</span>
             </h2>
             <p className="mt-6 text-base font-light leading-relaxed text-ink-500">
               Antes de investir em uma landing page para advogados, vale entender o que diferencia
-              uma página focada em conversão de um site institucional comum — e por que escritórios
+              uma página focada em conversão de um site institucional comum, e por que escritórios
               que dominam o ambiente digital estão adotando estruturas pensadas exclusivamente para
               transformar visitas em contatos.
             </p>
@@ -46,8 +45,8 @@ export default function Guide() {
                 contato, agendar uma consulta ou baixar um material informativo.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                Diferente de um site institucional — que distribui a atenção do visitante entre
-                várias páginas, menus e informações gerais — a página de conversão concentra toda
+                Diferente de um site institucional , que distribui a atenção do visitante entre
+                várias páginas, menus e informações gerais , a página de conversão concentra toda
                 a mensagem em um único fluxo.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
@@ -236,7 +235,7 @@ export default function Guide() {
                 <Link href="/blog/pagina-de-captura-para-advogados-guia-completo/" className="border-b border-accent/30 font-medium text-primary transition-colors hover:text-accent">
                   Leia o guia completo sobre páginas de captação jurídica
                 </Link>
-                {' '}— entenda a estratégia por trás de cada elemento da página antes de investir.
+                {' '}, entenda a estratégia por trás de cada elemento da página antes de investir.
               </p>
             </article>
           </div>

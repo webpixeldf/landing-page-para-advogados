@@ -16,7 +16,7 @@ export default function ContactForm() {
     e.preventDefault();
 
     const lines = [
-      `Olá! Gostaria de solicitar um orçamento de página de captação para escritório de advocacia.`,
+      `Olá! Vim do site landingpageparaadvogados.com e gostaria de um orçamento.`,
       ``,
       `*Nome:* ${name}`,
       `*E-mail:* ${email}`,
@@ -123,7 +123,7 @@ export default function ContactForm() {
         </svg>
       </button>
       <p className="text-center text-xs font-light text-ink-400">
-        Ao enviar, o WhatsApp abrirá com a mensagem já preenchida — basta confirmar.
+        Ao enviar, o WhatsApp abrirá com a mensagem já preenchida , basta confirmar.
       </p>
     </form>
   );

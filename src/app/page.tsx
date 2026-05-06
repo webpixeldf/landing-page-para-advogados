@@ -6,18 +6,17 @@ import Methodology from '@/components/Methodology';
 import Guide from '@/components/Guide';
 import Benefits from '@/components/Benefits';
 import Portfolio from '@/components/Portfolio';
-import Testimonials from '@/components/Testimonials';
-import FAQ, { type FaqItem } from '@/components/FAQ';
 import CtaBanner from '@/components/CtaBanner';
+import FAQ, { type FaqItem } from '@/components/FAQ';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Landing Page para Advogados — Páginas Jurídicas de Alta Conversão | Conforme OAB',
+  title: 'Landing Page para Advogados , Páginas Jurídicas de Alta Conversão | Conforme OAB',
   description:
     'Criação de páginas de captação para advogados com SEO técnico, copywriting jurídico ético e total conformidade com o Código de Ética da OAB. 20 anos e mais de 500 projetos entregues.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Landing Page para Advogados — Páginas Jurídicas de Alta Conversão | Conforme OAB',
+    title: 'Landing Page para Advogados , Páginas Jurídicas de Alta Conversão | Conforme OAB',
     description:
       'Páginas de captação para escritórios jurídicos com design que transmite credibilidade, performance, SEO e conformidade total com a OAB.',
     url: '/',
@@ -128,7 +127,7 @@ export default function HomePage() {
       audienceType: 'Advogados e escritórios de advocacia'
     },
     description:
-      'Desenvolvimento de páginas de conversão para escritórios de advocacia — design responsivo, SEO técnico, copywriting jurídico ético e total conformidade com a OAB.',
+      'Desenvolvimento de páginas de conversão para escritórios de advocacia , design responsivo, SEO técnico, copywriting jurídico ético e total conformidade com a OAB.',
     brand: { '@type': 'Brand', name: 'Landing Page para Advogados' },
     offers: {
       '@type': 'Offer',
@@ -137,7 +136,7 @@ export default function HomePage() {
       availability: 'https://schema.org/InStock',
       itemOffered: {
         '@type': 'Service',
-        name: 'Landing Page para Advogados — projeto completo'
+        name: 'Landing Page para Advogados , projeto completo'
       }
     }
   };
@@ -165,7 +164,7 @@ export default function HomePage() {
     // Speakable: sinaliza a Alexa/Google Assistant/bots de voz/IA
     // quais blocos são "respondíveis" com voz sem prejuízo de contexto.
     // Nota: .prose-editorial não existe na homepage (só em posts/legais),
-    // então mantemos apenas h1/h2 — universais a qualquer página.
+    // então mantemos apenas h1/h2 , universais a qualquer página.
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', 'h2']
@@ -177,7 +176,7 @@ export default function HomePage() {
     '@type': 'Person',
     '@id': siteConfig.url + '/#author',
     name: siteConfig.author.name,
-    alternateName: 'Marcelo França — Especialista em SEO e Desenvolvimento Web Jurídico',
+    alternateName: 'Marcelo França , Especialista em SEO e Desenvolvimento Web Jurídico',
     url: siteConfig.author.linkedin,
     image: siteConfig.url + siteConfig.author.image,
     jobTitle: siteConfig.author.jobTitle,
@@ -294,7 +293,7 @@ export default function HomePage() {
       <Benefits />
       <Portfolio />
       <CtaBanner
-        title="Vamos criar uma landing page jurídica para o seu escritório?"
+        title="Vamos criar uma landing page para o seu escritório?"
         subtitle={[
           'Sua banca não precisa depender apenas de indicação.',
           'Com uma página bem estruturada, o tráfego certo encontra uma mensagem clara, profissional e preparada para gerar contato.',
@@ -302,7 +301,6 @@ export default function HomePage() {
         ]}
         cta="Solicitar diagnóstico gratuito"
       />
-      <Testimonials />
       <FAQ items={FAQ_ITEMS} title="Perguntas frequentes" />
     </>
   );

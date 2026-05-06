@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: '/images/termos-de-uso.jpg',
         width: 1200,
         height: 630,
-        alt: 'Termos de Uso — Landing Page para Advogados',
+        alt: 'Termos de Uso , Landing Page para Advogados',
         type: 'image/jpeg'
       }
     ]
