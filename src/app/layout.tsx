@@ -64,9 +64,9 @@ export const metadata: Metadata = {
     }
   },
   icons: {
-    icon: [{ url: '/images/favicon.jpg', type: 'image/jpeg' }],
-    shortcut: [{ url: '/images/favicon.jpg' }],
-    apple: [{ url: '/images/favicon.jpg' }]
+    icon: [{ url: '/images/favicon.png', type: 'image/png' }],
+    shortcut: [{ url: '/images/favicon.png' }],
+    apple: [{ url: '/images/favicon.png' }]
   },
   manifest: '/manifest.webmanifest'
 };
