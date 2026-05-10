@@ -1,7 +1,6 @@
 {
   "_comment": "Pool de âncoras keyword-rich para linkar a homepage. TODAS contêm 'landing page' (a keyword raiz) para reforçar o sinal SEO interno. Cada artigo consome 1 âncora; 'used' lista consumidas.",
   "available": [
-    "landing page para advogado empresarial",
     "landing page para advogado cível",
     "landing page para advogado imobiliário",
     "landing page para advogado do consumidor",
@@ -203,6 +202,11 @@
       "anchor": "landing page para advogado de família",
       "slug": "marketing-de-relacionamento-para-escritorios-juridicos-estrategias-de-retencao-e",
       "date": "2026-05-09"
+    },
+    {
+      "anchor": "landing page para advogado empresarial",
+      "slug": "instagram-para-advogados-guia-completo-2026",
+      "date": "2026-05-10"
     }
   ]
 }
