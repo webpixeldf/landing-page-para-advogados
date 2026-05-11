@@ -5,14 +5,14 @@ import CtaBanner from '@/components/CtaBanner';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Quem Somos , Especialistas em Presença Digital Jurídica',
+  title: 'Quem Somos — Marcelo França e a equipe por trás dos seus projetos',
   description:
-    'Conheça Marcelo França e nossa equipe: especialistas em páginas de conversão para escritórios de advocacia com mais de 15 anos de experiência e 500+ projetos entregues.',
+    'Conheça Marcelo França e a equipe: mais de 20 anos de experiência, 500+ projetos entregues e um processo validado de criação de presença digital para escritórios jurídicos.',
   alternates: { canonical: '/quem-somos/' },
   openGraph: {
-    title: 'Quem Somos , Especialistas em Presença Digital Jurídica',
+    title: 'Quem Somos — Marcelo França e a equipe por trás dos seus projetos',
     description:
-      'Mais de 15 anos criando soluções digitais para advogados, com foco em conversão, SEO e ética.',
+      'Mais de 20 anos construindo soluções digitais para advogados, com foco em ética, performance e resultados mensuráveis.',
     url: '/quem-somos/',
     type: 'website',
     locale: 'pt_BR',
@@ -42,9 +42,9 @@ export default function QuemSomosPage() {
   const aboutSchema = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    name: 'Quem Somos , Especialistas em Páginas Jurídicas',
+    name: 'Quem Somos — Marcelo França e equipe',
     description:
-      'Especialistas em criação de páginas de conversão para escritórios de advocacia, com foco em performance, SEO e ética profissional. Liderado por Marcelo França.',
+      'Marcelo França lidera uma equipe com mais de 20 anos de experiência em desenvolvimento web e presença digital para o mercado jurídico brasileiro.',
     url: siteConfig.url + '/quem-somos/'
   };
 
@@ -60,15 +60,14 @@ export default function QuemSomosPage() {
         <div className="container-pp">
           <span className="eyebrow-light">Sobre nós</span>
           <h1 className="display-lg mt-6 max-w-4xl text-balance text-white">
-            Especialistas em
-            <span className="italic font-light text-accent"> páginas de conversão</span> para
-            escritórios de advocacia.
+            Marcelo França e a equipe por trás de
+            <span className="italic font-light text-accent"> cada projeto.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-white/70">
-            Há mais de 15 anos combinamos design, performance e estratégia para transformar
-            escritórios de advocacia em referências digitais. Sob a liderança de Marcelo França,
-            nossa equipe é especializada em criar páginas de captação que respeitam o Código de
-            Ética da OAB e entregam contatos qualificados de forma consistente.
+            Há mais de 20 anos combinamos design, performance e estratégia para fortalecer a
+            presença digital de escritórios jurídicos em todo o Brasil. Sob a liderança de Marcelo
+            França, entregamos projetos que respeitam o Código de Ética da OAB e geram resultados
+            mensuráveis de forma consistente.
           </p>
         </div>
       </section>
@@ -99,21 +98,20 @@ export default function QuemSomosPage() {
               <p>
                 Nascemos da visão de Marcelo França, que uniu sua experiência em tecnologia e SEO
                 com um profundo conhecimento do mercado jurídico. Compreendemos os desafios que
-                advogados enfrentam no ambiente digital , e traduzimos a complexidade do direito
-                em uma comunicação clara, ética e persuasiva.
+                advogados enfrentam no ambiente digital e traduzimos a complexidade do direito
+                em comunicação clara, ética e profissional.
               </p>
               <p>
-                Entregamos soluções digitais que, além de destacar a marca da banca, geram
-                resultados mensuráveis em captação. Para isso, criamos cada{' '}
+                Entregamos projetos digitais que, além de fortalecer a marca da banca, geram
+                resultados mensuráveis. Cada entrega respeita o Código de Ética da OAB e aplica
+                boas práticas de{' '}
                 <Link href="/" className="border-b border-accent/40 font-medium text-primary transition-colors hover:text-accent">
-                  página de aquisição para escritório jurídico
-                </Link>{' '}
-                respeitando o Código de Ética da OAB e usando boas práticas de performance,
-                acessibilidade e SEO.
+                  performance, acessibilidade e otimização técnica
+                </Link>.
               </p>
               <p>
-                Construímos páginas que são verdadeiras ferramentas de aquisição de clientes,
-                priorizando a conversão qualificada , não o volume vazio.
+                Priorizamos a captação qualificada, não o volume vazio — cada projeto é construído
+                com base no posicionamento do escritório e no perfil do cliente que a banca quer atrair.
               </p>
             </div>
           </div>

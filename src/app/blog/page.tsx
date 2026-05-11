@@ -76,7 +76,7 @@ export default function BlogIndexPage() {
           <h1 className="display-lg mt-6 max-w-4xl text-balance text-white">
             Blog sobre
             <span className="italic font-light text-accent"> marketing jurídico</span>,
-            SEO e páginas de conversão para escritórios.
+            SEO e estratégia digital para advogados.
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-white/70">
             Conteúdo prático para escritórios que querem crescer no digital com ética, estratégia

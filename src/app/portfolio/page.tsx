@@ -50,15 +50,15 @@ export default function PortfolioPage() {
         <div className="container-pp">
           <span className="eyebrow-light">Portfólio</span>
           <h1 className="display-lg mt-6 max-w-4xl text-balance text-white">
-            Portfólio de
-            <span className="italic font-light text-accent"> páginas jurídicas de alta conversão </span>
-            entregues pela nossa equipe.
+            Projetos entregues para
+            <span className="italic font-light text-accent"> escritórios jurídicos </span>
+            em todo o Brasil.
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-white/70">
-            Veja exemplos reais de escritórios que transformaram a presença digital em volume
-            previsível de novos clientes , todos construídos sobre a metodologia do nosso{' '}
+            Veja exemplos reais de bancas que fortaleceram a presença digital e passaram a receber
+            contatos mais qualificados — todos construídos com a{' '}
             <Link href="/" className="border-b border-accent/40 text-accent transition-colors hover:border-accent">
-              site para captação de clientes jurídicos
+              nossa metodologia de projetos jurídicos
             </Link>.
           </p>
         </div>

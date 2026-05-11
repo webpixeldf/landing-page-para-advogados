@@ -5,7 +5,7 @@ import { siteConfig } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Contato , Fale Conosco',
   description:
-    'Fale com nossa equipe especialista em páginas de conversão para escritórios de advocacia. WhatsApp, e-mail ou formulário , resposta em até 1 dia útil.',
+    'Entre em contato com nossa equipe pelo WhatsApp, formulário ou telefone. Respondemos em até 1 dia útil e enviamos proposta sem compromisso.',
   alternates: { canonical: '/contato/' },
   openGraph: {
     title: 'Contato , Fale Conosco',
@@ -61,9 +61,8 @@ export default function ContatoPage() {
         <div className="container-pp">
           <span className="eyebrow-light">Contato</span>
           <h1 className="display-lg mt-6 max-w-4xl text-balance text-white">
-            Fale com quem cria
-            <span className="italic font-light text-accent"> páginas de conversão para advocacia </span>
-            há mais de 20 anos.
+            Fale com nossa equipe e receba
+            <span className="italic font-light text-accent"> uma proposta em até 1 dia útil.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-white/70">
             Respondemos em até 1 dia útil. Prefere conversar direto? Use o WhatsApp , ou preencha
