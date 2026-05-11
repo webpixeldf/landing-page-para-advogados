@@ -60,8 +60,8 @@ export default function QuemSomosPage() {
         <div className="container-pp">
           <span className="eyebrow-light">Sobre nós</span>
           <h1 className="display-lg mt-6 max-w-4xl text-balance text-white">
-            Marcelo França e a equipe por trás de
-            <span className="italic font-light text-accent"> cada projeto.</span>
+            20 anos construindo presença digital
+            <span className="italic font-light text-accent"> para o direito.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-white/70">
             Há mais de 20 anos combinamos design, performance e estratégia para fortalecer a
