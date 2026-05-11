@@ -214,10 +214,17 @@ REGRAS OBRIGATÓRIAS:
 4. O texto-âncora desse único link DEVE ser EXATAMENTE: "${anchor}" — escreva exatamente assim: [${anchor}](/) — encaixado naturalmente no fluxo da frase, dentro do contexto.
 5. Exemplo de uso natural: "Para escritórios que querem começar com base sólida, vale conhecer nossa [${anchor}](/), que entrega tudo isso pronto."
 6. NÃO use a frase exata "landing page para advogados" mais de 2 vezes no artigo (anti-stuffing). Variações curtas como "landing page" ou "página jurídica" podem aparecer mais.
-7. NÃO inclua imagens no markdown (só texto).
-8. NÃO inclua título H1 no início do conteúdo (o sistema renderiza separadamente).
-9. Comece o conteúdo direto com um parágrafo introdutório (sem H2 logo de cara).
-10. PARÁGRAFOS CURTOS — REGRA CRÍTICA PARA MOBILE (VIOLAR ESSA REGRA INVALIDA O ARTIGO):
+7. ANTI-CANIBALIZAÇÃO — REGRA CRÍTICA PARA O CAMPO "title": A página inicial do site já ranqueia para a keyword comercial "landing page para advogados". O campo "title" do artigo NUNCA deve reproduzir essa keyword sem um modificador que sinalize intenção claramente informacional ou de nicho específico. Regras práticas:
+   - PROIBIDO: iniciar o title com "Landing Page para Advogados:" seguido de qualquer coisa genérica.
+   - PROIBIDO: qualquer title que um usuário com intenção de CONTRATAR usaria para buscar (ex.: "Landing Page para Advogados — Preços e Serviços").
+   - OBRIGATÓRIO quando o tópico envolver landing pages para advogados em geral: usar modificador informacional no início ou no meio do title, como "Como", "Guia", "O que é", "Por que", "Checklist", "Erros", número + "elementos/dicas/passos", "Como criar", "Como estruturar", etc.
+   - PERMITIDO: modificador de nicho ("Landing Page para Advogado Trabalhista", "Landing Page para Advogado Previdenciário") pois são long-tails que não competem com a homepage.
+   - Exemplos CORRETOS: "Página de captação para advogados: guia completo [2026]" | "7 elementos essenciais de uma landing page jurídica" | "Como estruturar a página de conversão do seu escritório" | "O que é uma landing page jurídica e quando usar".
+   - Exemplos ERRADOS: "Landing Page para Advogados: Guia Completo de Captação" | "Como Criar uma Landing Page para Advogados" | "Landing Page para Advogados: Tudo que Você Precisa Saber".
+8. NÃO inclua imagens no markdown (só texto).
+9. NÃO inclua título H1 no início do conteúdo (o sistema renderiza separadamente).
+10. Comece o conteúdo direto com um parágrafo introdutório (sem H2 logo de cara).
+11. PARÁGRAFOS CURTOS — REGRA CRÍTICA PARA MOBILE (VIOLAR ESSA REGRA INVALIDA O ARTIGO):
     - **Máximo ABSOLUTO de 2 frases por parágrafo**. Se tiver 3, quebre em dois.
     - Cada parágrafo separado por LINHA EM BRANCO (dupla quebra de linha no markdown)
     - Máximo 35 palavras por parágrafo (NUNCA ultrapasse 50)
@@ -230,7 +237,7 @@ REGRAS OBRIGATÓRIAS:
       Segundo pesquisa do IBGE, mais de 1,3 milhão de profissionais atuam no Direito no país.
 
       Desse total, cerca de 85% são advogados autônomos ou em pequenos escritórios." ← 3 parágrafos de 1 frase = BOM
-11. Use markdown padrão: **negrito**, *itálico*, listas com - ou 1., links [texto](url).`;
+12. Use markdown padrão: **negrito**, *itálico*, listas com - ou 1., links [texto](url).`;
 
   const userPrompt = `Escreva um artigo completo sobre: "${topic}"
 
