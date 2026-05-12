@@ -3,8 +3,9 @@ import Hero from '@/components/Hero';
 import Stats from '@/components/Stats';
 import Differentials from '@/components/Differentials';
 import Methodology from '@/components/Methodology';
-import Guide from '@/components/Guide';
+import AboutSection from '@/components/AboutSection';
 import Benefits from '@/components/Benefits';
+import ContactSection from '@/components/ContactSection';
 import Portfolio from '@/components/Portfolio';
 import CtaBanner from '@/components/CtaBanner';
 import FAQ, { type FaqItem } from '@/components/FAQ';
@@ -289,7 +290,7 @@ export default function HomePage() {
       <Stats />
       <Differentials />
       <Methodology />
-      <Guide />
+      <AboutSection />
       <Benefits />
       <Portfolio />
       <CtaBanner
@@ -302,6 +303,7 @@ export default function HomePage() {
         cta="Solicitar diagnóstico gratuito"
       />
       <FAQ items={FAQ_ITEMS} title="Perguntas frequentes" />
+      <ContactSection />
     </>
   );
 }

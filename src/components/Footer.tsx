@@ -77,11 +77,9 @@ export default function Footer() {
               Navegação
             </span>
             <ul className="space-y-3 text-sm font-light text-white/75">
-              <li><Link href="/" className="transition-colors hover:text-accent">Início</Link></li>
-              <li><Link href="/quem-somos/" className="transition-colors hover:text-accent">Quem somos</Link></li>
-              <li><Link href="/portfolio/" className="transition-colors hover:text-accent">Portfólio</Link></li>
-              <li><Link href="/blog/" className="transition-colors hover:text-accent">Blog</Link></li>
-              <li><Link href="/contato/" className="transition-colors hover:text-accent">Contato</Link></li>
+              <li><a href="/#sobre" className="transition-colors hover:text-accent">Quem somos</a></li>
+              <li><a href="/#metodologia" className="transition-colors hover:text-accent">Como funciona</a></li>
+              <li><a href="/#contato" className="transition-colors hover:text-accent">Contato</a></li>
               <li><Link href="/politica-privacidade/" className="transition-colors hover:text-accent">Política de privacidade</Link></li>
               <li><Link href="/termos-de-uso/" className="transition-colors hover:text-accent">Termos de uso</Link></li>
             </ul>

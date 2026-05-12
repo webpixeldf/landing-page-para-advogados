@@ -5,11 +5,9 @@ import { useEffect, useState } from 'react';
 import { siteConfig } from '@/lib/site';
 
 const NAV = [
-  { href: '/', label: 'Início' },
-  { href: '/quem-somos/', label: 'Quem somos' },
-  { href: '/portfolio/', label: 'Portfólio' },
-  { href: '/blog/', label: 'Blog' },
-  { href: '/contato/', label: 'Contato' }
+  { href: '/#sobre', label: 'Quem somos' },
+  { href: '/#metodologia', label: 'Como funciona' },
+  { href: '/#contato', label: 'Contato' }
 ];
 
 export default function Header() {
