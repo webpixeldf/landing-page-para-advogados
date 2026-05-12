@@ -5,114 +5,116 @@ import { siteConfig } from '@/lib/site';
 
 const WHATSAPP_NUMBER = siteConfig.contact.phone.replace(/\D/g, '');
 
+function maskPhone(value: string) {
+  const digits = value.replace(/\D/g, '').slice(0, 11);
+  if (digits.length <= 2) return digits.length ? `(${digits}` : '';
+  if (digits.length <= 7) return `(${digits.slice(0, 2)}) ${digits.slice(2)}`;
+  return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
+}
+
 export default function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [segment, setSegment] = useState('');
   const [message, setMessage] = useState('');
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
+  function validate() {
+    const e: Record<string, string> = {};
+    if (!name.trim()) e.name = 'Informe seu nome completo.';
+    if (!email.trim()) e.email = 'Informe seu e-mail.';
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) e.email = 'E-mail inválido.';
+    if (!phone.trim()) e.phone = 'Informe seu WhatsApp.';
+    if (!message.trim()) e.message = 'Escreva uma mensagem antes de enviar.';
+    return e;
+  }
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const errs = validate();
+    if (Object.keys(errs).length > 0) { setErrors(errs); return; }
+    setErrors({});
 
     const lines = [
       `Olá! Vim do site landingpageparaadvogados.com e gostaria de um orçamento.`,
       ``,
       `*Nome:* ${name}`,
       `*E-mail:* ${email}`,
-      `*Telefone:* ${phone}`
+      `*WhatsApp:* ${phone}`,
+      ``,
+      `*Mensagem:*`,
+      message
     ];
-    if (segment.trim()) lines.push(`*Área de atuação:* ${segment}`);
-    if (message.trim()) {
-      lines.push(``, `*Mensagem:*`, message);
-    }
 
     const text = encodeURIComponent(lines.join('\n'));
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
-    window.open(url, '_blank', 'noopener');
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank', 'noopener');
   }
 
-  const inputClass =
-    'w-full rounded-2xl border border-ink-100 bg-white px-4 py-3 text-sm font-light text-ink-700 placeholder:text-ink-400 transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/15';
+  const inputClass = (field: string) =>
+    `w-full rounded-2xl border px-4 py-3 text-sm font-light text-ink-700 placeholder:text-ink-400 transition-colors focus:outline-none focus:ring-2 bg-white ${
+      errors[field]
+        ? 'border-red-400 focus:border-red-400 focus:ring-red-100'
+        : 'border-ink-100 focus:border-primary focus:ring-primary/15'
+    }`;
   const labelClass = 'mb-2 block text-xs font-semibold uppercase tracking-widest text-ink-500';
+  const errorClass = 'mt-1.5 text-xs text-red-500';
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+    <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <label htmlFor="cf-name" className={labelClass}>
-          Nome
-        </label>
+        <label htmlFor="cf-name" className={labelClass}>Nome</label>
         <input
           id="cf-name"
           type="text"
-          required
           autoComplete="name"
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => { setName(e.target.value); setErrors((p) => ({ ...p, name: '' })); }}
           placeholder="Seu nome completo"
-          className={inputClass}
+          className={inputClass('name')}
         />
+        {errors.name && <p className={errorClass}>{errors.name}</p>}
       </div>
 
       <div className="grid gap-5 md:grid-cols-2">
         <div>
-          <label htmlFor="cf-email" className={labelClass}>
-            E-mail
-          </label>
+          <label htmlFor="cf-email" className={labelClass}>E-mail</label>
           <input
             id="cf-email"
             type="email"
-            required
             autoComplete="email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => { setEmail(e.target.value); setErrors((p) => ({ ...p, email: '' })); }}
             placeholder="seu@email.com"
-            className={inputClass}
+            className={inputClass('email')}
           />
+          {errors.email && <p className={errorClass}>{errors.email}</p>}
         </div>
         <div>
-          <label htmlFor="cf-phone" className={labelClass}>
-            Telefone / WhatsApp
-          </label>
+          <label htmlFor="cf-phone" className={labelClass}>WhatsApp</label>
           <input
             id="cf-phone"
             type="tel"
-            required
             autoComplete="tel"
             value={phone}
-            onChange={(e) => setPhone(e.target.value)}
+            onChange={(e) => { setPhone(maskPhone(e.target.value)); setErrors((p) => ({ ...p, phone: '' })); }}
             placeholder="(00) 00000-0000"
-            className={inputClass}
+            className={inputClass('phone')}
           />
+          {errors.phone && <p className={errorClass}>{errors.phone}</p>}
         </div>
       </div>
 
       <div>
-        <label htmlFor="cf-segment" className={labelClass}>
-          Área de atuação <span className="text-ink-400 normal-case tracking-normal">(opcional)</span>
-        </label>
-        <input
-          id="cf-segment"
-          type="text"
-          value={segment}
-          onChange={(e) => setSegment(e.target.value)}
-          placeholder="Ex.: Trabalhista, Previdenciário, Família…"
-          className={inputClass}
-        />
-      </div>
-
-      <div>
-        <label htmlFor="cf-message" className={labelClass}>
-          Mensagem <span className="text-ink-400 normal-case tracking-normal">(opcional)</span>
-        </label>
+        <label htmlFor="cf-message" className={labelClass}>Mensagem</label>
         <textarea
           id="cf-message"
           rows={4}
           value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          onChange={(e) => { setMessage(e.target.value); setErrors((p) => ({ ...p, message: '' })); }}
           placeholder="Conte um pouco sobre seu escritório ou o projeto que tem em mente."
-          className={`${inputClass} resize-none`}
+          className={`${inputClass('message')} resize-none`}
         />
+        {errors.message && <p className={errorClass}>{errors.message}</p>}
       </div>
 
       <button type="submit" className="btn-primary w-full justify-center">
