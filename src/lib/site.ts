@@ -32,7 +32,7 @@ export const siteConfig = {
       'https://wa.me/5561992784283?text=Ol%C3%A1!%20Vim%20do%20site%20landingpageparaadvogados.com%20e%20gostaria%20de%20um%20or%C3%A7amento.'
   },
   social: {
-    instagram: 'https://instagram.com/landingpageparaadvogados',
+    instagram: 'https://instagram.com/landingpage.advogados',
     linkedin: 'https://www.linkedin.com/company/landing-page-para-advogado/'
   },
   indexNowKey: 'c2e2107a5718803b8f142c315b50da81'
