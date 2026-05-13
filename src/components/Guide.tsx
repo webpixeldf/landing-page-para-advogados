@@ -212,8 +212,8 @@ export default function Guide() {
                 Quanto custa uma página de conversão para advocacia?
               </h3>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">
-                O investimento começa em <strong className="font-semibold text-ink-900">R$ 699,00, em pagamento único</strong> (ou{' '}
-                <strong className="font-semibold text-ink-900">3x de R$ 233 sem juros</strong>),
+                O investimento começa em <strong className="font-semibold text-ink-900">R$ 690,00, em pagamento único</strong> (ou{' '}
+                <strong className="font-semibold text-ink-900">3x de R$ 230 sem juros</strong>),
                 com hospedagem inclusa e sem mensalidade obrigatória.
               </p>
               <p className="mt-3 text-base font-light leading-relaxed text-ink-500">

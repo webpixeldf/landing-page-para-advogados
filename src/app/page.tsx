@@ -12,12 +12,12 @@ import FAQ, { type FaqItem } from '@/components/FAQ';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Landing Page para Advogados , Páginas Jurídicas de Alta Conversão | Conforme OAB',
+  title: 'Landing Page para Advogados — Alta Conversão | Conforme OAB',
   description:
     'Criação de páginas de captação para advogados com SEO técnico, copywriting jurídico ético e total conformidade com o Código de Ética da OAB. 20 anos e mais de 500 projetos entregues.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Landing Page para Advogados , Páginas Jurídicas de Alta Conversão | Conforme OAB',
+    title: 'Landing Page para Advogados — Alta Conversão | Conforme OAB',
     description:
       'Páginas de captação para escritórios jurídicos com design que transmite credibilidade, performance, SEO e conformidade total com a OAB.',
     url: '/',
@@ -58,7 +58,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     q: 'Qual o investimento necessário?',
     a: [
-      'O investimento começa em R$ 699,00 em pagamento único (ou 3x de R$ 233 sem juros), com hospedagem inclusa e sem mensalidade obrigatória.',
+      'O investimento começa em R$ 690,00 em pagamento único (ou 3x de R$ 230 sem juros), com hospedagem inclusa e sem mensalidade obrigatória.',
       'Estão incluídos: design responsivo, SEO on-page, integração WhatsApp, formulário LGPD, treinamento e 90 dias de suporte gratuito.'
     ]
   },
@@ -132,7 +132,7 @@ export default function HomePage() {
     brand: { '@type': 'Brand', name: 'Landing Page para Advogados' },
     offers: {
       '@type': 'Offer',
-      price: '699.00',
+      price: '690.00',
       priceCurrency: 'BRL',
       availability: 'https://schema.org/InStock',
       itemOffered: {
@@ -203,7 +203,7 @@ export default function HomePage() {
       'Metodologia em 5 etapas para construir uma página profissional para escritórios de advocacia, com design otimizado, SEO técnico e total conformidade com a OAB.',
     image: siteConfig.ogImage,
     totalTime: 'P7D',
-    estimatedCost: { '@type': 'MonetaryAmount', currency: 'BRL', value: '699.00' },
+    estimatedCost: { '@type': 'MonetaryAmount', currency: 'BRL', value: '690.00' },
     supply: [
       { '@type': 'HowToSupply', name: 'Logo em alta resolução' },
       { '@type': 'HowToSupply', name: 'Fotos do escritório e da equipe' },

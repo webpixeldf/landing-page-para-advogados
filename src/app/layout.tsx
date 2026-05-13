@@ -18,11 +18,10 @@ const lexend = Lexend({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Landing Page para Advogados , Páginas Jurídicas de Alta Conversão | Conforme OAB',
+    default: 'Landing Page para Advogados — Alta Conversão | Conforme OAB',
     template: '%s | Landing Page para Advogados'
   },
   description: siteConfig.description,
-  keywords: siteConfig.keywords,
   authors: [{ name: siteConfig.author.name }],
   creator: siteConfig.author.name,
   publisher: 'Landing Page para Advogados',
@@ -34,7 +33,7 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: 'Landing Page para Advogados , Páginas Jurídicas de Alta Conversão | Conforme OAB',
+    title: 'Landing Page para Advogados — Alta Conversão | Conforme OAB',
     description: siteConfig.description,
     images: [
       {
@@ -47,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Landing Page para Advogados , Páginas Jurídicas de Alta Conversão | Conforme OAB',
+    title: 'Landing Page para Advogados — Alta Conversão | Conforme OAB',
     description: siteConfig.description,
     images: [siteConfig.ogImage]
   },
@@ -87,7 +86,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const orgSchema = {
     '@context': 'https://schema.org',
-    '@type': 'ProfessionalService',
+    '@type': ['LocalBusiness', 'ProfessionalService'],
     '@id': siteConfig.url + '/#organization',
     name: 'Landing Page para Advogados',
     alternateName: 'Criação de Landing Page para Advogados',
@@ -128,7 +127,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     sameAs: [siteConfig.social.instagram, siteConfig.social.linkedin],
     makesOffer: {
       '@type': 'Offer',
-      price: '699.00',
+      price: '690.00',
       priceCurrency: 'BRL',
       itemOffered: {
         '@type': 'Service',
@@ -149,7 +148,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     publisher: { '@type': 'Organization', name: 'Landing Page para Advogados' },
     potentialAction: {
       '@type': 'SearchAction',
-      target: `${siteConfig.url}/blog/?q={search_term_string}`,
+      target: `${siteConfig.url}/?q={search_term_string}`,
       'query-input': 'required name=search_term_string'
     }
   };
@@ -157,13 +156,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR" className={lexend.variable}>
       <head>
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          title="Landing Page para Advogados , Blog"
-          href={`${siteConfig.url}/rss.xml`}
-        />
-        <script
+          <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
         />
