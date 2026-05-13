@@ -1,8 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import type React from 'react';
 
-export type FaqItem = { q: string; a: string | string[] };
+export type FaqItem = { q: string; a: string | string[] | React.ReactNode; aText?: string };
 
 export default function FAQ({
   items,
@@ -74,12 +75,14 @@ export default function FAQ({
                   </summary>
                   <div className="px-6 pb-6 pl-[3.4rem] text-[0.98rem] font-light leading-relaxed text-ink-500">
                     {Array.isArray(item.a)
-                      ? item.a.map((p, k) => (
+                      ? (item.a as string[]).map((p, k) => (
                           <p key={k} className="mt-2 first:mt-0">
                             {p}
                           </p>
                         ))
-                      : <p>{item.a}</p>}
+                      : typeof item.a === 'string'
+                        ? <p>{item.a}</p>
+                        : <>{item.a}</>}
                   </div>
                 </details>
               );

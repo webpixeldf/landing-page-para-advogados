@@ -58,14 +58,30 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     q: 'Qual o investimento necessário?',
     a: [
-      'O investimento começa em R$ 690,00 em pagamento único (ou 3x de R$ 230 sem juros), com hospedagem inclusa e sem mensalidade obrigatória.',
+      'O investimento começa em R$ 690,00 em pagamento único (ou 3x de R$ 230), com hospedagem inclusa e sem mensalidade obrigatória.',
       'Estão incluídos: design responsivo, SEO on-page, integração WhatsApp, formulário LGPD, treinamento e 90 dias de suporte gratuito.'
     ]
   },
   {
     q: 'A landing page respeita as normas da OAB?',
-    a:
-      'Sim. Conhecemos a fundo o Código de Ética e o Provimento 205/2021 da OAB. Garantimos linguagem informativa, sóbria, sem promessa de resultado e exibição correta da inscrição na OAB.'
+    aText:
+      'Sim. Conhecemos a fundo o Código de Ética e o Provimento 205/2021 da OAB. Garantimos linguagem informativa, sóbria, sem promessa de resultado e exibição correta da inscrição na OAB.',
+    a: (
+      <>
+        <p>
+          Sim. Conhecemos a fundo o Código de Ética e o{' '}
+          <a
+            href="https://www.oab.org.br/leisnormas/legislacao/provimentos/205-2021"
+            target="_blank"
+            rel="noopener"
+            className="border-b border-accent/30 font-medium text-primary transition-colors hover:text-accent"
+          >
+            Provimento 205/2021 da OAB
+          </a>
+          . Garantimos linguagem informativa, sóbria, sem promessa de resultado e exibição correta da inscrição na OAB.
+        </p>
+      </>
+    )
   },
   {
     q: 'Preciso investir em tráfego pago para a página funcionar?',
@@ -98,7 +114,7 @@ export default function HomePage() {
       name: item.q,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: Array.isArray(item.a) ? item.a.join(' ') : item.a
+        text: item.aText ?? (Array.isArray(item.a) ? (item.a as string[]).join(' ') : typeof item.a === 'string' ? item.a : '')
       }
     }))
   };
