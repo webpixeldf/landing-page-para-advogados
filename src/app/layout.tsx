@@ -93,8 +93,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     description:
       'Criação de páginas de conversão para escritórios de advocacia com mais de 20 anos de experiência. Design responsivo, SEO técnico e conformidade total com o Código de Ética da OAB.',
     slogan: 'Páginas jurídicas de alta conversão, em conformidade com a OAB.',
-    keywords:
-      'página de captação para advogados, site para advogados, criação de site jurídico, marketing digital jurídico, captação de clientes advocacia',
     image: siteConfig.ogImage,
     url: siteConfig.url + '/',
     telephone: siteConfig.contact.phone,
@@ -142,6 +140,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': siteConfig.url + '/#website',
     url: siteConfig.url + '/',
     name: siteConfig.name,
     inLanguage: 'pt-BR',

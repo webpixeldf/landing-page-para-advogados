@@ -167,7 +167,7 @@ export default function HomePage() {
     description:
       'Criação de páginas de conversão para escritórios de advocacia com mais de 20 anos de experiência. Design responsivo, SEO técnico e conformidade total com a OAB.',
     inLanguage: 'pt-BR',
-    isPartOf: { '@id': siteConfig.url + '/' },
+    isPartOf: { '@id': siteConfig.url + '/#website' },
     primaryImageOfPage: { '@type': 'ImageObject', url: siteConfig.ogImage },
     about: { '@id': siteConfig.url + '/#organization' },
     author: { '@id': siteConfig.url + '/#author' },
