@@ -1,7 +1,6 @@
 {
   "_comment": "Pool de âncoras keyword-rich para linkar a homepage. TODAS contêm 'landing page' (a keyword raiz) para reforçar o sinal SEO interno. Cada artigo consome 1 âncora; 'used' lista consumidas.",
   "available": [
-    "landing page para advocacia digital",
     "landing page para advocacia empresarial",
     "landing page para advocacia contemporânea",
     "landing page para departamento jurídico",
@@ -243,6 +242,11 @@
       "anchor": "landing page para banca de advocacia",
       "slug": "facebook-ads-para-advogados-como-configurar-sem-desperdicar-verba",
       "date": "2026-05-20"
+    },
+    {
+      "anchor": "landing page para advocacia digital",
+      "slug": "pagina-do-facebook-para-advocacia-guia-de-setup-e-seo",
+      "date": "2026-05-21"
     }
   ]
 }
