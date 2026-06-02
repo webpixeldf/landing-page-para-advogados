@@ -1,7 +1,6 @@
 {
   "_comment": "Pool de âncoras keyword-rich para linkar a homepage. TODAS contêm 'landing page' (a keyword raiz) para reforçar o sinal SEO interno. Cada artigo consome 1 âncora; 'used' lista consumidas.",
   "available": [
-    "estrutura de landing page para advogados",
     "plataforma de landing page para advogados",
     "solução de landing page para advocacia",
     "pacote de landing page para advogados",
@@ -287,6 +286,11 @@
       "anchor": "modelo de landing page jurídica",
       "slug": "roteiros-de-video-para-advogado-estrutura-de-retencao-que-converte",
       "date": "2026-06-01"
+    },
+    {
+      "anchor": "estrutura de landing page para advogados",
+      "slug": "guia-de-seo-no-youtube-para-advogados-ranqueie-no-segundo-maior-buscador",
+      "date": "2026-06-02"
     }
   ]
 }
