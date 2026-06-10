@@ -1,7 +1,6 @@
 {
   "_comment": "Pool de âncoras keyword-rich para linkar a homepage. TODAS contêm 'landing page' (a keyword raiz) para reforçar o sinal SEO interno. Cada artigo consome 1 âncora; 'used' lista consumidas.",
   "available": [
-    "landing page profissional jurídica",
     "landing page segura para advogados",
     "landing page para captação jurídica",
     "landing page para Google Ads jurídico",
@@ -319,6 +318,11 @@
       "anchor": "design de landing page jurídica",
       "slug": "seo-local-para-advogados-guia-completo-para-dominar-buscas-geolocalizadas",
       "date": "2026-06-09"
+    },
+    {
+      "anchor": "landing page profissional jurídica",
+      "slug": "google-search-console-para-advogados-como-usar-e-agir-sobre-os-dados",
+      "date": "2026-06-10"
     }
   ]
 }
