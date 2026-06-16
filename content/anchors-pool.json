@@ -1,7 +1,6 @@
 {
   "_comment": "Pool de âncoras keyword-rich para linkar a homepage. TODAS contêm 'landing page' (a keyword raiz) para reforçar o sinal SEO interno. Cada artigo consome 1 âncora; 'used' lista consumidas.",
   "available": [
-    "landing page para WhatsApp advogados",
     "landing page de SEO para advogados",
     "landing page focada em conversão jurídica",
     "landing page que converte para advogados",
@@ -343,6 +342,11 @@
       "anchor": "landing page para tráfego pago jurídico",
       "slug": "seo-no-bing-para-advogados-7-diferencas-cruciais-vs-google",
       "date": "2026-06-15"
+    },
+    {
+      "anchor": "landing page para WhatsApp advogados",
+      "slug": "yahoo-search-e-seo-juridico-ainda-vale-a-pena-investir",
+      "date": "2026-06-16"
     }
   ]
 }
