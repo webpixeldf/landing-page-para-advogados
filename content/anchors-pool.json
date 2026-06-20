@@ -1,7 +1,6 @@
 {
   "_comment": "Pool de âncoras keyword-rich para linkar a homepage. TODAS contêm 'landing page' (a keyword raiz) para reforçar o sinal SEO interno. Cada artigo consome 1 âncora; 'used' lista consumidas.",
   "available": [
-    "landing page que capta clientes para advogados",
     "landing page completa para escritórios jurídicos"
   ],
   "used": [
@@ -359,6 +358,11 @@
       "anchor": "landing page que converte para advogados",
       "slug": "automacao-de-whatsapp-para-escritorios-juridicos-como-nao-perder-a-humanizacao",
       "date": "2026-06-19"
+    },
+    {
+      "anchor": "landing page que capta clientes para advogados",
+      "slug": "grupos-de-whatsapp-para-advocacia-etica-e-estrategia-de-captacao",
+      "date": "2026-06-20"
     }
   ]
 }
